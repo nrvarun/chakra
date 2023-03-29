@@ -1,4 +1,3 @@
-import Footer from "@components/Footer";
 import Image from "next/image";
 import React from "react";
 import {
