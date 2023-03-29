@@ -37,7 +37,7 @@ const Header = ({ customClass = "" }: Props) => {
     <StyledHeader className={customClass}>
       <div className="grid grid-cols-2">
         <StyledHeaderLogoWrapper>
-          <Link href={"/"}>
+          <Link href={"/"} className="inline-block">
             <SVG src="/icons/logo.svg" />
           </Link>
         </StyledHeaderLogoWrapper>
