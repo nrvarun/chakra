@@ -350,4 +350,12 @@ template {
 [hidden] {
   display: none;
 }
+
+//Custom font default
+html,
+body {
+  font-family: "Inter", sans-serif;
+}
+
+
 `;

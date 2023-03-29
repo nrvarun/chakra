@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Marcovaldo";
+  src: url("/fonts/Marcovaldo-Regular.woff") format("woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Marcovaldo";
+  src: url("/fonts/Marcovaldo-Regular.woff2") format("woff2");
+  font-style: normal;
+}
+
+.marco-font {
+  font-family: "Marcovaldo", sans-serif;
+}
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+}
