@@ -48,7 +48,7 @@ const Header = ({ customClass = "" }: Props) => {
                 <Link
                   href={link.path}
                   className={
-                    currentRoute === link.path ? "active" : "in-active"
+                    currentRoute.includes(link.path) ? "active" : "in-active"
                   }
                 >
                   <p className="text-base font-inter text-white">

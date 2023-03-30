@@ -3,35 +3,40 @@ import WorldItem from "./WorldItem";
 
 type Props = {};
 
+const WORLD_ITEMS = [
+  {
+    id: 1,
+    title: "Lore",
+    desc: "Chakra is a dynamic, ever expanding IP anchored in eastern mythologies that mimics natural evolution of human mythos and culture. Chakra seeks to speedrun millennia-long mythmaking by bringing it to life within a high-fidelity sandbox by leveraging mix media (Gaming, Cinematics & Comics) & web3 tech- [DeFi & NFTs]",
+    img: "/images/world/1.png",
+    path: "/world/lore",
+  },
+  {
+    id: 2,
+    title: "Eco System",
+    desc: "Chakra is a dynamic, ever expanding IP anchored in eastern mythologies that mimics natural evolution of human mythos and culture. Chakra seeks to speedrun millennia-long mythmaking by bringing it to life within a high-fidelity sandbox by leveraging mix media (Gaming, Cinematics & Comics) & web3 tech- [DeFi & NFTs]",
+    img: "/images/world/2.png",
+    path: "/world/ec-system",
+  },
+  {
+    id: 3,
+    title: "Vision",
+    desc: "Chakra is a dynamic, ever expanding IP anchored in eastern mythologies that mimics natural evolution of human mythos and culture. Chakra seeks to speedrun millennia-long mythmaking by bringing it to life within a high-fidelity sandbox by leveraging mix media (Gaming, Cinematics & Comics) & web3 tech- [DeFi & NFTs]",
+    img: "/images/world/1.png",
+    path: "/world/vision",
+  },
+];
+
 const WorldModule = (props: Props) => {
   return (
-    <main>
-      <StyledWorld className="pt-14">
+    <main className="non-landing">
+      <StyledWorld>
         <div className="grid grid-cols-3 pt-4 px-6 pb-6 gap-4">
-          <div className="relative">
-            <WorldItem
-              title="Lore"
-              desc="Chakra is a dynamic, ever expanding IP anchored in eastern mythologies that mimics natural evolution of human mythos and culture. Chakra seeks to speedrun millennia-long mythmaking by bringing it to life within a high-fidelity sandbox by leveraging mix media (Gaming, Cinematics & Comics) & web3 tech- [DeFi & NFTs]"
-              path="/images/world/lore"
-              img="/images/world/1.png"
-            />
-          </div>
-          <div className="relative">
-            <WorldItem
-              title="Lore"
-              desc="Chakra is a dynamic, ever expanding IP anchored in eastern mythologies that mimics natural evolution of human mythos and culture. Chakra seeks to speedrun millennia-long mythmaking by bringing it to life within a high-fidelity sandbox by leveraging mix media (Gaming, Cinematics & Comics) & web3 tech- [DeFi & NFTs]"
-              path="/world/eco-system"
-              img="/images/world/2.png"
-            />
-          </div>
-          <div className="relative">
-            <WorldItem
-              title="Lore"
-              desc="Chakra is a dynamic, ever expanding IP anchored in eastern mythologies that mimics natural evolution of human mythos and culture. Chakra seeks to speedrun millennia-long mythmaking by bringing it to life within a high-fidelity sandbox by leveraging mix media (Gaming, Cinematics & Comics) & web3 tech- [DeFi & NFTs]"
-              path="/world/vision"
-              img="/images/world/3.png"
-            />
-          </div>
+          {WORLD_ITEMS.map((world) => (
+            <div className="relative" key={world.id}>
+              <WorldItem {...world} />
+            </div>
+          ))}
         </div>
       </StyledWorld>
     </main>
