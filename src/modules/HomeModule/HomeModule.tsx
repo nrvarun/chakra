@@ -15,7 +15,12 @@ const HomeModule = (props: Props) => {
     <main>
       <StyledHomeBanner>
         <StyledHomeBannerBgImgWrapper>
-          <Image fill src="/images/landing-bgimg.png" alt="landing banner" />
+          <Image
+            fill
+            priority
+            src="/images/landing-bgimg.png"
+            alt="landing banner"
+          />
         </StyledHomeBannerBgImgWrapper>
         <div className="grid grid-cols-2 z-10 relative">
           <StyledHomeBannerContent>

@@ -16,7 +16,7 @@ const WORLD_ITEMS = [
     title: "Eco System",
     desc: "Chakra is a dynamic, ever expanding IP anchored in eastern mythologies that mimics natural evolution of human mythos and culture. Chakra seeks to speedrun millennia-long mythmaking by bringing it to life within a high-fidelity sandbox by leveraging mix media (Gaming, Cinematics & Comics) & web3 tech- [DeFi & NFTs]",
     img: "/images/world/2.png",
-    path: "/world/ec-system",
+    path: "/world/eco-system",
   },
   {
     id: 3,

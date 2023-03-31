@@ -25,3 +25,19 @@
 .non-landing {
   padding-top: 3.5rem;
 }
+
+.lore {
+  background-color: #000;
+}
+
+.eco-system {
+  background-color: #c8cbcc;
+}
+
+.vision {
+  background-color: #e52e3d;
+}
+
+* {
+  box-sizing: border-box;
+}

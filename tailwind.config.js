@@ -22,11 +22,15 @@ module.exports = {
       'pink': '#ff49db',
       'orange': '#ff7849',
       'green': '#13ce66',
+      'red': '#E52E3D',
       'yellow': '#ffc82c',
       'gray-dark': '#273444',
       'gray': '#8492a6',
       'gray-light': '#d3dce6',
-      'white': '#ffffff'
+      'white': '#ffffff',
+      'white-fa': '#fafafa',
+      'white-aeb': '#AEB1B3',
+      'black': '#000000'
     },
     fontFamily: {
       inter: ['Inter', 'sans-serif'],

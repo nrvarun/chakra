@@ -40,8 +40,79 @@ export const StyledHeader = styled.header`
       &:hover {
         color: #000000;
 
-        P {
+        p {
           color: #000000;
+        }
+      }
+    }
+  }
+
+  &.black-red {
+    svg {
+      color: #000000;
+    }
+
+    a {
+      &,
+      &:hover {
+        color: #000000;
+
+        p {
+          color: #000000;
+        }
+
+        &.active {
+          color: #e52e3d;
+
+          p {
+            color: #e52e3d;
+          }
+        }
+      }
+    }
+  }
+
+  &.red {
+    svg {
+      color: #ffffff;
+    }
+
+    a {
+      &,
+      &:hover {
+        color: #e52e3d;
+
+        p {
+          color: #ffffff;
+        }
+
+        &.active {
+          p {
+            color: #e52e3d;
+          }
+        }
+      }
+    }
+  }
+
+  &.white {
+    svg {
+      color: #ffffff;
+    }
+
+    a {
+      &,
+      &:hover {
+        color: #ffffff;
+
+        p {
+          color: #ffffff;
+        }
+
+        &.active {
+          p {
+            color: #ffffff;
+          }
         }
       }
     }

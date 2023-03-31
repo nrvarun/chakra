@@ -19,7 +19,7 @@ const WorldItem = ({ title, desc, img, path }: Props) => {
     <StyledWorld>
       <Link href={path}>
         <StyledWorldImgWrapper>
-          <Image fill src={img} alt={title} />
+          <Image priority fill src={img} alt={title} />
         </StyledWorldImgWrapper>
         <StyledWorldContent>
           <h3 className="font-marco">{title}</h3>
