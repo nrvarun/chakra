@@ -13,7 +13,11 @@ import HomeBanner from "./HomeBanner";
 
 const HomeModule = (props: Props) => {
   return (
-    <main>
+    <main
+      style={{
+        background: "#000000",
+      }}
+    >
       <StyledHomeBanner>
         <HomeBanner />
         <div className="grid grid-cols-2 z-10 relative">

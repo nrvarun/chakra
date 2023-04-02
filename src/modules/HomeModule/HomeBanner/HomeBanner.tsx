@@ -22,17 +22,29 @@ const HomeBanner = (props: Props) => {
   return (
     <StyledHomeBannerWrapper
       id="home-scene"
-      data-relative-input="true"
+      data-friction-x="0.1"
+      data-friction-y="0.1"
+      data-scalar-x="25"
+      data-scalar-y="15"
+      // data-relative-input="true"
+      style={{
+        height: "100vh",
+        width: "100vw",
+      }}
       ref={homeBannerRef}
     >
-      <div data-depth="0" className="relative">
-        <img className="layer background" src="/images/home/parallax/1.png" />
+      <div data-depth="0" className="relative"></div>
+      <div data-depth="0.10" className="layer">
+        <img
+          className="background"
+          src="/images/home/parallax/background.png"
+        />
       </div>
-      <div data-depth="0.8">
-        <img className="layer devi" src="/images/home/parallax/2.png" />
+      <div data-depth="0.8" className="layer">
+        <img className="devi" src="/images/home/parallax/2.png" />
       </div>
-      <div data-depth="0.3" className="relative">
-        <img className="layer character" src="/images/home/parallax/3.png" />
+      <div data-depth="0.3" className="layer">
+        <img className="character" src="/images/home/parallax/3.png" />
       </div>
       {/* <StyledHomeBannerBgImgWrapper>
         <Image

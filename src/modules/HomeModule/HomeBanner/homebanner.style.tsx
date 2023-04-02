@@ -9,13 +9,33 @@ export const StyledHomeBannerWrapper = styled.div`
   width: 100%;
   height: 100%;
   overflow: hidden;
+  min-height: 100vh;
 
   .layer {
-    &.devi {
+    height: 100%;
+    width: 100%;
+
+    div {
+      transform: translate3d(0, 0, 0);
+      transform-style: preserve-3d;
+      backface-visibility: hidden;
+    }
+
+    .background {
+      position: absolute;
+      width: 120%;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 120px;
+      transform: scale(1.1);
+    }
+
+    .devi {
       margin-top: -10%;
     }
 
-    &.character {
+    .character {
       margin-left: 10%;
     }
   }
