@@ -13,10 +13,21 @@ export const StyledLoreBgImgWrapper = styled("div")`
   pointer-events: none;
   transition: opacity 1s ease;
 
+  &:after {
+    content: "";
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.34), rgba(0, 0, 0, 0.34));
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
   img {
     height: auto;
     width: 100%;
-    transtion: opacity 0.3s ease;
+    transition: opacity 0.3s ease, transform 1s ease;
   }
 `;
 

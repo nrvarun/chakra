@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { motion, useScroll, useInView } from "framer-motion";
+import { motion, useScroll, useInView, cubicBezier } from "framer-motion";
 
 import WorldNav from "@components/WorldNav";
 import {
@@ -12,6 +12,7 @@ import Premise from "./Premise";
 import Story from "./Story";
 import { useEffect, useRef, useState } from "react";
 import Faction from "./Faction";
+import { useTransform } from "framer-motion";
 
 type Props = {};
 
@@ -35,9 +36,14 @@ const NAV_ITEMS = [
 ];
 
 const LoreModule = (props: Props) => {
-  const { scrollYProgress } = useScroll();
+  const scrollableDivRef = useRef(null);
 
-  const [bgImgPosition, setBgImgPosition] = useState(0);
+  const { scrollYProgress } = useScroll({
+    target: scrollableDivRef,
+    offset: ["start start", "end end"],
+  });
+
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "-40%"]);
 
   const [activeSection, setActiveSection] = useState(NAV_ITEMS[0].id);
 
@@ -52,10 +58,6 @@ const LoreModule = (props: Props) => {
 
   const factionRef = useRef(null);
   const factionInView = useInView(factionRef);
-
-  scrollYProgress.on("change", (val) => {
-    setBgImgPosition(val * 50);
-  });
 
   useEffect(() => {
     if (premiseInView) {
@@ -83,44 +85,43 @@ const LoreModule = (props: Props) => {
 
   return (
     <main className="non-landing lore">
-      <StyledLoreBgImgWrapper
-        style={{
-          opacity: factionInView ? 0 : 1,
-        }}
-      >
-        <motion.img
-          style={{
-            transform: `translateY(-${bgImgPosition}%)`,
-          }}
-          transition={{
-            ease: "linear",
-          }}
-          src="/images/world-bgimg.png"
-          alt="world background"
-        />
-      </StyledLoreBgImgWrapper>
       <WorldNav title="lore" list={NAV_ITEMS} activeSection={activeSection} />
 
-      <StyledLoreContent className="relative z-10" ref={premiseRef}>
-        <div className="grid grid-cols-[240px_minmax(900px,_1fr)]">
-          <div className="relative"></div>
-          <Premise />
-        </div>
-      </StyledLoreContent>
+      <section ref={scrollableDivRef}>
+        <StyledLoreBgImgWrapper
+          style={{
+            opacity: factionInView ? 0 : 1,
+          }}
+        >
+          <motion.img
+            style={{
+              y,
+            }}
+            src="/images/world-bgimg.png"
+            alt="world background"
+          />
+        </StyledLoreBgImgWrapper>
+        <StyledLoreContent className="relative z-10" ref={premiseRef}>
+          <div className="grid grid-cols-[240px_minmax(900px,_1fr)]">
+            <div className="relative"></div>
+            <Premise />
+          </div>
+        </StyledLoreContent>
 
-      <StyledLoreContent className="relative z-10" ref={storyRef}>
-        <div className="grid grid-cols-[240px_minmax(900px,_1fr)]">
-          <div className="relative"></div>
-          <Story />
-        </div>
-      </StyledLoreContent>
+        <StyledLoreContent className="relative z-10" ref={storyRef}>
+          <div className="grid grid-cols-[240px_minmax(900px,_1fr)]">
+            <div className="relative"></div>
+            <Story />
+          </div>
+        </StyledLoreContent>
 
-      <StyledLoreContent className="relative z-10" ref={philosophyRef}>
-        <div className="grid grid-cols-[240px_minmax(900px,_1fr)]">
-          <div className="relative"></div>
-          <Philosophy />
-        </div>
-      </StyledLoreContent>
+        <StyledLoreContent className="relative z-10" ref={philosophyRef}>
+          <div className="grid grid-cols-[240px_minmax(900px,_1fr)]">
+            <div className="relative"></div>
+            <Philosophy />
+          </div>
+        </StyledLoreContent>
+      </section>
 
       <section className="pt-64"></section>
       <StyledLoreFactionSection
