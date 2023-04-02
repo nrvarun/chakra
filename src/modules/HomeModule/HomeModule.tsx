@@ -9,19 +9,13 @@ import {
 type Props = {};
 
 import SVG from "react-inlinesvg";
+import HomeBanner from "./HomeBanner";
 
 const HomeModule = (props: Props) => {
   return (
     <main>
       <StyledHomeBanner>
-        <StyledHomeBannerBgImgWrapper>
-          <Image
-            fill
-            priority
-            src="/images/landing-bgimg.png"
-            alt="landing banner"
-          />
-        </StyledHomeBannerBgImgWrapper>
+        <HomeBanner />
         <div className="grid grid-cols-2 z-10 relative">
           <StyledHomeBannerContent>
             <SVG src="/icons/logo.svg" className="mb-3" />
