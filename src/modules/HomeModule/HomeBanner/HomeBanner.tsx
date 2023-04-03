@@ -40,7 +40,7 @@ const HomeBanner = (props: Props) => {
           src="/images/home/parallax/background.png"
         />
       </div>
-      <div data-depth="0.3" className="layer">
+      <div data-depth="0.35" className="layer">
         <img className="background-devis" src="/images/home/parallax/02.png" />
       </div>
       <div data-depth="0.3" className="layer">
@@ -58,13 +58,13 @@ const HomeBanner = (props: Props) => {
       <div data-depth="0.2" className="layer">
         <img className="clouds-bottom" src="/images/home/parallax/07.png" />
       </div>
-      <div data-depth="0.3" className="layer">
+      <div data-depth="0.25" className="layer">
         <img className="devi" src="/images/home/parallax/08.png" />
       </div>
       <div data-depth="0.3" className="layer">
         <img className="flowers-air" src="/images/home/parallax/09.png" />
       </div>
-      <div data-depth="0.5" className="layer">
+      <div data-depth="0.35" className="layer">
         <img className="character" src="/images/home/parallax/10.png" />
       </div>
     </StyledHomeBannerWrapper>
