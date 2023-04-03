@@ -5,7 +5,7 @@ type Props = {
   bannerImg?: string;
 };
 
-const CustomHead = ({ bannerImg = "/images/ogg/banner.png" }: Props) => {
+const CustomHead = ({ bannerImg = "/images/ogg/banner.jpeg" }: Props) => {
   return (
     <Head>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,7 +27,7 @@ const CustomHead = ({ bannerImg = "/images/ogg/banner.png" }: Props) => {
         name="description"
         content="Chakra is a dynamic, ever expanding IP anchored in eastern mythologies that mimics natural evolution of human mythos and culture. Chakra seeks to speedrun millennia-long mythmaking by bringing it to life within a high-fidelity sandbox by leveraging mix media (Gaming, Cinematics & Comics) & web3 tech- [DeFi & NFTs]."
       />
-      <meta property="og:title" content="chakra - We are coming to Metaverse" />
+      <meta property="og:title" content="Chakra" />
       <meta
         property="og:description"
         content="Chakra is a dynamic, ever expanding IP anchored in eastern mythologies that mimics natural evolution of human mythos and culture. Chakra seeks to speedrun millennia-long mythmaking by bringing it to life within a high-fidelity sandbox by leveraging mix media (Gaming, Cinematics & Comics) & web3 tech- [DeFi & NFTs]."
