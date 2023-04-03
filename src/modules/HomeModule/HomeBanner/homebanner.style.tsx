@@ -15,28 +15,52 @@ export const StyledHomeBannerWrapper = styled.div`
     height: 100%;
     width: 100%;
 
-    div {
-      transform: translate3d(0, 0, 0);
-      transform-style: preserve-3d;
-      backface-visibility: hidden;
-    }
-
-    .background {
+    img {
       position: absolute;
-      width: 120%;
+      width: 100%;
       left: 0;
       top: 0;
       right: 0;
+    }
+
+    .background {
       bottom: 120px;
       transform: scale(1.1);
     }
 
+    .background-devis {
+      width: 150%;
+      transform: scale(1.15);
+    }
+
+    .light {
+      width: 100%;
+      transform: scale(1);
+    }
+
+    .flowers {
+      width: 100%;
+      transform: scale(1);
+      left: -5%;
+      margin-top: 2%;
+    }
+
+    .clouds {
+      margin-top: 2%;
+    }
+
+    .clouds-bottom {
+      margin-top: 2%;
+    }
+
     .devi {
-      margin-top: -10%;
+      margin-top: -2%;
+      height: 120%;
     }
 
     .character {
       margin-left: 10%;
+      margin-top: 2%;
     }
   }
 `;

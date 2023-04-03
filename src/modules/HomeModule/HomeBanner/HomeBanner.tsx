@@ -24,7 +24,7 @@ const HomeBanner = (props: Props) => {
       id="home-scene"
       data-friction-x="0.1"
       data-friction-y="0.1"
-      data-scalar-x="25"
+      data-scalar-x="15"
       data-scalar-y="15"
       // data-relative-input="true"
       style={{
@@ -40,20 +40,33 @@ const HomeBanner = (props: Props) => {
           src="/images/home/parallax/background.png"
         />
       </div>
+      <div data-depth="0.4" className="layer">
+        <img className="background-devis" src="/images/home/parallax/02.png" />
+      </div>
+      <div data-depth="0.3" className="layer">
+        <img className="birds" src="/images/home/parallax/03.png" />
+      </div>
+      <div data-depth="0" className="layer">
+        <img className="light" src="/images/home/parallax/04.png" />
+      </div>
       <div data-depth="0.2" className="layer">
-        <img className="devi" src="/images/home/parallax/2.png" />
+        <img className="clouds" src="/images/home/parallax/05.png" />
+      </div>
+      <div data-depth="0.3" className="layer">
+        <img className="flowers" src="/images/home/parallax/06.png" />
+      </div>
+      <div data-depth="0.2" className="layer">
+        <img className="clouds-bottom" src="/images/home/parallax/07.png" />
       </div>
       <div data-depth="0.5" className="layer">
-        <img className="character" src="/images/home/parallax/3.png" />
+        <img className="devi" src="/images/home/parallax/08.png" />
       </div>
-      {/* <StyledHomeBannerBgImgWrapper>
-        <Image
-          fill
-          priority
-          src="/images/landing-bgimg.png"
-          alt="landing banner"
-        />
-      </StyledHomeBannerBgImgWrapper> */}
+      <div data-depth="0.3" className="layer">
+        <img className="flowers-air" src="/images/home/parallax/09.png" />
+      </div>
+      <div data-depth="0.5" className="layer">
+        <img className="character" src="/images/home/parallax/10.png" />
+      </div>
     </StyledHomeBannerWrapper>
   );
 };
