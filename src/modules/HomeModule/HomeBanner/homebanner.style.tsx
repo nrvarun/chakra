@@ -34,8 +34,8 @@ export const StyledHomeBannerWrapper = styled.div`
     }
 
     .light {
-      width: 100%;
-      transform: scale(1);
+      width: 120%;
+      transform: scale(1.2);
     }
 
     .flowers {
@@ -54,13 +54,18 @@ export const StyledHomeBannerWrapper = styled.div`
     }
 
     .devi {
-      margin-top: -2%;
+      margin-top: 0%;
       height: 120%;
     }
 
     .character {
       margin-left: 10%;
-      margin-top: 2%;
+      margin-top: -2%;
+    }
+
+    .character-left {
+      margin-left: -5%;
+      margin-top: 0;
     }
   }
 `;
