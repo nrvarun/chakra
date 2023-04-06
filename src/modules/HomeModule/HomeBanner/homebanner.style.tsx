@@ -55,7 +55,7 @@ export const StyledHomeBannerWrapper = styled.div`
 
     .devi {
       margin-top: 0%;
-      height: 120%;
+      height: 110%;
     }
 
     .character {
