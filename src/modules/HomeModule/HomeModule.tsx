@@ -20,7 +20,7 @@ const HomeModule = (props: Props) => {
     >
       <StyledHomeBanner>
         <HomeBanner />
-        <div className="grid grid-cols-2 z-10 relative">
+        <div className="grid lg:grid-cols-2 z-10 relative mt-10">
           <StyledHomeBannerContent>
             <SVG src="/icons/logo.svg" className="mb-3" />
             <p className="text-md text-white font-inter p-2">

@@ -36,7 +36,12 @@ export const StyledHomeBannerContent = styled.div`
   padding: 32px;
 
   svg {
-    width: 496.84px;
-    height: 120px;
+    width: 100px;
+    height: 30px;
+
+    @media (min-width: 1280px) {
+      width: 496.84px;
+      height: 120px;
+    }
   }
 `;

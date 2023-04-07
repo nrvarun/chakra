@@ -2,9 +2,14 @@ import styled from "styled-components";
 
 export const StyledHeaderLogoWrapper = styled.div`
   svg {
-    width: 165.61px;
-    height: 40px;
+    width: 61px;
+    height: 20px;
     color: #ffffff;
+
+    @media (min-width: 1280px) {
+      width: 165.61px;
+      height: 40px;
+    }
 
     path {
       fill: currentColor;
@@ -13,13 +18,17 @@ export const StyledHeaderLogoWrapper = styled.div`
 `;
 
 export const StyledHeader = styled.header`
-  padding: 16px 24px;
+  padding: 8px 12px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
   z-index: 100;
+
+  @media (min-width: 1280px) {
+    padding: 16px 24px;
+  }
 
   a {
     &,

@@ -2,9 +2,13 @@ import styled from "styled-components";
 
 export const StyledWorld = styled.section`
   position: relative;
-  min-height: calc(100vh - 94px);
+  min-height: 450px;
   overflow: hidden;
   border-radius: 16px;
+
+  @media (min-width: 1280px) {
+    min-height: calc(100vh - 94px);
+  }
 `;
 
 export const StyledWorldImgWrapper = styled.div`

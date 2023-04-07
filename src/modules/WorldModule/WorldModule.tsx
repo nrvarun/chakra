@@ -31,7 +31,7 @@ const WorldModule = (props: Props) => {
   return (
     <main className="non-landing">
       <StyledWorld>
-        <div className="grid grid-cols-3 pt-4 px-6 pb-6 gap-4">
+        <div className="grid lg:grid-cols-3 pt-4 px-6 pb-6 gap-4">
           {WORLD_ITEMS.map((world) => (
             <div className="relative" key={world.id}>
               <WorldItem {...world} />

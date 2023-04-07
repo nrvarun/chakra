@@ -5,7 +5,7 @@ type Props = {
   bannerImg?: string;
 };
 
-const CustomHead = ({ bannerImg = "/images/ogg/banner.jpeg" }: Props) => {
+const CustomHead = ({ bannerImg = "/images/ogg/banner.png" }: Props) => {
   return (
     <Head>
       <link rel="preconnect" href="https://fonts.googleapis.com" />

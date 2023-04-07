@@ -44,14 +44,14 @@ const Header = ({ customClass = "" }: Props) => {
         <div className="relative flex">
           <ul className="flex items-start ml-auto">
             {NAV_LINKS.map((link) => (
-              <li className="px-5 py-2 mr-1" key={link.path}>
+              <li className="px-1 lg:px-5 py-2 mr-1" key={link.path}>
                 <Link
                   href={link.path}
                   className={
                     currentRoute.includes(link.path) ? "active" : "in-active"
                   }
                 >
-                  <p className="text-base font-inter text-white">
+                  <p className="text-xs md:text-sm lg:text-base font-inter text-white">
                     {link.title}
                   </p>
                 </Link>

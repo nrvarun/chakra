@@ -25,9 +25,11 @@ const Footer = (props: Props) => {
       <div className="relative flex">
         <ul className="flex items-start mr-auto">
           {FOOTER_LINKS.map((link) => (
-            <li className="px-4 py-2 mr-1" key={link.path}>
+            <li className="px-2 md:px-4 py-2 mr-1" key={link.path}>
               <Link href={link.path} target="_blank">
-                <p className="text-base font-inter text-white">{link.title}</p>
+                <p className="text-xs md:text-base font-inter text-white">
+                  {link.title}
+                </p>
               </Link>
             </li>
           ))}
