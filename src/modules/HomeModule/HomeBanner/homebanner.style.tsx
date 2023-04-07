@@ -21,15 +21,16 @@ export const StyledHomeBannerWrapper = styled.div`
       left: 0;
       top: 0;
       right: 0;
+      bottom: 0;
+      height: 100%;
     }
 
     .background {
-      bottom: 120px;
       transform: scale(1.1);
     }
 
     .background-devis {
-      width: 150%;
+      width: 120%;
       transform: scale(1.15);
     }
 
@@ -60,12 +61,12 @@ export const StyledHomeBannerWrapper = styled.div`
 
     .character {
       margin-left: 10%;
-      margin-top: -2%;
+      margin-top: 5%;
     }
 
     .character-left {
       margin-left: -5%;
-      margin-top: 0;
+      margin-top: 5%;
     }
   }
 `;

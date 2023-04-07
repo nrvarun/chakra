@@ -42,14 +42,14 @@ const HomeBanner = (props: Props) => {
         }}
         ref={homeBannerRef}
       >
-        <div data-depth="0" className="relative"></div>
+        <div data-depth="0" className="layer"></div>
         <div data-depth="0.10" className="layer">
           <img
             className="background"
             src="/images/home/parallax/background.png"
           />
         </div>
-        <div data-depth="0.35" className="layer">
+        <div data-depth="0.25" className="layer">
           <img
             className="background-devis"
             src="/images/home/parallax/02.png"

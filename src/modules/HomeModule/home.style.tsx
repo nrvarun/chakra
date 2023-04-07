@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledHomeBanner = styled.section`
   position: relative;
-  min-height: 100vh;
+  min-height: 85vh;
 `;
 
 export const StyledHomeBannerBgImgWrapper = styled.div`
