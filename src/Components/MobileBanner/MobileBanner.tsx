@@ -12,8 +12,8 @@ const MobileBanner = (props: Props) => {
       <img src="/images/ogg/banner.png" alt="mobile view" />
       <article className="m-auto">
         <SVG src="/icons/logo.svg" />
-        <h2 className="text-lg  font-inter text-center font-bold capitalize text-white">
-          Better Viewed in Desktop, for a great experience.
+        <h2 className="text-lg  font-inter text-center font-regular text-white">
+          Better viewed in desktop, for a great Experience.
         </h2>
       </article>
     </StyledMobileBanner>
