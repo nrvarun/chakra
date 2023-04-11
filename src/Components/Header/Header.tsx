@@ -14,18 +14,22 @@ const NAV_LINKS = [
   {
     path: "/world",
     title: "World",
+    disabled: true,
   },
   {
     path: "/writing",
     title: "Writing",
+    disabled: true,
   },
   {
     path: "/docs",
     title: "Docs",
+    disabled: false,
   },
   {
     path: "/connect",
     title: "Connect",
+    disabled: false,
   },
 ];
 
@@ -47,9 +51,9 @@ const Header = ({ customClass = "" }: Props) => {
               <li className="px-1 lg:px-5 py-2 mr-1" key={link.path}>
                 <Link
                   href={link.path}
-                  className={
+                  className={`${
                     currentRoute.includes(link.path) ? "active" : "in-active"
-                  }
+                  } ${link.disabled ? "disabled" : ""}`}
                 >
                   <p className="text-xs md:text-sm lg:text-base font-inter text-white">
                     {link.title}

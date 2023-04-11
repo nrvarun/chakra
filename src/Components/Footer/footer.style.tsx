@@ -12,4 +12,17 @@ export const StyledFooter = styled.footer`
   @media (min-width: 1024px) {
     padding: 24px;
   }
+
+  ul {
+    li {
+      svg {
+        height: auto;
+        width: 30px;
+
+        path {
+          fill: #fff;
+        }
+      }
+    }
+  }
 `;

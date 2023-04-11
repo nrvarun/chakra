@@ -36,6 +36,11 @@ export const StyledHeader = styled.header`
       &.active {
         text-decoration: underline;
       }
+
+      &.disabled {
+        pointer-events: none;
+        opacity: 0.8;
+      }
     }
   }
 

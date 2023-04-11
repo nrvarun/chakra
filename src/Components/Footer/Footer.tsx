@@ -1,21 +1,20 @@
 import Link from "next/link";
 import React from "react";
 import { StyledFooter } from "./footer.style";
+import SVG from "react-inlinesvg";
 
 type Props = {};
 
 const FOOTER_LINKS = [
   {
-    path: "https://twitter.com/",
+    icon: "/icons/twitter.svg",
+    path: "https://twitter.com/worldofchakra",
     title: "Twitter",
   },
   {
-    path: "https://discord.com/",
+    icon: "/icons/discord.svg",
+    path: "https://discord.gg/2mwyTYbr",
     title: "Discord",
-  },
-  {
-    path: "https://telegram.com/",
-    title: "Telegram",
   },
 ];
 
@@ -25,11 +24,9 @@ const Footer = (props: Props) => {
       <div className="relative flex">
         <ul className="flex items-start mr-auto">
           {FOOTER_LINKS.map((link) => (
-            <li className="px-2 md:px-4 py-2 mr-1" key={link.path}>
+            <li className="px-1 md:px-2 py-2 mr-1" key={link.path}>
               <Link href={link.path} target="_blank">
-                <p className="text-xs md:text-base font-inter text-white">
-                  {link.title}
-                </p>
+                <SVG src={link.icon} />
               </Link>
             </li>
           ))}
