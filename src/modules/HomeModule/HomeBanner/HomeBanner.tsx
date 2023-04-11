@@ -5,7 +5,6 @@ import {
   StyledMobileHomeBannerWrapper,
 } from "./homebanner.style";
 import { StyledHomeBannerBgImgWrapper } from "../home.style";
-import Image from "next/image";
 
 import Parallax from "parallax-js";
 import { useEffect, useRef } from "react";
@@ -30,57 +29,65 @@ const HomeBanner = (props: Props) => {
 
   if (width >= 1280) {
     return (
-      <StyledHomeBannerWrapper
-        id="home-scene"
-        data-friction-x="0.1"
-        data-friction-y="0.1"
-        data-scalar-x="15"
-        data-scalar-y="15"
-        // data-relative-input="true"
-        style={{
-          height: "100vh",
-          width: "100vw",
-        }}
-        ref={homeBannerRef}
-      >
-        <div data-depth="0" className="layer"></div>
-        <div data-depth="0.10" className="layer">
-          <img
-            className="background"
-            src="/images/home/parallax/background.png"
-          />
-        </div>
-        <div data-depth="0.15" className="layer">
-          <img
-            className="background-devis"
-            src="/images/home/parallax/02.png"
-          />
-        </div>
-        <div data-depth="0.15" className="layer">
-          <img
-            className="background-devis"
-            src="/images/home/parallax/03.png"
-          />
-        </div>
-        <div data-depth="0.15" className="layer">
-          <img className="flowers" src="/images/home/parallax/04.png" />
-        </div>
-        <div data-depth="0.15" className="layer">
-          <img className="devi" src="/images/home/parallax/05.png" />
-        </div>
-        <div data-depth="0.15" className="layer">
-          <img className="birds" src="/images/home/parallax/06.png" />
-        </div>
-        <div data-depth="0.15" className="layer">
-          <img className="clouds" src="/images/home/parallax/08.png" />
-        </div>
-        <div data-depth="0.3" className="layer">
-          <img className="character" src="/images/home/parallax/07.png" />
-        </div>
-        <div data-depth="0.3" className="layer">
-          <img className="character-left" src="/images/home/parallax/09.png" />
-        </div>
-      </StyledHomeBannerWrapper>
+      <>
+        <StyledHomeBannerWrapper
+          id="home-scene"
+          data-friction-x="0.1"
+          data-friction-y="0.1"
+          data-scalar-x="15"
+          data-scalar-y="15"
+          // data-relative-input="true"
+          style={{
+            height: "100vh",
+            width: "100vw",
+          }}
+          ref={homeBannerRef}
+        >
+          <div data-depth="0" className="layer"></div>
+          <div data-depth="0.10" className="layer">
+            <img
+              className="background"
+              src="/images/home/parallax/background.png"
+            />
+          </div>
+          <div data-depth="0.15" className="layer">
+            <img
+              className="background-devis"
+              src="/images/home/parallax/02.png"
+            />
+          </div>
+          <div data-depth="0.15" className="layer">
+            <img
+              className="background-devis"
+              src="/images/home/parallax/03.png"
+            />
+          </div>
+          <div data-depth="0.15" className="layer">
+            <img className="flowers" src="/images/home/parallax/04.png" />
+          </div>
+          <div data-depth="0.1" className="layer">
+            <img className="devi" src="/images/home/parallax/05.png" />
+          </div>
+          <div data-depth="0.15" className="layer">
+            <img className="birds" src="/images/home/parallax/06.png" />
+          </div>
+          <div data-depth="0.15" className="layer">
+            <img className="clouds" src="/images/home/parallax/08.png" />
+          </div>
+          <div data-depth="0" className="layer">
+            <img className="overlay" src="/images/home/parallax/10.png" />
+          </div>
+          <div data-depth="0.3" className="layer">
+            <img className="character" src="/images/home/parallax/07.png" />
+          </div>
+          <div data-depth="0.3" className="layer">
+            <img
+              className="character-left"
+              src="/images/home/parallax/09.png"
+            />
+          </div>
+        </StyledHomeBannerWrapper>
+      </>
     );
   }
 
