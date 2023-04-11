@@ -31,18 +31,17 @@ export const StyledHomeBannerWrapper = styled.div`
 
     .background-devis {
       width: 120%;
-      transform: scale(1.15);
+      transform: scale(1.05);
     }
 
-    .light {
-      width: 120%;
-      transform: scale(1.2);
+    .birds {
+      margin-top: 2%;
     }
 
     .flowers {
       width: 100%;
       transform: scale(1);
-      left: -5%;
+      left: -0%;
       margin-top: 2%;
     }
 
@@ -60,8 +59,8 @@ export const StyledHomeBannerWrapper = styled.div`
     }
 
     .character {
-      margin-left: 10%;
-      margin-top: 5%;
+      margin-left: 5%;
+      margin-top: 3%;
     }
 
     .character-left {
