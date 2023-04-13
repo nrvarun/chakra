@@ -12,12 +12,6 @@ import HomeBanner from "./HomeBanner";
 import { useRouter } from "next/router";
 
 const HomeModule = (props: Props) => {
-  const router = useRouter();
-
-  useEffect(() => {
-    router.prefetch("/");
-  }, []);
-
   return (
     <main
       style={{
