@@ -4,9 +4,6 @@ import { StyledHeader, StyledHeaderLogoWrapper } from "./header.style";
 import SVG from "react-inlinesvg";
 import { useRouter } from "next/router";
 
-import { Tooltip } from "react-tooltip";
-import "react-tooltip/dist/react-tooltip.css";
-
 type Props = {
   logo?: React.ReactNode;
   logoColor?: string;
@@ -61,19 +58,17 @@ const Header = ({ customClass = "" }: Props) => {
                   className={`${
                     currentRoute.includes(link.path) ? "active" : "in-active"
                   } ${link.disabled ? "disabled" : ""}`}
-                  data-tooltip-id={`my-tooltip`}
-                  data-tooltip-content={link.tooltipContent}
                 >
                   <p className="text-xs md:text-sm lg:text-base font-inter text-white">
                     {link.title}
                   </p>
+                  {link.disabled && <span>{link.tooltipContent}</span>}
                 </Link>
               </li>
             ))}
           </ul>
         </div>
       </div>
-      <Tooltip id="my-tooltip" />
     </StyledHeader>
   );
 };

@@ -31,14 +31,35 @@ export const StyledHeader = styled.header`
   }
 
   a {
+    & {
+      span {
+        background: #000;
+        padding: 2px;
+        position: absolute;
+        min-width: 77px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+    }
+
     &,
     &:hover {
+      position: relative;
+
       &.active {
         text-decoration: underline;
       }
 
       &.disabled {
         opacity: 0.8;
+      }
+    }
+
+    &:hover {
+      &.disabled {
+        span {
+          opacity: 1;
+        }
       }
     }
   }
