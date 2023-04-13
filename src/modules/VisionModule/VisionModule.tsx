@@ -10,6 +10,7 @@ import Expansion from "./Expansion";
 import Decentralization from "./Decentralization";
 import Thesis from "./Thesis";
 import PublicGoods from "./PublicGoods";
+import { useRouter } from "next/router";
 
 type Props = {};
 
@@ -33,6 +34,15 @@ const NAV_ITEMS = [
 ];
 
 const VisionModule = (props: Props) => {
+  const router = useRouter();
+
+  useEffect(() => {
+    /**
+     * Redirect to home on landing
+     */
+    router.push("/");
+  }, []);
+
   const [activeSection, setActiveSection] = useState(NAV_ITEMS[0].id);
 
   const thesisRef = useRef(null);

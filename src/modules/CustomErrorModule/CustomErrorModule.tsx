@@ -18,9 +18,12 @@ const CustomErrorModule = (props: Props) => {
         <StyledHomeBannerBgImgWrapper>
           <Image
             fill
+            style={{
+              objectFit: "cover",
+            }}
             priority
-            src="/images/landing-bgimg.png"
-            alt="landing banner"
+            src="/images/404.png"
+            alt="error banner"
           />
         </StyledHomeBannerBgImgWrapper>
         <div className="grid grid-cols-2 z-10 relative">

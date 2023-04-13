@@ -10,6 +10,7 @@ import Manga from "./Manga";
 import Comicon from "./Comicon";
 import Gaming from "./Gaming";
 import Web from "./Web";
+import { useRouter } from "next/router";
 
 type Props = {};
 
@@ -33,6 +34,15 @@ const NAV_ITEMS = [
 ];
 
 const EcoSystemModule = (props: Props) => {
+  const router = useRouter();
+
+  useEffect(() => {
+    /**
+     * Redirect to home on landing
+     */
+    router.push("/");
+  }, []);
+
   const [activeSection, setActiveSection] = useState(NAV_ITEMS[0].id);
 
   const gamingRef = useRef(null);

@@ -63,11 +63,11 @@ const HomeBanner = (props: Props) => {
             />
           </div>
           <div data-depth="0.15" className="layer">
-            <img className="flowers" src="/images/home/parallax/04.png" />
+            <img className="devi" src="/images/home/parallax/04.png" />
           </div>
-          <div data-depth="0.1" className="layer">
+          {/* <div data-depth="0.1" className="layer">
             <img className="devi" src="/images/home/parallax/05.png" />
-          </div>
+          </div> */}
           <div data-depth="0.15" className="layer">
             <img className="birds" src="/images/home/parallax/06.png" />
           </div>

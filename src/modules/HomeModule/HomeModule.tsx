@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import {
   StyledHomeBanner,
   StyledHomeBannerBgImgWrapper,
@@ -10,8 +10,15 @@ type Props = {};
 
 import SVG from "react-inlinesvg";
 import HomeBanner from "./HomeBanner";
+import { useRouter } from "next/router";
 
 const HomeModule = (props: Props) => {
+  const router = useRouter();
+
+  useEffect(() => {
+    router.prefetch("/");
+  }, []);
+
   return (
     <main
       style={{

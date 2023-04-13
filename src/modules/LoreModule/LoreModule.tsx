@@ -13,6 +13,7 @@ import Story from "./Story";
 import { useEffect, useRef, useState } from "react";
 import Faction from "./Faction";
 import { useTransform } from "framer-motion";
+import { useRouter } from "next/router";
 
 type Props = {};
 
@@ -36,6 +37,15 @@ const NAV_ITEMS = [
 ];
 
 const LoreModule = (props: Props) => {
+  const router = useRouter();
+
+  useEffect(() => {
+    /**
+     * Redirect to home on landing
+     */
+    router.push("/");
+  }, []);
+
   const scrollableDivRef = useRef(null);
 
   const { scrollYProgress } = useScroll({
