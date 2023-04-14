@@ -40,7 +40,7 @@ const EcoSystemModule = (props: Props) => {
     /**
      * Redirect to home on landing
      */
-    router.push("/");
+    // router.push("/");
   }, []);
 
   const [activeSection, setActiveSection] = useState(NAV_ITEMS[0].id);

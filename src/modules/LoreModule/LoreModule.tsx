@@ -43,7 +43,7 @@ const LoreModule = (props: Props) => {
     /**
      * Redirect to home on landing
      */
-    router.push("/");
+    // router.push("/");
   }, []);
 
   const scrollableDivRef = useRef(null);

@@ -36,7 +36,7 @@ const WorldModule = (props: Props) => {
     /**
      * Redirect to home on landing
      */
-    router.push("/");
+    // router.push("/");
   }, []);
 
   return (
