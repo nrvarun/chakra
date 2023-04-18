@@ -9,7 +9,7 @@ export default function World() {
   return (
     <>
       <CustomHead />
-      <Header customClass="black" />
+      <Header customClass="white" />
       <WorldModule />
     </>
   );

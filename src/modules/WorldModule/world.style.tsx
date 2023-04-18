@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledWorld = styled.section`
+export const StyledWorldItem = styled.article`
   position: relative;
   min-height: 450px;
   overflow: hidden;
@@ -8,6 +8,16 @@ export const StyledWorld = styled.section`
 
   @media (min-width: 1280px) {
     min-height: calc(100vh - 94px);
+  }
+`;
+
+export const StyledWorldSection = styled.section`
+  .world-item {
+    width: 100% !important;
+    padding: 0 !important;
+    background: #000 !important;
+    transform-style: preserve-3d;
+    margin: 0 !important;
   }
 `;
 

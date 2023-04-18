@@ -24,10 +24,11 @@
 
 .non-landing {
   padding-top: 3.5rem;
+  background-color: #000000;
 }
 
 .lore {
-  background-color: #000;
+  background-color: #000000;
 }
 
 .eco-system {

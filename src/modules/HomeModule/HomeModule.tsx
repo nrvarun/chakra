@@ -1,15 +1,9 @@
-import React, { useEffect } from "react";
-import {
-  StyledHomeBanner,
-  StyledHomeBannerBgImgWrapper,
-  StyledHomeBannerContent,
-} from "./home.style";
+import { StyledHomeBanner, StyledHomeBannerContent } from "./home.style";
 
 type Props = {};
 
 import SVG from "react-inlinesvg";
 import HomeBanner from "./HomeBanner";
-import { useRouter } from "next/router";
 
 const HomeModule = (props: Props) => {
   return (
@@ -22,10 +16,18 @@ const HomeModule = (props: Props) => {
         <HomeBanner />
         <div className="grid lg:grid-cols-2 z-10 relative mt-10 md:mt-0">
           <StyledHomeBannerContent>
-            <SVG src="/icons/logo.svg" className="mb-3" />
-            <p className="text-md text-white font-inter p-2">
-              Decentralised Collaborative Mythmaking.
-            </p>
+            <div className="top-content">
+              <SVG
+                src="/icons/home-logo.svg"
+                className="mb-3 w-10 mr-0 text-left"
+              />
+            </div>
+            <div className="bottom-content">
+              <SVG src="/icons/chakra.svg" className="mb-3" />
+              <p className="text-md text-white font-inter font-semibold p-2">
+                Collaborative. Decentralized. Mythmaking.
+              </p>
+            </div>
           </StyledHomeBannerContent>
         </div>
       </StyledHomeBanner>

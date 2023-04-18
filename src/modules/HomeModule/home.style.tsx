@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledHomeBanner = styled.section`
   position: relative;
-  min-height: 85vh;
+  min-height: 100vh;
 `;
 
 export const StyledHomeBannerBgImgWrapper = styled.div`
@@ -34,13 +34,31 @@ export const StyledHomeBannerImg = styled.img`
 
 export const StyledHomeBannerContent = styled.div`
   padding: 32px;
-  
-  svg {
-    width: 180px;
-    height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 100vh;
 
-    @media (min-width: 1280px) {
-      width: 496.84px;
-      height: 120px;
+  .top-content {
+    svg {
+      width: 80px;
+      height: 80px;
     }
+  }
+
+  .bottom-content {
+    margin: 0 0 40px 0;
+
+    svg {
+      width: 180px;
+      height: auto;
+      margin: 0 0 0 -10px;
+
+      @media (min-width: 1280px) {
+        width: 496.84px;
+        height: 120px;
+      }
+    }
+  }
 `;

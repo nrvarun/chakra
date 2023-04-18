@@ -1,7 +1,8 @@
-import { useEffect } from "react";
-import { StyledWorld } from "./world.style";
+import { useEffect, useRef } from "react";
+import { StyledWorldSection } from "./world.style";
 import WorldItem from "./WorldItem";
-import { useRouter } from "next/router";
+
+import Tilt from "react-vanilla-tilt";
 
 type Props = {};
 
@@ -11,26 +12,26 @@ const WORLD_ITEMS = [
     title: "Lore",
     desc: "Chakra is a dynamic, ever expanding IP anchored in eastern mythologies that mimics natural evolution of human mythos and culture. Chakra seeks to speedrun millennia-long mythmaking by bringing it to life within a high-fidelity sandbox by leveraging mix media (Gaming, Cinematics & Comics) & web3 tech- [DeFi & NFTs]",
     img: "/images/world/1.png",
-    path: "/world/lore",
+    path: "/world",
   },
   {
     id: 2,
     title: "Eco System",
     desc: "Chakra is a dynamic, ever expanding IP anchored in eastern mythologies that mimics natural evolution of human mythos and culture. Chakra seeks to speedrun millennia-long mythmaking by bringing it to life within a high-fidelity sandbox by leveraging mix media (Gaming, Cinematics & Comics) & web3 tech- [DeFi & NFTs]",
     img: "/images/world/2.png",
-    path: "/world/eco-system",
+    path: "/world",
   },
   {
     id: 3,
     title: "Vision",
     desc: "Chakra is a dynamic, ever expanding IP anchored in eastern mythologies that mimics natural evolution of human mythos and culture. Chakra seeks to speedrun millennia-long mythmaking by bringing it to life within a high-fidelity sandbox by leveraging mix media (Gaming, Cinematics & Comics) & web3 tech- [DeFi & NFTs]",
-    img: "/images/world/1.png",
-    path: "/world/vision",
+    img: "/images/world/3.png",
+    path: "/world",
   },
 ];
 
 const WorldModule = (props: Props) => {
-  const router = useRouter();
+  // const router = useRouter();
 
   useEffect(() => {
     /**
@@ -41,15 +42,17 @@ const WorldModule = (props: Props) => {
 
   return (
     <main className="non-landing">
-      <StyledWorld>
+      <StyledWorldSection>
         <div className="grid lg:grid-cols-3 pt-4 px-6 pb-6 gap-4">
           {WORLD_ITEMS.map((world) => (
-            <div className="relative" key={world.id}>
-              <WorldItem {...world} />
+            <div key={world.id}>
+              <Tilt className="relative world-item">
+                <WorldItem {...world} />
+              </Tilt>
             </div>
           ))}
         </div>
-      </StyledWorld>
+      </StyledWorldSection>
     </main>
   );
 };

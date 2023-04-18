@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import {
-  StyledWorld,
+  StyledWorldItem,
   StyledWorldContent,
   StyledWorldImgWrapper,
 } from "./world.style";
@@ -16,7 +16,7 @@ type Props = {
 
 const WorldItem = ({ title, desc, img, path }: Props) => {
   return (
-    <StyledWorld>
+    <StyledWorldItem>
       <Link href={path}>
         <StyledWorldImgWrapper>
           <Image priority fill src={img} alt={title} />
@@ -31,7 +31,7 @@ const WorldItem = ({ title, desc, img, path }: Props) => {
           </div>
         </StyledWorldContent>
       </Link>
-    </StyledWorld>
+    </StyledWorldItem>
   );
 };
 
