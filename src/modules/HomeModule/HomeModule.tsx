@@ -23,13 +23,9 @@ const HomeModule = (props: Props) => {
         <div className="grid lg:grid-cols-2 z-10 relative mt-10 md:mt-0">
           <StyledHomeBannerContent>
             <SVG src="/icons/logo.svg" className="mb-3" />
-            {/* <p className="text-md text-white font-inter p-2">
-              Chakra is a dynamic, ever expanding IP anchored in eastern
-              mythologies that mimics natural evolution of human mythos and
-              culture. Chakra seeks to speedrun millennia-long mythmaking by
-              bringing it to life within a high-fidelity sandbox by leveraging
-              mix media (Gaming, Cinematics & Comics) & web3 tech- [DeFi & NFTs]
-            </p> */}
+            <p className="text-md text-white font-inter p-2">
+              Decentralised Collaborative Mythmaking.
+            </p>
           </StyledHomeBannerContent>
         </div>
       </StyledHomeBanner>
