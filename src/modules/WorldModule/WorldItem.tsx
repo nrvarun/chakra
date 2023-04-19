@@ -22,10 +22,12 @@ const WorldItem = ({ title, desc, img, path }: Props) => {
           <Image priority fill src={img} alt={title} />
         </StyledWorldImgWrapper>
         <StyledWorldContent>
-          <h3 className="font-marco">{title}</h3>
+          <div>
+            <h3 className="font-marco">{title}</h3>
+          </div>
           <div>
             <p className="mb-8 font-medium font-inter">{desc}</p>
-            <p className="text-md text-white capitalize py-2 font-semibold font-inter">
+            <p className="text-md text-white capitalize py-2 font-semibold font-inter explore-item">
               explore
             </p>
           </div>

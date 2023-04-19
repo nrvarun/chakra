@@ -1,16 +1,5 @@
 import styled from "styled-components";
 
-export const StyledWorldItem = styled.article`
-  position: relative;
-  min-height: 450px;
-  overflow: hidden;
-  border-radius: 16px;
-
-  @media (min-width: 1280px) {
-    min-height: calc(100vh - 94px);
-  }
-`;
-
 export const StyledWorldSection = styled.section`
   .world-item {
     width: 100% !important;
@@ -27,6 +16,7 @@ export const StyledWorldImgWrapper = styled.div`
   left: 0;
   bottom: 0;
   right: 0;
+  opacity: 1;
 
   &:after {
     content: "";
@@ -53,11 +43,12 @@ export const StyledWorldImgWrapper = styled.div`
     width: 100%;
     border-radius: 16px;
     object-fit: cover;
+    transition: opacity 0.6s ease;
   }
 `;
 
 export const StyledWorldContent = styled.div`
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   justify-content: space-between;
   position: absolute;
@@ -75,6 +66,11 @@ export const StyledWorldContent = styled.div`
     line-height: 77px;
     letter-spacing: 0.01em;
     color: #fafafa;
+    padding: 10px 24px;
+    background: transparent;
+    display: inline-block;
+    width: auto;
+    transition: background 0.3s ease;
   }
 
   p {
@@ -82,5 +78,48 @@ export const StyledWorldContent = styled.div`
     font-size: 12px;
     line-height: 15px;
     color: #fafafa;
+    padding: 12px 16px;
+    background: transparent;
+    display: inline-block;
+    width: auto;
+    transition: background 0.3s ease;
+  }
+
+  .explore-item {
+    border-radius: 16px;
+    padding: 8px 16px;
+    background: transparent;
+    display: inline-block;
+    width: auto;
+    transition: background 0.6s ease;
+  }
+
+  &:hover {
+    p,
+    h3,
+    .explore-item {
+      background: #000;
+    }
+  }
+`;
+
+export const StyledWorldItem = styled.article`
+  position: relative;
+  min-height: 450px;
+  overflow: hidden;
+  border-radius: 16px;
+  background: url("./icons/world-bg.svg") repeat;
+  transition: background 0.6s ease;
+
+  @media (min-width: 1280px) {
+    min-height: calc(100vh - 94px);
+  }
+
+  &:hover {
+    ${StyledWorldImgWrapper} {
+      img {
+        opacity: 0;
+      }
+    }
   }
 `;

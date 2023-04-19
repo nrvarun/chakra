@@ -56,6 +56,8 @@ export const StyledHeader = styled.header`
     }
 
     &:hover {
+      text-decoration: underline;
+
       &.disabled {
         span {
           opacity: 1;

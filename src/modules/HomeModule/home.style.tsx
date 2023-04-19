@@ -48,7 +48,15 @@ export const StyledHomeBannerContent = styled.div`
   }
 
   .bottom-content {
-    margin: 0 0 40px 0;
+    margin: 0 0 80px 0;
+
+    @media (min-width: 1600px) {
+      margin: 0 0 15% 0;
+    }
+
+    @media (min-width: 1900px) {
+      margin: 0 0 18% 0;
+    }
 
     svg {
       width: 180px;

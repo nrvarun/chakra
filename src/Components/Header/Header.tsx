@@ -31,7 +31,7 @@ const NAV_LINKS = [
   },
   {
     path: "/connect",
-    title: "Connect",
+    title: "Play",
     disabled: false,
     tooltipContent: "",
   },
