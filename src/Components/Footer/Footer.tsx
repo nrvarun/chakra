@@ -26,7 +26,10 @@ const Footer = (props: Props) => {
           {FOOTER_LINKS.map((link) => (
             <li className="px-1 md:px-2 py-2 mr-1" key={link.path}>
               <Link href={link.path} target="_blank">
-                <SVG src={link.icon} />
+                {/* <SVG src={link.icon} /> */}
+                <p className="font-inter font-medium text-white text-sm">
+                  {link.title}
+                </p>
               </Link>
             </li>
           ))}
