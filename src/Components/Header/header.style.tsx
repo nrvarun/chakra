@@ -32,6 +32,28 @@ export const StyledHeader = styled.header`
 
   a {
     & {
+      position: relative;
+
+      &:after {
+        position: absolute;
+        content: "";
+        bottom: -2px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 2px;
+        background: #ffffff;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s ease;
+      }
+
+      &:hover {
+        &:after {
+          transform: scaleX(1);
+        }
+      }
+
       span {
         background: #000;
         padding: 2px;
@@ -47,7 +69,9 @@ export const StyledHeader = styled.header`
       position: relative;
 
       &.active {
-        text-decoration: underline;
+        &:after {
+          transform: scaleX(1);
+        }
       }
 
       &.disabled {
@@ -56,8 +80,6 @@ export const StyledHeader = styled.header`
     }
 
     &:hover {
-      text-decoration: underline;
-
       &.disabled {
         span {
           opacity: 1;
