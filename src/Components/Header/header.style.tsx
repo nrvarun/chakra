@@ -55,11 +55,12 @@ export const StyledHeader = styled.header`
       }
 
       span {
-        background: #000;
         padding: 2px;
         position: absolute;
-        min-width: 77px;
         opacity: 0;
+        bottom: -35px;
+        left: 50%;
+        transform: translate(-50%, -50%);
         transition: opacity 0.3s ease;
       }
     }

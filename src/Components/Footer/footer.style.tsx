@@ -32,12 +32,28 @@ export const StyledFooter = styled.footer`
           transition: transform 0.5s ease;
         }
 
+        span {
+          padding: 2px;
+          position: absolute;
+          opacity: 0;
+          width: auto;
+          bottom: -35px;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          transition: opacity 0.3s ease;
+        }
+
         &:hover {
           &:after {
             transform: scaleX(1);
           }
+
+          &.disabled {
+            span {
+              opacity: 1;
+            }
+          }
         }
-      }
 
       svg {
         height: auto;

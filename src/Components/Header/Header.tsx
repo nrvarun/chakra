@@ -15,25 +15,25 @@ const NAV_LINKS = [
     path: "/world",
     title: "World",
     disabled: false,
-    tooltipContent: "Under 🚧",
+    tooltipContent: "🚧",
   },
   {
     path: "/writing",
     title: "Writing",
     disabled: true,
-    tooltipContent: "Under 🚧",
+    tooltipContent: "🚧",
   },
   {
     path: "/docs",
     title: "Docs",
-    disabled: false,
-    tooltipContent: "",
+    disabled: true,
+    tooltipContent: "🚧",
   },
   {
     path: "/connect",
     title: "Play",
-    disabled: false,
-    tooltipContent: "",
+    disabled: true,
+    tooltipContent: "🚧",
   },
 ];
 
