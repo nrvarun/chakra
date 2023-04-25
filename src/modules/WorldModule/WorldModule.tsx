@@ -46,7 +46,10 @@ const WorldModule = (props: Props) => {
         <div className="grid lg:grid-cols-3 pt-4 px-6 pb-6 gap-4">
           {WORLD_ITEMS.map((world) => (
             <div key={world.id}>
-              <Tilt className="relative world-item">
+              <Tilt
+                className="relative world-item"
+                options={{ scale: 1.5, max: 5 }}
+              >
                 <WorldItem {...world} />
               </Tilt>
             </div>
