@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
 export const StyledHeaderLogoWrapper = styled.div`
+  a {
+    &,
+    &:hover {
+    }
+  }
+
   svg {
     width: 61px;
     height: 20px;
