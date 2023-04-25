@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+
 import {
   StyledWorldItem,
   StyledWorldContent,
@@ -11,21 +11,22 @@ type Props = {
   title: string;
   desc: string;
   img: string;
+  bgPattern?: string;
   path: string;
 };
 
-const WorldItem = ({ title, desc, img, path }: Props) => {
+const WorldItem = ({ title, desc, img, path, bgPattern }: Props) => {
   return (
-    <StyledWorldItem>
+    <StyledWorldItem bgPattern={bgPattern}>
       <Link href={path}>
         <StyledWorldImgWrapper>
           <Image priority fill src={img} alt={title} />
         </StyledWorldImgWrapper>
         <StyledWorldContent>
           <div>
-            <h3 className="font-marco">{title}</h3>
+            <h3 className="font-marco world-inner-element">{title}</h3>
           </div>
-          <div>
+          <div className="world-inner-element">
             <p className="mb-8 font-medium font-inter">{desc}</p>
             <p className="text-md text-white capitalize py-2 font-semibold font-inter explore-item">
               explore

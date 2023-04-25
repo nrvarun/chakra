@@ -42,3 +42,18 @@
 * {
   box-sizing: border-box;
 }
+
+.world-item {
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
+.world-item:hover p,
+h3,
+.explore-item {
+  background: #000;
+}
+
+.world-inner-element {
+  transform: translateZ(40px);
+}

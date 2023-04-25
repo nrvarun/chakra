@@ -59,6 +59,7 @@ export const StyledWorldContent = styled.div`
   height: 100%;
   width: 100%;
   padding: 16px;
+  z-index: 10;
 
   h3 {
     font-weight: 400;
@@ -103,16 +104,23 @@ export const StyledWorldContent = styled.div`
   }
 `;
 
-export const StyledWorldItem = styled.article`
+export const StyledWorldItem = styled.article<{ bgPattern?: string }>`
   position: relative;
   min-height: 450px;
   overflow: hidden;
   border-radius: 16px;
-  background: url("./icons/world-bg.svg") repeat;
+  background: url(${({ bgPattern }) =>
+      bgPattern ? bgPattern : "./icons/world-bg.svg"})
+    repeat;
   transition: background 0.6s ease;
+  overflow: hidden;
 
   @media (min-width: 1280px) {
     min-height: calc(100vh - 94px);
+  }
+
+  a {
+    display: block;
   }
 
   &:hover {
