@@ -15,24 +15,28 @@ const NAV_LINKS = [
     path: "/world",
     title: "World",
     disabled: true,
+    target: "",
     tooltipContent: "🚧",
   },
   {
     path: "/writing",
     title: "Writing",
     disabled: true,
+    target: "",
     tooltipContent: "🚧",
   },
   {
-    path: "/docs",
+    path: "https://continuous-rover-864.notion.site/Litepaper-85bcde5f6c18473a8a87f4c53bb4c88c",
     title: "Docs",
-    disabled: true,
+    disabled: false,
+    target: "_blank",
     tooltipContent: "🚧",
   },
   {
     path: "/connect",
     title: "Play",
     disabled: true,
+    target: "",
     tooltipContent: "🚧",
   },
 ];
@@ -54,6 +58,7 @@ const Header = ({ customClass = "" }: Props) => {
             {NAV_LINKS.map((link) => (
               <li className="px-1 lg:px-5 py-2 mr-1" key={link.path}>
                 <Link
+                  target={link.target}
                   href={link.disabled ? "/" : link.path}
                   className={`${
                     currentRoute.includes(link.path) ? "active" : "in-active"
