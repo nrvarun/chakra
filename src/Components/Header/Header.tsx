@@ -30,7 +30,7 @@ const NAV_LINKS = [
     title: "Docs",
     disabled: false,
     target: "_blank",
-    tooltipContent: "🚧",
+    tooltipContent: "",
   },
   {
     path: "/connect",
