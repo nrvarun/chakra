@@ -11,7 +11,7 @@ const PageLoadAnim = (props: Props) => {
           rotate: 360,
         }}
         transition={{
-          duration: 2,
+          duration: 12,
           repeat: Infinity,
           ease: "linear",
         }}

@@ -3,6 +3,7 @@ import { StyledWorldSection } from "./world.style";
 import WorldItem from "./WorldItem";
 
 import Tilt from "react-parallax-tilt";
+import { useRouter } from "next/router";
 
 type Props = {};
 
@@ -34,13 +35,13 @@ const WORLD_ITEMS = [
 ];
 
 const WorldModule = (props: Props) => {
-  // const router = useRouter();
+  const router = useRouter();
 
   useEffect(() => {
     /**
      * Redirect to home on landing
      */
-    // router.push("/");
+    router.push("/");
   }, []);
 
   return (
