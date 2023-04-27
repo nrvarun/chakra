@@ -24,9 +24,9 @@ const NAV_LINKS = [
     tooltipContent: "🚧",
   },
   {
-    path: "/docs",
+    path: "https://www.notion.so/Litepaper-85bcde5f6c18473a8a87f4c53bb4c88c?pvs=4",
     title: "Docs",
-    disabled: true,
+    disabled: false,
     tooltipContent: "🚧",
   },
   {
