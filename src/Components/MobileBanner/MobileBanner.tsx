@@ -13,7 +13,7 @@ const MobileBanner = (props: Props) => {
       <article className="m-auto">
         <SVG src="/icons/logo.svg" />
         <h2 className="text-lg  font-inter text-center font-regular text-white">
-          Better viewed in desktop, for a great Experience.
+          Switch to the desktop version for a better browsing experience!
         </h2>
       </article>
     </StyledMobileBanner>

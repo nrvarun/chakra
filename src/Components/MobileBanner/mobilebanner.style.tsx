@@ -22,6 +22,10 @@ export const StyledMobileBanner = styled.section`
     svg {
       width: 100%;
       margin: 0 auto 12px auto;
+
+      path {
+        fill: #ffffff;
+      }
     }
   }
 `;
