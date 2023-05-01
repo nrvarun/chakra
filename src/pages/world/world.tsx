@@ -8,7 +8,7 @@ import WorldModule from "modules/WorldModule";
 export default function World() {
   return (
     <>
-      <CustomHead />
+      <CustomHead title="Chakra - The World" />
       <Header customClass="white" />
       <WorldModule />
     </>

@@ -14,9 +14,9 @@ const NAV_LINKS = [
   {
     path: "/world",
     title: "World",
-    disabled: true,
+    disabled: false,
     target: "",
-    tooltipContent: "🚧",
+    tooltipContent: "",
   },
   {
     path: "/writing",

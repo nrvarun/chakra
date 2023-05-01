@@ -2,10 +2,12 @@
 import Head from "next/head";
 
 type Props = {
+  title?: string;
   bannerImg?: string;
 };
 
 const CustomHead = ({
+  title = "Chakra",
   bannerImg = "https://www.chakra.world/images/ogg/banner.png",
 }: Props) => {
   return (
@@ -16,7 +18,7 @@ const CustomHead = ({
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
         rel="stylesheet"
       />
-      <title>Chakra</title>
+      <title>{title}</title>
       <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="Chakra" />

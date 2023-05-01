@@ -19,17 +19,12 @@ const WorldItem = ({ title, desc, img, path, bgPattern }: Props) => {
   return (
     <StyledWorldItem bgPattern={bgPattern}>
       <Link href={path}>
-        <StyledWorldImgWrapper>
-          <Image priority fill src={img} alt={title} />
-        </StyledWorldImgWrapper>
         <StyledWorldContent>
-          <div>
-            <h3 className="font-marco world-inner-element">{title}</h3>
-          </div>
           <div className="world-inner-element">
+            <h3 className="font-marco world-inner-element">{title}</h3>
             <p className="mb-8 font-medium font-inter">{desc}</p>
             <p className="text-md text-white capitalize py-2 font-semibold font-inter explore-item">
-              explore
+              {`Explore ->`}
             </p>
           </div>
         </StyledWorldContent>

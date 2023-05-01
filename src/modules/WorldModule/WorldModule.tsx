@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { StyledWorldSection } from "./world.style";
+import { StyledWorldPageBgImgWrapper, StyledWorldSection } from "./world.style";
 import WorldItem from "./WorldItem";
 
 import Tilt from "react-parallax-tilt";
@@ -41,32 +41,18 @@ const WorldModule = (props: Props) => {
     /**
      * Redirect to home on landing
      */
-    router.push("/");
+    // router.push("/");
   }, []);
 
   return (
     <main className="non-landing">
-      <StyledWorldSection>
-        <div className="grid lg:grid-cols-3 pt-4 px-6 pb-6 gap-4">
+      <StyledWorldPageBgImgWrapper>
+        <img src="/images/world/bgimg.png" alt="background of world" />
+      </StyledWorldPageBgImgWrapper>
+      <StyledWorldSection className="mt-2">
+        <div className="grid lg:grid-cols-3">
           {WORLD_ITEMS.map((world) => (
-            <Tilt
-              style={{
-                overflow: "hidden",
-                borderRadius: 16,
-              }}
-              key={world.id}
-              className="relative world-item"
-              glareEnable={true}
-              glareMaxOpacity={0.4}
-              glareBorderRadius={"16px"}
-              tiltMaxAngleX={10}
-              tiltMaxAngleY={10}
-              perspective={1000}
-              transitionSpeed={600}
-              scale={1}
-            >
-              <WorldItem {...world} />
-            </Tilt>
+            <WorldItem key={world.id} {...world} />
           ))}
         </div>
       </StyledWorldSection>

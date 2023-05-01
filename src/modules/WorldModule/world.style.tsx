@@ -1,12 +1,30 @@
 import styled from "styled-components";
 
 export const StyledWorldSection = styled.section`
+  position: relative;
+
   .world-item {
     width: 100% !important;
     padding: 0 !important;
     background: #000 !important;
     transform-style: preserve-3d;
     margin: 0 !important;
+  }
+`;
+
+export const StyledWorldPageBgImgWrapper = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 `;
 
@@ -50,7 +68,7 @@ export const StyledWorldImgWrapper = styled.div`
 export const StyledWorldContent = styled.div`
   display: inline-flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: end;
   position: absolute;
   top: 0;
   left: 0;
@@ -60,6 +78,8 @@ export const StyledWorldContent = styled.div`
   width: 100%;
   padding: 16px;
   z-index: 10;
+  transition: transform 0.5s ease;
+  transform: translateY(26%);
 
   h3 {
     font-weight: 400;
@@ -71,7 +91,6 @@ export const StyledWorldContent = styled.div`
     background: transparent;
     display: inline-block;
     width: auto;
-    transition: background 0.3s ease;
   }
 
   p {
@@ -83,7 +102,9 @@ export const StyledWorldContent = styled.div`
     background: transparent;
     display: inline-block;
     width: auto;
-    transition: background 0.3s ease;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    transition-delay: 0.25s;
   }
 
   .explore-item {
@@ -92,15 +113,9 @@ export const StyledWorldContent = styled.div`
     background: transparent;
     display: inline-block;
     width: auto;
-    transition: background 0.6s ease;
-  }
-
-  &:hover {
-    p,
-    h3,
-    .explore-item {
-      background: #000;
-    }
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    transition-delay: 0.25s;
   }
 `;
 
@@ -108,15 +123,12 @@ export const StyledWorldItem = styled.article<{ bgPattern?: string }>`
   position: relative;
   min-height: 450px;
   overflow: hidden;
-  border-radius: 16px;
-  background: url(${({ bgPattern }) =>
-      bgPattern ? bgPattern : "./icons/world-bg.svg"})
-    repeat;
   transition: background 0.6s ease;
   overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.2);
 
   @media (min-width: 1280px) {
-    min-height: calc(100vh - 94px);
+    min-height: calc(100vh - 65px);
   }
 
   a {
@@ -124,10 +136,18 @@ export const StyledWorldItem = styled.article<{ bgPattern?: string }>`
   }
 
   &:hover {
-    ${StyledWorldImgWrapper} {
-      img {
-        opacity: 0;
+    background: rgba(0, 0, 0, 0.4);
+
+    ${StyledWorldContent} {
+      transform: translateY(0%);
+
+      h3,
+      p {
+        opacity: 1;
+        
       }
+    }
+
     }
   }
 `;
