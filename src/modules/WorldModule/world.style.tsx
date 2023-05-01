@@ -79,7 +79,7 @@ export const StyledWorldContent = styled.div`
   padding: 16px;
   z-index: 10;
   transition: transform 0.5s ease;
-  transform: translateY(26%);
+  transform: translateY(160px);
 
   h3 {
     font-weight: 400;
