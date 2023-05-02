@@ -74,7 +74,7 @@ export const StyledLoreContentSection = styled.section`
 `;
 
 export const StyledLoreFactionSection = styled("section")`
-  min-height: 200px;
+  min-height: 100px;
   padding: 5rem 1.5rem 2rem 1.5rem;
 `;
 
