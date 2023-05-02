@@ -2,6 +2,7 @@ import {
   StyledLoreContentDesc,
   StyledLoreContentHeading,
   StyledLoreContentSection,
+  StyledLoreContentSubHeading,
 } from "../lore.style";
 
 type Props = {};
@@ -9,18 +10,19 @@ type Props = {};
 const Philosophy = (props: Props) => {
   return (
     <StyledLoreContentSection>
-      <div className="grid grid-cols-3">
-        <div id="philosophy-section">
-          <StyledLoreContentHeading className="font-marco text-red">
+      <div className="grid grid-cols-1 m-auto">
+        <div id="philosophy-section" className="text-center">
+          <StyledLoreContentHeading className="font-marco text-white mb-8">
             Philosophy
           </StyledLoreContentHeading>
-          <StyledLoreContentDesc className="mb-4 text-red">
-            Chakra is a whole alternate universe based on our reality; set in a
-            time when the ancient myths and mythologies rooted in the eternal
-            order come alive. The significance of humans is in question as they
-            find out, they are but a footnote in the infinite expanse of
-            creation.
-          </StyledLoreContentDesc>
+          <StyledLoreContentSubHeading className="mb-4 text-white">
+            Chakra symbolizes the cyclic aspect of the formation and destruction
+            of reality, but after each iteration, it is close to the
+            singularity. Unlike the mainstream good vs evil, chakra focuses on
+            evolving with the situation and understanding the plurality of
+            things. It focuses on the middle path that is always dynamic. The
+            greater of good and the lesser of evil.
+          </StyledLoreContentSubHeading>
         </div>
       </div>
     </StyledLoreContentSection>

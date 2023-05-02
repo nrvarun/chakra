@@ -38,17 +38,17 @@ export const StyledLoreContent = styled.section`
 
 export const StyledLoreContentHeading = styled.h4`
   font-weight: 400;
-  font-size: 48px;
-  line-height: 58px;
+  font-size: 40px;
+  line-height: 48px;
   letter-spacing: 0.01em;
-  margin: 0 0 2rem 0;
 `;
 
 export const StyledLoreContentSubHeading = styled.h5`
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 38px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
   letter-spacing: 0.01em;
+  max-width: 800px;
 `;
 
 export const StyledLoreContentDesc = styled.p`
@@ -57,7 +57,7 @@ export const StyledLoreContentDesc = styled.p`
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
-  max-width: 360px;
+  max-width: 800px;
 `;
 
 export const StyledLoreContentDescTitle = styled.h6`
@@ -70,11 +70,11 @@ export const StyledLoreContentDescTitle = styled.h6`
 
 export const StyledLoreContentSection = styled.section`
   min-height: calc(100vh - 118px);
+  display: flex;
 `;
 
 export const StyledLoreFactionSection = styled("section")`
-  background: #000000;
-  min-height: 100vh;
+  min-height: 200px;
   padding: 5rem 1.5rem 2rem 1.5rem;
 `;
 

@@ -1,4 +1,8 @@
 import {
+  StyledFactionNav,
+  StyledFactionNavList,
+} from "modules/LoreModule/lore.style";
+import {
   StyledWorldNavHeading,
   StyledWorldNavList,
   StyledWorldNavWrapper,
@@ -7,6 +11,8 @@ import {
 type NAV_ITEM = {
   title: string;
   id: string;
+  subList?: any[];
+  hasDropdown?: boolean;
 };
 
 type Props = {
@@ -51,6 +57,25 @@ const WorldNav = ({
               >
                 {nav.title}
               </a>
+              <StyledFactionNav>
+                <StyledFactionNavList>
+                  {nav.subList &&
+                    nav.subList.map((faction) => (
+                      <li key={faction.id} className={`mb-3 `}>
+                        <a
+                          href="javascript:void(0);"
+                          // className={`${
+                          //   activeFaction === faction.id ? "active" : "in-active"
+                          // }`}
+                          onClick={() => handleClickScroll(faction.id)}
+                          data-section-id={faction.id}
+                        >
+                          {faction.title}
+                        </a>
+                      </li>
+                    ))}
+                </StyledFactionNavList>
+              </StyledFactionNav>
             </li>
           ))}
         </ul>

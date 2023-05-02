@@ -13,7 +13,7 @@ const WORLD_ITEMS = [
     title: "Lore",
     desc: "Chakra is a dynamic, ever expanding IP anchored in eastern mythologies that mimics natural evolution of human mythos and culture. Chakra seeks to speedrun millennia-long mythmaking by bringing it to life within a high-fidelity sandbox by leveraging mix media (Gaming, Cinematics & Comics) & web3 tech- [DeFi & NFTs]",
     img: "/images/world/1.png",
-    path: "/world",
+    path: "/world/lore",
     bgPattern: "/icons/lore-bg.svg",
   },
   {

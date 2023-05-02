@@ -49,6 +49,11 @@ export const StyledWorldNavWrapper = styled.aside`
     width: 100%;
   }
 
+  h3,
+  p {
+    background: none;
+  }
+
   &.eco-system {
     ${StyledWorldNavList} {
       a {
