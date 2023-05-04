@@ -19,10 +19,10 @@ const NAV_LINKS = [
     tooltipContent: "",
   },
   {
-    path: "/blog",
+    path: "https://mirror.xyz/worldofchakra.eth/03pjbCCXlDpaBAFN6srpLu-XDlscyEqCtMGWYKxqVBY",
     title: "Blog",
-    disabled: true,
-    target: "",
+    disabled: false,
+    target: "_blank",
     tooltipContent: "🚧",
   },
   {
