@@ -11,15 +11,15 @@ const WORLD_ITEMS = [
   {
     id: 1,
     title: "Lore",
-    desc: "Chakra is a dynamic, ever expanding IP anchored in eastern mythologies that mimics natural evolution of human mythos and culture. Chakra seeks to speedrun millennia-long mythmaking by bringing it to life within a high-fidelity sandbox by leveraging mix media (Gaming, Cinematics & Comics) & web3 tech- [DeFi & NFTs]",
+    desc: "Chakra is an alternate universe; set in a time when the ancient myths and mythologies come alive. The significance of humans is in question as they find out, they are but a footnote in the infinite expanse of creation.",
     img: "/images/world/1.png",
-    path: "/world/lore",
+    path: "/world",
     bgPattern: "/icons/lore-bg.svg",
   },
   {
     id: 2,
     title: "Eco System",
-    desc: "Chakra is a dynamic, ever expanding IP anchored in eastern mythologies that mimics natural evolution of human mythos and culture. Chakra seeks to speedrun millennia-long mythmaking by bringing it to life within a high-fidelity sandbox by leveraging mix media (Gaming, Cinematics & Comics) & web3 tech- [DeFi & NFTs]",
+    desc: "Chakra seeks to bring millenia old myths to life within a high-fidelity gaming sandbox by leveraging art, tech and web3",
     img: "/images/world/2.png",
     path: "/world",
     bgPattern: "/icons/eco-bg.svg",
@@ -27,7 +27,7 @@ const WORLD_ITEMS = [
   {
     id: 3,
     title: "Vision",
-    desc: "Chakra is a dynamic, ever expanding IP anchored in eastern mythologies that mimics natural evolution of human mythos and culture. Chakra seeks to speedrun millennia-long mythmaking by bringing it to life within a high-fidelity sandbox by leveraging mix media (Gaming, Cinematics & Comics) & web3 tech- [DeFi & NFTs]",
+    desc: "Chakra is envisioned as a decentralized worldbuilding platform designed to empower community creators to expand the myth through tangible forms",
     img: "/images/world/3.png",
     path: "/world",
     bgPattern: "/icons/vision-bg.svg",

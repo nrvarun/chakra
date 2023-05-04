@@ -79,7 +79,7 @@ export const StyledWorldContent = styled.div`
   padding: 16px;
   z-index: 10;
   transition: transform 0.5s ease;
-  transform: translateY(160px);
+  transform: translateY(100px);
 
   h3 {
     font-weight: 400;
@@ -139,7 +139,15 @@ export const StyledWorldItem = styled.article<{ bgPattern?: string }>`
     background: rgba(0, 0, 0, 0.4);
 
     ${StyledWorldContent} {
-      transform: translateY(0%);
+      transform: translateY(-28%);
+      
+      @media (min-width: 1440px) {
+        transform: translateY(-32%);
+      }
+      
+      @media (min-width: 1600px) {
+        transform: translateY(-35%);
+      }
 
       h3,
       p {
@@ -147,7 +155,6 @@ export const StyledWorldItem = styled.article<{ bgPattern?: string }>`
         
       }
     }
-
     }
   }
 `;
