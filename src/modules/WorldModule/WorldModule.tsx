@@ -11,7 +11,7 @@ const WORLD_ITEMS = [
   {
     id: 1,
     title: "Lore",
-    desc: "Chakra is an alternate universe; set in a time when the ancient myths and mythologies come alive. The significance of humans is in question as they find out, they are but a footnote in the infinite expanse of creation.",
+    desc: "An alternate universe inspired by current reality; set in a time when the ancient myths and mythologies come alive. The significance of humans is in question as they find out, they are but a footnote in the infinite expanse of creation.",
     img: "/images/world/1.png",
     path: "/world",
     bgPattern: "/icons/lore-bg.svg",
@@ -19,7 +19,7 @@ const WORLD_ITEMS = [
   {
     id: 2,
     title: "Ecosystem",
-    desc: "Chakra seeks to bring millenia old myths to life within a high-fidelity gaming sandbox by leveraging art, tech and web3",
+    desc: "The Chakra ecosystem leverages the power of gaming and the wonders of web3 to create a well-defined yet boundless fantasy meta-world inspired by millennia-old Eastern mythologies.",
     img: "/images/world/2.png",
     path: "/world",
     bgPattern: "/icons/eco-bg.svg",
@@ -27,7 +27,7 @@ const WORLD_ITEMS = [
   {
     id: 3,
     title: "Vision",
-    desc: "Chakra is envisioned as a decentralized worldbuilding platform designed to empower community creators to expand the myth through tangible forms",
+    desc: "Envisioned as a collaborative storytelling platform designed to empower community creators to expand the myth within a high-fidelity gaming sandbox.",
     img: "/images/world/3.png",
     path: "/world",
     bgPattern: "/icons/vision-bg.svg",
