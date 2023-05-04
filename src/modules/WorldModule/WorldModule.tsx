@@ -18,7 +18,7 @@ const WORLD_ITEMS = [
   },
   {
     id: 2,
-    title: "Eco System",
+    title: "Ecosystem",
     desc: "Chakra seeks to bring millenia old myths to life within a high-fidelity gaming sandbox by leveraging art, tech and web3",
     img: "/images/world/2.png",
     path: "/world",
