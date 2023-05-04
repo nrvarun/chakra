@@ -47,7 +47,7 @@ const WorldModule = (props: Props) => {
   return (
     <main className="non-landing">
       <StyledWorldPageBgImgWrapper>
-        <img src="/images/world/bgimg-2.png" alt="background of world" />
+        <img src="/images/world/bgimg.png" alt="background of world" />
       </StyledWorldPageBgImgWrapper>
       <StyledWorldSection className="mt-2">
         <div className="grid lg:grid-cols-3">
