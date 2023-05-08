@@ -71,7 +71,7 @@ const Header = ({ customClass = "" }: Props) => {
                     currentRoute.includes(link.path) ? "active" : "in-active"
                   } ${link.disabled ? "disabled" : ""}`}
                 >
-                  <p className="text-xs md:text-sm lg:text-base font-inter text-white">
+                  <p className="text-xs md:text-sm lg:text-base font-inter capitalize text-white">
                     {link.title}
                   </p>
                   {link.disabled && <span>{link.tooltipContent}</span>}
