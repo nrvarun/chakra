@@ -49,6 +49,10 @@ export const StyledLitePaperNav = styled.aside`
     text-transform: uppercase;
     color: #fafafa;
     margin: 0 0 20px 0;
+
+    @media (min-width: 1600px) {
+      margin: 0 0 80px 0;
+    }
   }
 
   nav {
