@@ -81,7 +81,7 @@ const LitepaperArticle = (props: Props) => {
         <span className="underline">Chakra Conundrum </span>{" "}
         <span className="text-red-ff0">{`->`}</span> In Conundrum, players face
         off in the ultimate game of strategy and deception: the iterative
-        prisoner's dilemma
+        {`prisoner's`} dilemma
       </p>
       <figure>
         <img className="mb-10 w-full" src="/images/litepaper/5.png" alt="1" />
@@ -653,18 +653,18 @@ const LitepaperArticle = (props: Props) => {
           property may be used, reproduced, or distributed without the prior
           written consent of illiquid labs. Any use, reproduction, or
           distribution without prior written consent will be considered an
-          infringement of illiquid labs' intellectual property rights and may
-          result in legal action.
+          infringement of illiquid {`labs'`} intellectual property rights and
+          may result in legal action.
         </span>{" "}
       </p>
       <p className="mb-10">
         <span className="text-white">
           Provisions: This disclaimer does not constitute a waiver of any of
-          illiquid labs' rights under copyright law or any other applicable law.
-          illiquid labs reserves the right to take legal action to protect its
-          intellectual property rights, including seeking injunctive relief,
-          damages, and attorneys' fees. illiquid labs also reserves the right to
-          amend this disclaimer in writing at any time.
+          illiquid {`labs'`} rights under copyright law or any other applicable
+          law. illiquid labs reserves the right to take legal action to protect
+          its intellectual property rights, including seeking injunctive relief,
+          damages, and {`attorneys'`} fees. illiquid labs also reserves the
+          right to amend this disclaimer in writing at any time.
         </span>{" "}
       </p>
       <p className="mb-10">
