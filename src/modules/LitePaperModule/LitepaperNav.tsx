@@ -89,12 +89,12 @@ const NAV_LIST = [
     ],
   },
   {
-    id: "FAQ",
+    id: "faq",
     title: "FAQ",
     subList: [],
   },
   {
-    id: "DISCLAIMER",
+    id: "disclaimer",
     title: "DISCLAIMER",
     subList: [],
   },

@@ -5,7 +5,7 @@ type Props = {};
 
 const LitepaperArticle = (props: Props) => {
   return (
-    <StyledLitePaperArticle>
+    <StyledLitePaperArticle className="scroll-smooth">
       <h3 className="font-marco font-semibold text-red-ff0 mb-10">
         Introduction
       </h3>
