@@ -26,6 +26,13 @@ const NAV_LINKS = [
     tooltipContent: "🚧",
   },
   {
+    path: "/litepaper",
+    title: "litepaper",
+    disabled: false,
+    target: "",
+    tooltipContent: "",
+  },
+  {
     path: "https://continuous-rover-864.notion.site/Litepaper-85bcde5f6c18473a8a87f4c53bb4c88c",
     title: "Docs",
     disabled: false,
