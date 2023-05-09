@@ -9,11 +9,6 @@ type Props = {};
 
 const NAV_LIST = [
   {
-    id: "introduction",
-    title: "introduction",
-    subList: [],
-  },
-  {
     id: "world-of-chakra",
     title: "THE WORLD OF CHAKRA",
     subList: [],

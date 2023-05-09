@@ -7,8 +7,8 @@ type Props = {};
 const LitepaperArticle = (props: Props) => {
   return (
     <StyledLitePaperArticle className="scroll-smooth">
-      <h3 className="font-marco font-semibold text-red-ff0 mb-10">
-        Introduction
+      <h3 className="font-marco font-semibold text-red-ff0 mb-10" id="">
+        The World of Chakra
       </h3>
       <figure>
         <img className="mb-10 w-full" src="/images/litepaper/1.png" alt="1" />
@@ -20,9 +20,7 @@ const LitepaperArticle = (props: Props) => {
         by supported by Cinematics, Manga & wonders of web3 (DeFi, NFTs &
         Governance)
       </p>
-      <h3 className="font-marco font-semibold text-red-ff0 mb-10">
-        The World of Chakra
-      </h3>
+
       <h4 className="font-marco font-semibold text-white mb-10">The Premise</h4>
       <figure>
         <img className="mb-10 w-full" src="/images/litepaper/2.png" alt="1" />
@@ -45,7 +43,6 @@ const LitepaperArticle = (props: Props) => {
       </h3>
       <figure>
         <img className="mb-10 w-full" src="/images/litepaper/3.png" alt="1" />
-        <figcaption>flywheel</figcaption>
       </figure>
       <p className="mb-10">
         Envisioned as a platform designed to empower community creators to
@@ -64,22 +61,22 @@ const LitepaperArticle = (props: Props) => {
         through joy rather than “numbers go up”. Two game modes allowed for each
         game. P2E and Wagering.
       </p>
-      <p className="mb-10">
+      <p className="mb-6">
         Chakra universe will be seeded with 3 titles by Illiquid labs
       </p>
-      <p className="mb-10">
-        <span className="underline">Chakra Dungeons </span>{" "}
+      <p className="mb-6">
+        <span className="font-bold">Chakra Dungeons </span>{" "}
         <span className="text-red-ff0">{`->`}</span> A high—quality 3D ARPG with
         rogue—like elements. This is a flagship Chakra ecosystem game whose key
         objective is to immerse players into the world of chakra.
       </p>
-      <p className="mb-10">
-        <span className="underline">Chakra Duels </span>{" "}
+      <p className="mb-6">
+        <span className="font-bold">Chakra Duels </span>{" "}
         <span className="text-red-ff0">{`->`}</span> A PvP fighting game with
         comprehensive duel mechanics and wagering
       </p>
       <p className="mb-10">
-        <span className="underline">Chakra Conundrum </span>{" "}
+        <span className="font-bold">Chakra Conundrum </span>{" "}
         <span className="text-red-ff0">{`->`}</span> In Conundrum, players face
         off in the ultimate game of strategy and deception: the iterative
         {`prisoner's`} dilemma
@@ -98,20 +95,20 @@ const LitepaperArticle = (props: Props) => {
       <figure>
         <img className="mb-10 w-full" src="/images/litepaper/6.png" alt="1" />
       </figure>
-      <p className="mb-10">
-        <span className="underline">Guidebooks</span>{" "}
+      <p className="mb-6">
+        <span className="font-bold">Guidebooks</span>{" "}
         <span className="text-red-ff0">{`->`}</span> Art-style guides, Technical
         Documentation, Lore and character guides, Game content assets and Guide
         lines
       </p>
-      <p className="mb-10">
-        <span className="underline">Manga & Cinematics </span>{" "}
+      <p className="mb-6">
+        <span className="font-bold">Manga & Cinematics </span>{" "}
         <span className="text-red-ff0">{`->`}</span> Comic and Cinematics
         releases each week with embedded mini-arcs, clues and alpha that inform
         further development
       </p>
-      <p className="mb-10">
-        <span className="underline">Digital Assets </span>{" "}
+      <p className="mb-4">
+        <span className="font-bold">Digital Assets </span>{" "}
         <span className="text-red-ff0">{`->`}</span> Access to digital assets &
         NFTs
       </p>
@@ -140,41 +137,31 @@ const LitepaperArticle = (props: Props) => {
         We leverage web3 technologies such as user-owned virtual assets/NFTs,
         DeFi primitives & a Native unit of account ($CHAKRA) to provide greater
         control and value to users whose incentives are aligned with those of
-        Chakra Ecosystem. This ecosystem is built for Arbitrum.
+        Chakra Ecosystem. This ecosystem is built for{" "}
+        <span className="underline">Arbitrum</span>.
       </p>
       <figure>
         <img className="mb-10 w-full" src="/images/litepaper/7.png" alt="1" />
       </figure>
-      <p className="mb-10">
-        <span className="underline">NFTs | Two Core Collections of NFTs</span>{" "}
+      <p className="mb-4">
+        <span className="font-bold">NFTs | Two Core Collections of NFTs</span>{" "}
       </p>
-      <p className="mb-10">
-        <span className="underline">Chakra Chieftains</span>{" "}
-        <span className="text-red-ff0">{`->`}</span> 500 OG PFP characters that
-        play a crucial role in the ownership of the ecosystem
-      </p>
-      <p className="mb-10">
-        <span className="underline">Chakra 10k</span>{" "}
-        <span className="text-red-ff0">{`->`}</span> 10k 3D characters
-        functional in gaming
-      </p>
-      <p className="mb-10">
-        <span className="underline">Chakra Chieftains Utility</span>{" "}
-      </p>
-      <ul className="list-disc pl-4 mb-10 text-white">
+      <ol className="list-disc pl-4 mb-10 text-white">
         <li>
-          <p>Rewards from revenue generated by ecosystem</p>
+          <p className="mb-3">
+            <span className="font-bold">Chakra Chieftains</span>{" "}
+            <span className="text-red-ff0">{`->`}</span> 500 OG PFP characters
+            that play a crucial role in the ownership of the ecosystem
+          </p>
         </li>
         <li>
-          <p>Rewards from sales of 10k NFTs</p>
+          <p className="mb-3">
+            <span className="font-bold">Chakra 10k</span>{" "}
+            <span className="text-red-ff0">{`->`}</span> 10k 3D characters
+            functional in gaming
+          </p>
         </li>
-        <li>
-          <p>Taking part in ecosystem governance</p>
-        </li>
-        <li>
-          <p>10k collection waitlist/airdrop</p>
-        </li>
-      </ul>
+      </ol>
       <h4 className="font-marco font-semibold text-white mb-10">
         Public Goods
       </h4>
@@ -185,45 +172,45 @@ const LitepaperArticle = (props: Props) => {
         Core public infrastructure to help create a virtuous cycle of activity,
         expansion & commerce within the Chakra ecosystem.
       </p>
-      <p className="mb-10">
-        <span className="underline">Playable Game Content</span>{" "}
+      <p className="mb-4">
+        <span className="font-bold">Playable Game Content</span>{" "}
         <span className="text-red-ff0">{`->`}</span> Flagship Chakra games
         accessible for all users to play and engage with the ecosystem
       </p>
-      <p className="mb-10">
-        <span className="underline">Rule Book</span>{" "}
+      <p className="mb-4">
+        <span className="font-bold">Rule Book</span>{" "}
         <span className="text-red-ff0">{`->`}</span> Codified guide books
         informing on several critical aspects of content creation via Lore,
         Characters, Artstyle, Environments, Dev guides etc
       </p>
-      <p className="mb-10">
-        <span className="underline">DEX</span>{" "}
+      <p className="mb-4">
+        <span className="font-bold">DEX</span>{" "}
         <span className="text-red-ff0">{`->`}</span> AMM DEX that helps onboard
         and off ramp crypto users from across chains
       </p>
-      <p className="mb-10">
-        <span className="underline">Marketplace</span>{" "}
+      <p className="mb-4">
+        <span className="font-bold">Marketplace</span>{" "}
         <span className="text-red-ff0">{`->`}</span> NFT and virtual asset
         market place for P2P trading
       </p>
-      <p className="mb-10">
-        <span className="underline">Content Store</span>{" "}
+      <p className="mb-4">
+        <span className="font-bold">Content Store</span>{" "}
         <span className="text-red-ff0">{`->`}</span> native content store to buy
         and sell community created DAO approved game ready content
       </p>
-      <p className="mb-10">
-        <span className="underline">Game Vendor</span>{" "}
+      <p className="mb-4">
+        <span className="font-bold">Game Vendor</span>{" "}
         <span className="text-red-ff0">{`->`}</span> Vendor acting as main sink
         for tokens through which players can access NFT drops and DLC
       </p>
-      <p className="mb-10">
-        <span className="underline">Wagering System</span>{" "}
+      <p className="mb-4">
+        <span className="font-bold">Wagering System</span>{" "}
         <span className="text-red-ff0">{`->`}</span> Wagering contracts that
         enable a robust wager 2 earn mechanisms for certain PvP and PvE game
         modes
       </p>
       <p className="mb-10">
-        <span className="underline">Governance System</span>{" "}
+        <span className="font-bold">Governance System</span>{" "}
         <span className="text-red-ff0">{`->`}</span> Governance infrastructure
         (discussion + proposal forums and snapshot voting) using quadratic
         funding principles enabled by veToken mechanisms to facilitate optimal
@@ -232,10 +219,15 @@ const LitepaperArticle = (props: Props) => {
       <h4 className="font-marco font-semibold text-white mb-10">
         Game Expansion
       </h4>
-      <p className="mb-10">
-        <span className="underline">Content Creation</span>{" "}
+      <p className="mb-4">
+        <span className="font-bold">Content Creation</span>{" "}
       </p>
-      <ol className="mb-10">
+      <ol
+        className="mb-3"
+        style={{
+          marginBottom: 32,
+        }}
+      >
         <li>
           <p className="">
             <span className="">
@@ -257,10 +249,10 @@ const LitepaperArticle = (props: Props) => {
           </p>
         </li>
       </ol>
-      <p className="mb-10">
-        <span className="underline">Game Content Categories</span>{" "}
+      <p className="mb-4">
+        <span className="font-bold">Game Content Categories</span>{" "}
       </p>
-      <ul className="mb-10">
+      <ul className="mb-8">
         <li>
           <p className="">
             <span className="">{`->`} Animations</span>{" "}
@@ -282,8 +274,8 @@ const LitepaperArticle = (props: Props) => {
           </p>
         </li>
       </ul>
-      <p className="mb-10">
-        <span className="underline">
+      <p className="mb-4">
+        <span className="font-bold">
           Expansion of Chakra Ecosystem | Pipeline for Developers+Creators
         </span>{" "}
       </p>
@@ -347,14 +339,14 @@ const LitepaperArticle = (props: Props) => {
           </p>
         </li>
       </ol>
-      <p className="mb-10">
+      <p className="mb-6">
         <span className="">
           We will be following quadratic funding principles to match grant and
           funding to expansion projects
         </span>{" "}
       </p>
-      <p className="mb-10">
-        <span className="underline">What this Achieves</span>{" "}
+      <p className="mb-2">
+        <span className="font-bold">What this Achieves</span>{" "}
       </p>
       <ul className="list-disc pl-4 mb-10 text-white">
         <li>
@@ -392,14 +384,15 @@ const LitepaperArticle = (props: Props) => {
       <figure>
         <img className="mb-10 w-full" src="/images/litepaper/9.png" alt="1" />
       </figure>
-      <p className="mb-10">
+      <p className="mb-6">
         $CHAKRA- The primary utility token of the Chakra ecosystem.
       </p>
-      <p className="mb-10">An EVM compatible token for use on Arbitrum</p>
-      <p className="mb-10">
-        <span className="underline">
-          $CHAKRA- The primary utility token of the Chakra ecosystem.
-        </span>
+      <p className="mb-6">
+        An EVM compatible token for use on{" "}
+        <span className="underline">Arbitrum</span>
+      </p>
+      <p className="mb-2">
+        <span className="font-bold">How to get $Chakra token?</span>
       </p>
       <ul className="mb-10">
         <li>
@@ -434,24 +427,24 @@ const LitepaperArticle = (props: Props) => {
         </li>
       </ul>
       <h4 className="font-marco font-semibold text-white mb-10">Utility</h4>
-      <p className="mb-10">
-        <span className="underline">Chakra Token Utility</span>
+      <p className="mb-3">
+        <span className="font-bold">Chakra Token Utility</span>
       </p>
-      <p className="mb-10">
+      <p className="mb-3">
         <span className="text-red-ff0">{`◇`}</span> Lock Chakra [to get veTokens
         used in governance]
       </p>
-      <p className="mb-10">
+      <p className="mb-3">
         <span className="text-red-ff0">{`◇`}</span> Use Chakra to buy virtual
         assets and NFTs & DLC
       </p>
-      <p className="mb-10">
+      <p className="mb-3">
         <span className="text-red-ff0">{`◇`}</span> Use Chakra to wager in PvP
       </p>
-      <p className="mb-10">
+      <p className="mb-3">
         <span className="text-red-ff0">{`◇`}</span> to LP for DEX
       </p>
-      <p className="mb-10">
+      <p className="mb-3">
         <span className="text-red-ff0">{`◇`}</span> Works as quadratic
         multiplier for getting emissions when held along with Chieftains NFT
       </p>
@@ -459,28 +452,29 @@ const LitepaperArticle = (props: Props) => {
         <span className="text-red-ff0">{`◇`}</span> Funding expansion
         games/taking part in private launch
       </p>
-      <p className="mb-10">
-        <span className="underline">VeTokens Utility</span>
+
+      <p className="mb-3">
+        <span className="font-bold">VeTokens Utility</span>
       </p>
-      <p className="mb-10">
+      <p className="mb-3">
         <span className="text-red-ff0">{`◇`}</span> Voting for game expansion
         and content creation
       </p>
-      <p className="mb-10">
+      <p className="mb-3">
         <span className="text-red-ff0">{`◇`}</span> Wagering
       </p>
-      <p className="mb-10">
+      <p className="mb-8">
         <span className="text-red-ff0">{`◇`}</span> Wrapping for use as in-game
         currency (expansion games)
       </p>
-      <p className="mb-10">
+      <p className="mb-8">
         Fiat on Ramp {`->`} buy gems with USD (credit card/ fiat on ramp)
       </p>
-      <p className="mb-10">Gems can replace Chakra Tokens</p>
-      <p className="mb-10">
+      <p className="mb-3">Gems can replace Chakra Tokens</p>
+      <p className="mb-3">
         <span className="text-red-ff0">{`->`}</span> Can use gems to wager
       </p>
-      <p className="mb-10">
+      <p className="mb-8">
         <span className="text-red-ff0">{`->`}</span> Can use gems to buy NFTs &
         DLC
       </p>
@@ -488,8 +482,8 @@ const LitepaperArticle = (props: Props) => {
       <h4 className="font-marco font-semibold text-white mb-10">
         Incentivization
       </h4>
-      <p className="mb-10">
-        <span className="underline">Revenue Generated by Ecosystem</span>
+      <p className="mb-3">
+        <span className="font-bold">Revenue Generated by Ecosystem</span>
       </p>
       <ol className="mb-10">
         <li>
@@ -525,8 +519,8 @@ const LitepaperArticle = (props: Props) => {
           drops + Loot
         </span>{" "}
       </p>
-      <p className="mb-10">
-        <span className="underline">Minor Factors (Airdrops)</span>
+      <p className="mb-3">
+        <span className="font-bold">Minor Factors (Airdrops)</span>
       </p>
       <ol className="mb-10">
         <li>
@@ -560,8 +554,8 @@ const LitepaperArticle = (props: Props) => {
           </p>
         </li>
       </ol>
-      <p className="mb-10">
-        <span className="underline">Major Factors (Emissions)</span>
+      <p className="mb-3">
+        <span className="font-bold">Major Factors (Emissions)</span>
       </p>
       <ol className="mb-10">
         <li>
@@ -600,7 +594,7 @@ const LitepaperArticle = (props: Props) => {
         </span>{" "}
       </p>
       <h4 className="font-marco font-semibold text-white mb-10">
-        Incentivization <span className="font-inter">[Birds Eye View]</span>
+        Ecosystem <span className="font-inter">[Birds Eye View]</span>
       </h4>
       <figure>
         <img className="mb-10 w-full" src="/images/litepaper/10.png" alt="1" />
@@ -610,13 +604,13 @@ const LitepaperArticle = (props: Props) => {
         <img className="mb-10 w-full" src="/images/litepaper/11.png" alt="1" />
       </figure>
       <h4 className="font-marco font-semibold text-white mb-10">Disclaimer</h4>
-      <p className="mb-10">
+      <p className="mb-6">
         <span className="text-red-ff0">
           This white paper is published by illiquid labs for informational
           purposes only.
         </span>{" "}
       </p>
-      <p className="mb-10">
+      <p className="mb-6">
         <span className="text-white">
           The information contained in this document is confidential and
           proprietary to illiquid labs. The contents of this document are
@@ -625,29 +619,29 @@ const LitepaperArticle = (props: Props) => {
           belonging to illiquid labs.
         </span>{" "}
       </p>
-      <p className="mb-10">
+      <p className="mb-6">
         <span className="text-white">Date: Feb 1st 2023</span>{" "}
       </p>
-      <p className="mb-10">
+      <p className="mb-6">
         <span className="text-white">
           Parties: illiquid labs is the owner of the rights to the intellectual
           property described in this white paper.
         </span>{" "}
       </p>
-      <p className="mb-10">
+      <p className="mb-6">
         <span className="text-white">
           Business Description: illiquid labs is a gaming studio that
           specializes in the development of high-quality video games.
         </span>{" "}
       </p>
-      <p className="mb-10">
+      <p className="mb-6">
         <span className="text-white">
           IP Description: The intellectual property described in this white
           paper includes the game concept, gameplay mechanics, graphics, music,
           and all other aspects of the game known as Chakra.
         </span>{" "}
       </p>
-      <p className="mb-10">
+      <p className="mb-6">
         <span className="text-white">
           Terms: Illiquid labs retains all ownership rights to the intellectual
           property described in this white paper. No part of the intellectual
@@ -658,7 +652,7 @@ const LitepaperArticle = (props: Props) => {
           may result in legal action.
         </span>{" "}
       </p>
-      <p className="mb-10">
+      <p className="mb-6">
         <span className="text-white">
           Provisions: This disclaimer does not constitute a waiver of any of
           illiquid {`labs'`} rights under copyright law or any other applicable
@@ -668,7 +662,7 @@ const LitepaperArticle = (props: Props) => {
           right to amend this disclaimer in writing at any time.
         </span>{" "}
       </p>
-      <p className="mb-10">
+      <p className="mb-6">
         <span className="text-white">
           By accessing this white paper, you agree to be bound by the terms and
           conditions set forth in this disclaimer. If you do not agree to these

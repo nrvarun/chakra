@@ -118,12 +118,12 @@ export const StyledLitePaperArticle = styled.article`
   h4 {
     font-weight: 400;
     font-size: 48px;
-    line-height: 86px;
+    line-height: 1.25;
     background-color: transparent !important;
 
     span {
       font-size: 24px;
-      line-height: 29px;
+      line-height: 1.25;
     }
   }
 
@@ -136,12 +136,12 @@ export const StyledLitePaperArticle = styled.article`
 
   ol {
     list-style-type: decimal !important;
-    padding: 0 0 0 18px;
+    padding: 0 0 0 12px;
     margin: 0 0 40px 10px;
 
     li {
-      font-size: 24px;
-      line-height: 29px;
+      font-size: 16px;
+      line-height: 1.25;
       color: #ffffff;
       margin: 0 0 8px 0;
     }
