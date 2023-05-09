@@ -104,7 +104,7 @@ const LitepaperNav = (props: Props) => {
   return (
     <nav className="mx-auto xl:mt-2 hd:m-auto">
       <StyledLitePaperText className="mb-4">
-        TABLE OF CONTENT
+        TABLE OF CONTENTS
       </StyledLitePaperText>
       <ol className="list-decimal">
         {NAV_LIST.map((nav) => (
