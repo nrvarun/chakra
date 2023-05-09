@@ -75,6 +75,11 @@ export const StyledLitePaperContent = styled.section`
 
 export const StyledLitePaperContentWrapper = styled.div`
   display: flex;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
 `;
 
 export const StyledLitePaperText = styled.p`

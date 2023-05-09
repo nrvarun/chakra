@@ -18,12 +18,12 @@ const NAV_LIST = [
     title: "LORE",
     subList: [
       {
-        id: "the-story",
-        title: "the story",
-      },
-      {
         id: "the-premise",
         title: "The Premise",
+      },
+      {
+        id: "the-story",
+        title: "the story",
       },
     ],
   },
@@ -32,7 +32,7 @@ const NAV_LIST = [
     title: "ECOSYSTEM",
     subList: [
       {
-        id: "flywheel",
+        id: "ecosystem",
         title: "Fly wheel",
       },
       {
@@ -83,11 +83,11 @@ const NAV_LIST = [
       },
     ],
   },
-  {
-    id: "faq",
-    title: "FAQ",
-    subList: [],
-  },
+  // {
+  //   id: "faq",
+  //   title: "FAQ",
+  //   subList: [],
+  // },
   {
     id: "disclaimer",
     title: "DISCLAIMER",
@@ -96,6 +96,14 @@ const NAV_LIST = [
 ];
 
 const LitepaperNav = (props: Props) => {
+  const handleClickScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <nav className="mx-auto xl:mt-2 hd:m-auto">
       <StyledLitePaperText className="mb-4">
@@ -104,20 +112,20 @@ const LitepaperNav = (props: Props) => {
       <ol className="list-decimal">
         {NAV_LIST.map((nav) => (
           <li key={nav.id} className="mb-4">
-            <a href={"#" + nav.id}>
+            <button onClick={() => handleClickScroll(nav.id)}>
               <StyledLitePaperListTitle className="text-white uppercase mb-2 hd:mb-4">
                 {nav.title}
               </StyledLitePaperListTitle>
-            </a>
+            </button>
             {nav.subList.length > 0 && (
               <ul className="ml-4">
                 {nav.subList.map((sub) => (
                   <li key={sub.id} className="mb-2">
-                    <a href={"#" + sub.id}>
+                    <button onClick={() => handleClickScroll(sub.id)}>
                       <StyledLitePaperSubListText className="capitalize">
                         {sub.title}
                       </StyledLitePaperSubListText>
-                    </a>
+                    </button>
                   </li>
                 ))}
               </ul>

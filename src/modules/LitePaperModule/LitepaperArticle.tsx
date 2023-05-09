@@ -7,7 +7,10 @@ type Props = {};
 const LitepaperArticle = (props: Props) => {
   return (
     <StyledLitePaperArticle className="scroll-smooth">
-      <h3 className="font-marco font-semibold text-red-ff0 mb-10" id="">
+      <h3
+        className="font-marco font-semibold text-red-ff0 mb-10"
+        id="world-of-chakra"
+      >
         The World of Chakra
       </h3>
       <figure>
@@ -21,7 +24,12 @@ const LitepaperArticle = (props: Props) => {
         Governance)
       </p>
 
-      <h4 className="font-marco font-semibold text-white mb-10">The Premise</h4>
+      <h4
+        className="font-marco font-semibold text-white mb-10"
+        id="the-premise"
+      >
+        The Premise
+      </h4>
       <figure>
         <img className="mb-10 w-full" src="/images/litepaper/2.png" alt="1" />
       </figure>
@@ -31,14 +39,19 @@ const LitepaperArticle = (props: Props) => {
         come alive. The significance of humans is in question as they find out,
         they are but a footnote in the infinite expanse of creation.
       </p>
-      <h4 className="font-marco font-semibold text-white mb-10">The Story</h4>
+      <h4 className="font-marco font-semibold text-white mb-10" id="the-story">
+        The Story
+      </h4>
       <p className="mb-10">
         The accepted history of humans becomes questionable as beings from
         various dimensions pour into the earth.The legendary creatures holding
         enormous power are now eyeing this domain to conquer. Can the evolution
         of humans combat these ancient entities?
       </p>
-      <h3 className="font-marco font-semibold text-red-ff0 mb-10">
+      <h3
+        className="font-marco font-semibold text-red-ff0 mb-10"
+        id="ecosystem"
+      >
         The Ecosystem
       </h3>
       <figure>
@@ -49,7 +62,9 @@ const LitepaperArticle = (props: Props) => {
         expand the myth through tangible forms; this ecosystem combines web3,
         gaming & collaborative storytelling to maximize it’s utility function
       </p>
-      <h4 className="font-marco font-semibold text-white mb-10">Gaming</h4>
+      <h4 id="gaming" className="font-marco font-semibold text-white mb-10">
+        Gaming
+      </h4>
       <figure>
         <img className="mb-10 w-full" src="/images/litepaper/4.png" alt="1" />
       </figure>
@@ -84,7 +99,10 @@ const LitepaperArticle = (props: Props) => {
       <figure>
         <img className="mb-10 w-full" src="/images/litepaper/5.png" alt="1" />
       </figure>
-      <h4 className="font-marco font-semibold text-white mb-10">
+      <h4
+        className="font-marco font-semibold text-white mb-10"
+        id="world-building"
+      >
         World—Building and Storytelling
       </h4>
       <p className="mb-10">
@@ -132,7 +150,9 @@ const LitepaperArticle = (props: Props) => {
           </p>
         </li>
       </ol>
-      <h4 className="font-marco font-semibold text-white mb-10">Web3</h4>
+      <h4 className="font-marco font-semibold text-white mb-10" id="web3">
+        Web3
+      </h4>
       <p className="mb-10">
         We leverage web3 technologies such as user-owned virtual assets/NFTs,
         DeFi primitives & a Native unit of account ($CHAKRA) to provide greater
@@ -162,7 +182,10 @@ const LitepaperArticle = (props: Props) => {
           </p>
         </li>
       </ol>
-      <h4 className="font-marco font-semibold text-white mb-10">
+      <h4
+        className="font-marco font-semibold text-white mb-10"
+        id="public-goods"
+      >
         Public Goods
       </h4>
       <figure>
@@ -216,7 +239,10 @@ const LitepaperArticle = (props: Props) => {
         funding principles enabled by veToken mechanisms to facilitate optimal
         and fair governance of ecosystem expansion
       </p>
-      <h4 className="font-marco font-semibold text-white mb-10">
+      <h4
+        className="font-marco font-semibold text-white mb-10"
+        id="game-expansion"
+      >
         Game Expansion
       </h4>
       <p className="mb-4">
@@ -377,10 +403,15 @@ const LitepaperArticle = (props: Props) => {
           <p>More NFTs and virtual assets, more dex usecases, more revenues</p>
         </li>
       </ul>
-      <h3 className="font-marco font-semibold text-red-ff0 mb-10">
+      <h3
+        className="font-marco font-semibold text-red-ff0 mb-10"
+        id="tokenomics"
+      >
         Tokenomics
       </h3>
-      <h4 className="font-marco font-semibold text-white mb-10">Supply</h4>
+      <h4 className="font-marco font-semibold text-white mb-10" id="supply">
+        Supply
+      </h4>
       <figure>
         <img className="mb-10 w-full" src="/images/litepaper/9.png" alt="1" />
       </figure>
@@ -426,7 +457,9 @@ const LitepaperArticle = (props: Props) => {
           </p>
         </li>
       </ul>
-      <h4 className="font-marco font-semibold text-white mb-10">Utility</h4>
+      <h4 className="font-marco font-semibold text-white mb-10" id="utility">
+        Utility
+      </h4>
       <p className="mb-3">
         <span className="font-bold">Chakra Token Utility</span>
       </p>
@@ -479,7 +512,10 @@ const LitepaperArticle = (props: Props) => {
         DLC
       </p>
       <p className="mb-10">Cannot use gems to vote or lock for veTokens</p>
-      <h4 className="font-marco font-semibold text-white mb-10">
+      <h4
+        className="font-marco font-semibold text-white mb-10"
+        id="incentivization"
+      >
         Incentivization
       </h4>
       <p className="mb-3">
@@ -593,17 +629,27 @@ const LitepaperArticle = (props: Props) => {
           have bigger weightage on rewards.
         </span>{" "}
       </p>
-      <h4 className="font-marco font-semibold text-white mb-10">
+      <h4
+        className="font-marco font-semibold text-white mb-10"
+        id="ecosystem-birds-view"
+      >
         Ecosystem <span className="font-inter">[Birds Eye View]</span>
       </h4>
       <figure>
         <img className="mb-10 w-full" src="/images/litepaper/10.png" alt="1" />
       </figure>
-      <h4 className="font-marco font-semibold text-white mb-10">How to Moon</h4>
+      <h4
+        className="font-marco font-semibold text-white mb-10"
+        id="how-to-moon"
+      >
+        How to Moon
+      </h4>
       <figure>
         <img className="mb-10 w-full" src="/images/litepaper/11.png" alt="1" />
       </figure>
-      <h4 className="font-marco font-semibold text-white mb-10">Disclaimer</h4>
+      <h4 className="font-marco font-semibold text-white mb-10" id="disclaimer">
+        Disclaimer
+      </h4>
       <p className="mb-6">
         <span className="text-red-ff0">
           This white paper is published by illiquid labs for informational
