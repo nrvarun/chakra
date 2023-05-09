@@ -14,7 +14,7 @@ const NAV_LIST = [
     subList: [],
   },
   {
-    id: "lore",
+    id: "the-premise",
     title: "LORE",
     subList: [
       {
@@ -113,7 +113,7 @@ const LitepaperNav = (props: Props) => {
         {NAV_LIST.map((nav) => (
           <li key={nav.id} className="mb-4">
             <button onClick={() => handleClickScroll(nav.id)}>
-              <StyledLitePaperListTitle className="text-white uppercase mb-2 hd:mb-4">
+              <StyledLitePaperListTitle className="text-white uppercase mb-1">
                 {nav.title}
               </StyledLitePaperListTitle>
             </button>
