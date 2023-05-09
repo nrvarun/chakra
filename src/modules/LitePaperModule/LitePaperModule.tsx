@@ -19,7 +19,7 @@ const LitePaperModule = (props: Props) => {
     <StyledLitePaperWrapper>
       <StyledLitePaperContentWrapper>
         <StyledLitePaperNav>
-          <h4 className="font-marco">litepaper</h4>
+          {/* <h4 className="font-marco">litepaper</h4> */}
           <LitepaperNav />
         </StyledLitePaperNav>
         <StyledLitePaperContent className="flex-1 relative w-full h-full bg-black">

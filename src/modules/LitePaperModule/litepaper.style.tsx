@@ -39,6 +39,7 @@ export const StyledLitePaperNav = styled.aside`
   width: auto;
   flex: 1 1 25%;
   padding: 0 75px;
+  display: flex;
 
   h4 {
     font-style: normal;
@@ -78,8 +79,8 @@ export const StyledLitePaperContentWrapper = styled.div`
 
 export const StyledLitePaperText = styled.p`
   font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 14px;
+  line-height: 17px;
   letter-spacing: 0.01em;
   color: rgba(255, 255, 255, 0.5);
 `;
@@ -90,8 +91,8 @@ export const StyledLitePaperListTitle = styled(StyledLitePaperText)`
 
 export const StyledLitePaperSubListText = styled.p`
   font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 12px;
+  line-height: 15px;
   letter-spacing: 0.01em;
   color: rgba(255, 255, 255, 0.5);
 `;
@@ -109,14 +110,14 @@ export const StyledLitePaperArticle = styled.article`
 
   h3 {
     font-weight: 400;
-    font-size: 90px;
+    font-size: 72px;
     line-height: 1.5;
     background-color: transparent !important;
   }
 
   h4 {
     font-weight: 400;
-    font-size: 72px;
+    font-size: 48px;
     line-height: 86px;
     background-color: transparent !important;
 
@@ -128,8 +129,8 @@ export const StyledLitePaperArticle = styled.article`
 
   p {
     font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 16px;
+    line-height: 1.25;
     color: #ffffff;
   }
 

@@ -102,22 +102,22 @@ const NAV_LIST = [
 
 const LitepaperNav = (props: Props) => {
   return (
-    <nav>
-      <StyledLitePaperText className="mb-3 ">
+    <nav className="mx-auto xl:mt-2 hd:m-auto">
+      <StyledLitePaperText className="mb-4">
         TABLE OF CONTENT
       </StyledLitePaperText>
       <ol className="list-decimal">
         {NAV_LIST.map((nav) => (
-          <li key={nav.id} className="mb-2">
+          <li key={nav.id} className="mb-4">
             <a href={"#" + nav.id}>
-              <StyledLitePaperListTitle className="text-white uppercase">
+              <StyledLitePaperListTitle className="text-white uppercase mb-2 hd:mb-4">
                 {nav.title}
               </StyledLitePaperListTitle>
             </a>
             {nav.subList.length > 0 && (
               <ul className="ml-4">
                 {nav.subList.map((sub) => (
-                  <li key={sub.id} className="">
+                  <li key={sub.id} className="mb-2">
                     <a href={"#" + sub.id}>
                       <StyledLitePaperSubListText className="capitalize">
                         {sub.title}
