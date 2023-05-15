@@ -10,7 +10,7 @@ type Props = {};
 const NAV_LIST = [
   {
     id: "world-of-chakra",
-    title: "THE WORLD OF CHAKRA",
+    title: "intro",
     subList: [],
   },
   {
@@ -41,7 +41,7 @@ const NAV_LIST = [
       },
       {
         id: "world-building",
-        title: "Ecosystem Expansion & World-Building",
+        title: "Expansion",
       },
       {
         id: "web3",
@@ -75,7 +75,7 @@ const NAV_LIST = [
       },
       {
         id: "ecosystem-birds-view",
-        title: "ecosystem [birds eye view]",
+        title: "Bird's-eye view",
       },
       {
         id: "incentivization",
@@ -85,16 +85,16 @@ const NAV_LIST = [
         id: "distribution-process",
         title: "Distribution Process",
       },
-      {
-        id: "distribution-and-supply",
-        title: "Distribution and Supply",
-      },
     ],
   },
   {
     id: "pitch",
     title: "INVESTOR PITCH",
     subList: [
+      {
+        id: "distribution-and-supply",
+        title: "Distribution and Supply",
+      },
       {
         id: "how-to-moon",
         title: "how to moon",

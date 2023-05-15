@@ -633,9 +633,9 @@ const LitepaperArticle = (props: Props) => {
         designing the parameters of the game, such as the economic agents or
         stakeholders and their interactions.
       </p>
-      <figure>
+      {/* <figure>
         <img className="mb-10 w-full" src="/images/litepaper/9.png" alt="1" />
-      </figure>
+      </figure> */}
 
       <p className="mb-4">
         <span className="font-bold">Token Objectives</span>
@@ -972,12 +972,9 @@ const LitepaperArticle = (props: Props) => {
         <i>Airdrops are composed of Tokens and Loot (virtual assets)</i>
       </p>
 
-      <h4
-        className="font-marco font-semibold text-white mb-10"
-        id="distribution-process"
-      >
-        Distribution Process
-      </h4>
+      <p className="text-white mb-6" id="distribution-process">
+        <span className="font-bold capitalize">Distribution Process</span>
+      </p>
 
       <p className="mb-4">
         <span className="font-bold">
@@ -1170,6 +1167,10 @@ const LitepaperArticle = (props: Props) => {
         </li>
       </ul>
 
+      <h3 className="font-marco font-semibold text-red-ff0 mb-10" id="pitch">
+        Investors Pitch
+      </h3>
+
       <h4
         className="font-marco font-semibold text-white mb-10"
         id="distribution-and-supply"
@@ -1204,15 +1205,16 @@ const LitepaperArticle = (props: Props) => {
       </p>
 
       <p className="mb-6">
-        <span className="">
+        <span className="underline mr-1">
           <a
             target="_blank"
             href="https://docs.google.com/spreadsheets/d/1SqtWn-jw5gOK3XHktV3-T3YdC0Kisvr4Zrrrj4oJMkY/edit?usp=sharing"
             rel="noopener noreferrer"
           >
-            ***https://docs.google.com/spreadsheets/d/1SqtWn-jw5gOK3XHktV3-T3YdC0Kisvr4Zrrrj4oJMkY/edit?usp=sharing***
+            Click here
           </a>
         </span>
+        to access the token allocation sheet.
       </p>
 
       <figure>
@@ -1237,9 +1239,6 @@ const LitepaperArticle = (props: Props) => {
         />
       </figure>
 
-      <h3 className="font-marco font-semibold text-red-ff0 mb-10" id="pitch">
-        Investors Pitch
-      </h3>
       <h4
         className="font-marco font-semibold text-white mb-10"
         id="how-to-moon"
