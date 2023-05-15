@@ -36,6 +36,7 @@ export const StyledLitePaperBgImg = styled.div`
 
 export const StyledLitePaperNav = styled.aside`
   min-height: calc(100vh - 76px);
+
   width: auto;
   flex: 1 1 25%;
   padding: 0 75px;
@@ -57,6 +58,23 @@ export const StyledLitePaperNav = styled.aside`
   }
 
   nav {
+    max-height: calc(100vh - 160px);
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      width: 8px; /* width of the entire scrollbar */
+      opacity: 0.4;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #8492a6;
+      border-radius: 20px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: #273444;
+    }
+
     ol {
       list-style-type: decimal !important;
       padding: 0 0 0 18px;

@@ -14,7 +14,7 @@ const NAV_LIST = [
     subList: [],
   },
   {
-    id: "the-premise",
+    id: "lore",
     title: "LORE",
     subList: [
       {
@@ -41,7 +41,7 @@ const NAV_LIST = [
       },
       {
         id: "world-building",
-        title: "world-building & storytelling",
+        title: "Ecosystem Expansion & World-Building",
       },
       {
         id: "web3",
@@ -51,43 +51,56 @@ const NAV_LIST = [
         id: "public-goods",
         title: "public goods",
       },
-      {
-        id: "game-expansion",
-        title: "game expansion",
-      },
+      // {
+      //   id: "game-expansion",
+      //   title: "game expansion",
+      // },
     ],
   },
   {
-    id: "tokenomics",
-    title: "TOKENOMICS",
+    id: "economy",
+    title: "Economy",
     subList: [
       {
-        id: "supply",
-        title: "supply",
+        id: "token-design",
+        title: "token Design ",
       },
       {
-        id: "utility",
-        title: "utility",
+        id: "revenue-generation",
+        title: "Revenue Generation",
       },
       {
-        id: "incentivization",
-        title: "incentivization",
+        id: "stakeholders",
+        title: "Stakeholders",
       },
       {
         id: "ecosystem-birds-view",
         title: "ecosystem [birds eye view]",
       },
       {
+        id: "incentivization",
+        title: "Incentivization",
+      },
+      {
+        id: "distribution-process",
+        title: "Distribution Process",
+      },
+      {
+        id: "distribution-and-supply",
+        title: "Distribution and Supply",
+      },
+    ],
+  },
+  {
+    id: "pitch",
+    title: "INVESTOR PITCH",
+    subList: [
+      {
         id: "how-to-moon",
         title: "how to moon",
       },
     ],
   },
-  // {
-  //   id: "faq",
-  //   title: "FAQ",
-  //   subList: [],
-  // },
   {
     id: "disclaimer",
     title: "DISCLAIMER",
