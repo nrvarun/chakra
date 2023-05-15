@@ -81,10 +81,10 @@ const NAV_LIST = [
         id: "incentivization",
         title: "Incentivization",
       },
-      {
-        id: "distribution-process",
-        title: "Distribution Process",
-      },
+      // {
+      //   id: "distribution-process",
+      //   title: "Distribution Process",
+      // },
     ],
   },
   {
