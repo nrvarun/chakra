@@ -77,7 +77,7 @@ export const StyledLitePaperNav = styled.aside`
 
     ol {
       list-style-type: decimal !important;
-      padding: 0 0 0 18px;
+      padding: 0 32px 0 18px;
 
       li {
         color: #ffffff;
@@ -118,6 +118,7 @@ export const StyledLitePaperSubListText = styled.p`
   line-height: 15px;
   letter-spacing: 0.01em;
   color: rgba(255, 255, 255, 0.5);
+  text-align: left;
 `;
 
 export const StyledLitePaperArticle = styled.article`

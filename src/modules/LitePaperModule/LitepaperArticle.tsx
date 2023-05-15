@@ -621,7 +621,10 @@ const LitepaperArticle = (props: Props) => {
       <h3 className="font-marco font-semibold text-red-ff0 mb-10" id="economy">
         Economy
       </h3>
-      <h4 className="font-marco font-semibold text-white mb-10" id="supply">
+      <h4
+        className="font-marco font-semibold text-white mb-10"
+        id="token-design"
+      >
         Token Design
       </h4>
       <p className="mb-10">
@@ -794,7 +797,7 @@ const LitepaperArticle = (props: Props) => {
 
       <h4
         className="font-marco font-semibold text-white mb-10"
-        id="incentivization"
+        id="revenue-generation"
       >
         Revenue Generation
       </h4>
@@ -881,7 +884,7 @@ const LitepaperArticle = (props: Props) => {
 
       <h4
         className="font-marco font-semibold text-white mb-10"
-        id="incentivization"
+        id="ecosystem-birds-view"
       >
         Ecosystem [Birds-Eye View]
       </h4>
@@ -971,7 +974,205 @@ const LitepaperArticle = (props: Props) => {
 
       <h4
         className="font-marco font-semibold text-white mb-10"
-        id="how-to-moon"
+        id="distribution-process"
+      >
+        Distribution Process
+      </h4>
+
+      <p className="mb-4">
+        <span className="font-bold">
+          PHASE I: [ <i>Announce Upcoming Airdrop</i> ]
+        </span>
+      </p>
+      <p className="mb-6">
+        Chakra will announce an upcoming airdrop, which is a treasure chest, and
+        the eligibility requirements to receive it. This announcement motivates
+        users to interact with the platform to generate CP.
+      </p>
+
+      <p className="mb-2">
+        <span className="font-bold">
+          PHASE II: [ <i>Treasure Chest NFT Airdrop</i> ]
+        </span>
+      </p>
+      <p className="mb-6">
+        The Treasure Chest NFT is distributed to all users who generated up to
+        the minimum required CP for Airdrop. The rarity (and value) of the chest
+        received is determined by the {`user's`} CPs.
+      </p>
+
+      <p className="mb-2">
+        <span className="font-bold">
+          PHASE III: [ <i>Use the Chest to more Accrue Chakra Points (CP)]</i> ]
+        </span>
+      </p>
+      <p className="mb-6">
+        The Treasury Chest is used to multiply subsequent CP accrued by the
+        holder. All CPs accrued are boosted by a multiplier effect associated
+        with the chest, with rarer chests providing higher multipliers.
+      </p>
+
+      <p className="mb-2">
+        <span className="font-bold">
+          PHASE IV: [ <i>CHAKRA Airdrop]</i> ]
+        </span>
+      </p>
+      <p className="mb-10">
+        At the end of each season, CHAKRA tokens are distributed proportionally
+        to stakeholders based on their CP holding. The {`protocol's`} CPs and
+        treasure chest NFT are burned to redeem CHAKRA tokens. points are reset
+        at the end of each season, and all airdrop tokens are vested.
+      </p>
+
+      <p className="mb-6">
+        <span className="font-bold">User Reward Share (Formula)</span>
+      </p>
+
+      <p className="mb-6">
+        To determine a {`user's`} reward share, a square root pro-rata
+        distribution formula is used. This formula calculates the ratio of the
+        square root of the {`user's`} CP to the square root of the total CP
+        earned by all users.
+      </p>
+
+      <p className="mb-6">
+        By taking the square root of the CP earned, the formula compresses the
+        range of values, reducing the impact of whales and ensuring that rewards
+        are distributed equitably.
+      </p>
+
+      <figure>
+        <img className="mb-12" src="/images/litepaper/dp-1.svg" alt="" />
+      </figure>
+
+      <p className="mb-6">
+        <i>Defining the above variables</i>
+      </p>
+
+      <figure>
+        <img className="mb-12" src="/images/litepaper/dp-2.svg" alt="" />
+      </figure>
+
+      <p className="mb-6">
+        <span className="font-bold">Treasure Chest Design</span>
+      </p>
+
+      <p className="mb-6">
+        This mechanism gamifies CP redemption by incentivizing users willing to
+        stay invested in the ecosystem for longer timeframes.
+      </p>
+      <p className="mb-10">
+        There are four types of treasury chests, each with varying properties,
+        as outlined below:
+      </p>
+
+      <figure>
+        <img className="mb-12" src="/images/litepaper/dp-3.svg" alt="" />
+      </figure>
+
+      <p className="mb-6">
+        <span className="font-bold">Defining User Actions Reward</span>
+      </p>
+
+      <p className="mb-6">
+        Listed below are the action sets that qualify for rewards and their
+        associated Chakra points
+      </p>
+
+      <p className="mb-6">
+        <span className="font-bold">
+          <i> Value of Action and Reward per Unit Action</i>
+        </span>
+      </p>
+      <figure>
+        <img className="mb-12" src="/images/litepaper/dp-4.svg" alt="" />
+      </figure>
+
+      <p className="mb-6">
+        <span className="font-bold">
+          Grouping rewardable actions by Sectors and Economic structure
+        </span>
+      </p>
+      <figure>
+        <img className="mb-12" src="/images/litepaper/dp-5.svg" alt="" />
+      </figure>
+
+      <p className="mb-4">
+        <span className="font-bold">Airdrop Distribution Design</span>
+      </p>
+
+      <p className="mb-6">
+        <span className="">
+          We plan to continuously incentivize user participation through a
+          gamified seasonal reward system throughout the project{`'s`} lifetime.
+          The first season will be powered by the initial token allocation,
+          which will serve as a blueprint for future seasons. Subsequent seasons
+          will be fuelled by the protocol{`'s`} revenue. To ensure sufficient
+          revenue for the project{`'s`} development, there will be a minimum
+          12-month gap between successive seasons.
+        </span>
+      </p>
+
+      <p className="mb-4">
+        <span className="font-bold">
+          Order of Incentivized Action Sets for Season I [subject to change]
+        </span>
+      </p>
+
+      <ul className="list-disc text-white pl-5 mb-12">
+        <li className="mb-3">
+          <p>
+            <span className="font-semibold">Set I :</span> <i>Social sharing</i>
+          </p>
+        </li>
+        <li className="mb-3">
+          <p>
+            <span className="font-semibold">Set II :</span>{" "}
+            <i>General DeFi and GameFi user</i>
+          </p>
+          <ul className="list-disc text-white pl-5">
+            <li>
+              <p>Reward for existing web3 users (gamers and DeFi users)</p>
+            </li>
+            <li>
+              <p>
+                To claim the reward, users have to engage with the Chakra
+                ecosystem)
+              </p>
+            </li>
+          </ul>
+        </li>
+        <li className="mb-3">
+          <p>
+            <span className="font-semibold">Set III :</span>{" "}
+            <i>Supply side action</i>
+          </p>
+          <ul className="list-disc text-white pl-5">
+            <li>
+              <p>
+                Incentivize actions in supply row of the reward grouping table
+              </p>
+            </li>
+          </ul>
+        </li>
+        <li className="mb-3">
+          <p>
+            <span className="font-semibold">Set IV :</span>{" "}
+            <i>Demand side action</i>
+          </p>
+          <ul className="list-disc text-white pl-5">
+            <li>
+              <p>
+                Incentivize actions in supply row of the reward grouping table
+              </p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <h4
+        className="font-marco font-semibold text-white mb-10"
+        id="distribution-and-supply"
       >
         Distribution and Supply
       </h4>
@@ -1036,13 +1237,13 @@ const LitepaperArticle = (props: Props) => {
         />
       </figure>
 
-      <h3
-        className="font-marco font-semibold text-red-ff0 mb-10"
-        id="disclaimer"
-      >
+      <h3 className="font-marco font-semibold text-red-ff0 mb-10" id="pitch">
         Investors Pitch
       </h3>
-      <h4 className="font-marco font-semibold text-white mb-10" id="disclaimer">
+      <h4
+        className="font-marco font-semibold text-white mb-10"
+        id="how-to-moon"
+      >
         How to Moon
       </h4>
       <figure>
