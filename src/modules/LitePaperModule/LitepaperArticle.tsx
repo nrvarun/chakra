@@ -72,8 +72,11 @@ const LitepaperArticle = (props: Props) => {
           inspired by millennia-old Eastern mythologies.
         </p>
 
-        <figure>
-          <img className="mb-10 w-full" src="/images/litepaper/3.png" alt="1" />
+        <figure className="mb-10">
+          <img className="w-full" src="/images/litepaper/3.png" alt="1" />
+          <figcaption className="text-white text-xs capitalize">
+            flywheel
+          </figcaption>
         </figure>
         <p className="mb-10">
           The Chakra ecosystem aims to create a robust flywheel effect by
@@ -85,7 +88,7 @@ const LitepaperArticle = (props: Props) => {
         </p>
 
         <p className="mb-2">
-          <span className="font-bold">Content</span>{" "}
+          <span className="font-bold underline">Content</span>{" "}
         </p>
         <ol className="mb-10">
           <li>
@@ -100,7 +103,7 @@ const LitepaperArticle = (props: Props) => {
         </ol>
 
         <p className="mb-2">
-          <span className="font-bold">Commerce</span>{" "}
+          <span className="font-bold underline">Commerce</span>{" "}
         </p>
         <ol className="mb-10">
           <li>
@@ -121,7 +124,7 @@ const LitepaperArticle = (props: Props) => {
         </ol>
 
         <p className="mb-2">
-          <span className="font-bold">Expansion</span>{" "}
+          <span className="font-bold underline">Expansion</span>{" "}
         </p>
         <ol className="mb-10">
           <li>
@@ -141,8 +144,11 @@ const LitepaperArticle = (props: Props) => {
         <h4 id="gaming" className="font-marco font-semibold text-white mb-10">
           Gaming
         </h4>
-        <figure>
-          <img className="mb-10 w-full" src="/images/litepaper/4.png" alt="1" />
+        <figure className="mb-10">
+          <img className="w-full" src="/images/litepaper/4.png" alt="1" />
+          <figcaption className="text-white text-xs capitalize">
+            Chakra Conundrum
+          </figcaption>
         </figure>
         <p className="mb-10">
           Our games are designed to immerse players in the Chakra universe. As a
@@ -156,7 +162,7 @@ const LitepaperArticle = (props: Props) => {
         </p>
 
         <p className="mb-6">
-          <span className="font-bold">Chakra Conundrum </span>{" "}
+          <span className="font-bold underline">Chakra Conundrum </span>{" "}
           <span className="text-red-ff0">{`->`}</span> In Conundrum, players
           face off in the ultimate game of strategy and deception: the iterative
           {`prisoner's`} dilemma
@@ -174,7 +180,7 @@ const LitepaperArticle = (props: Props) => {
         </p>
 
         <p className="mb-6">
-          <span className="font-bold">Chakra Dungeons </span>{" "}
+          <span className="font-bold underline">Chakra Dungeons </span>{" "}
           <span className="text-red-ff0">{`->`}</span> A high—quality 3D ARPG
           with rogue—like elements. This is a flagship Chakra ecosystem game
           whose key objective is to immerse players into the world of chakra.
@@ -189,7 +195,7 @@ const LitepaperArticle = (props: Props) => {
         </p>
 
         <p className="mb-6">
-          <span className="font-bold">Chakra Duels </span>{" "}
+          <span className="font-bold underline">Chakra Duels </span>{" "}
           <span className="text-red-ff0">{`->`}</span> A PvP fighting game with
           comprehensive duel mechanics and wagering
         </p>
@@ -206,8 +212,11 @@ const LitepaperArticle = (props: Props) => {
           </li>
         </ol>
 
-        <figure>
-          <img className="mb-10 w-full" src="/images/litepaper/5.png" alt="1" />
+        <figure className="mb-10">
+          <img className="w-full" src="/images/litepaper/5.png" alt="1" />
+          <figcaption className="text-white text-xs capitalize">
+            Chakra Dungeons
+          </figcaption>
         </figure>
 
         <h4
@@ -221,49 +230,75 @@ const LitepaperArticle = (props: Props) => {
           Cinematics and Digital Assets. This body of work serves as the
           scaffolding for community to expand upon.
         </p>
-        <figure>
-          <img className="mb-10 w-full" src="/images/litepaper/6.png" alt="1" />
-        </figure>
-        <p className="mb-6">
-          <span className="font-bold">Guidebooks</span>{" "}
-          <span className="text-red-ff0">{`->`}</span> Art-style guides,
-          Technical Documentation, Lore and character guides, Game content
-          assets and Guide lines
-        </p>
-        <p className="mb-6">
-          <span className="font-bold">Manga & Cinematics </span>{" "}
-          <span className="text-red-ff0">{`->`}</span> Comic and Cinematics
-          releases each week with embedded mini-arcs, clues and alpha that
-          inform further development
-        </p>
-        <p className="mb-4">
-          <span className="font-bold">Virtual Assets </span>{" "}
-          <span className="text-red-ff0">{`->`}</span> A two-fold periodic
-          release of Virtual assets that enable true ownership and expansion of
-          the ecosystem.
-        </p>
-        <ul className="mb-10 list-disc pl-4 text-white w-3/4">
+        <div className="grid grid-cols-2 gap-8">
+          <figure className="mb-10">
+            <img className="w-full" src="/images/litepaper/6-1.png" alt="1" />
+            <figcaption className="text-white text-xs capitalize">
+              manga
+            </figcaption>
+          </figure>
+          <figure className="mb-10">
+            <img className="w-full" src="/images/litepaper/6-2.png" alt="1" />
+            <figcaption className="text-white text-xs capitalize">
+              manga
+            </figcaption>
+          </figure>
+        </div>
+        <ol>
           <li>
-            <p>
-              NFTs in the form of skins, items, cosmetics, weapons, loot etc
-              that can be traded in the native marketplace
+            <p className="mb-6">
+              <span className="font-bold">Guidebooks</span>{" "}
+              <span className="text-red-ff0">{`->`}</span> Art-style guides,
+              Technical Documentation, Lore and character guides, Game content
+              assets and Guide lines
             </p>
           </li>
           <li>
-            <p>
-              Open-sourced or purchase-able game content & assets from Chakra
-              games ecosystem (and community creators)
+            <p className="mb-6">
+              <span className="font-bold">Manga & Cinematics </span>{" "}
+              <span className="text-red-ff0">{`->`}</span> Comic and Cinematics
+              releases each week with embedded mini-arcs, clues and alpha that
+              inform further development
             </p>
           </li>
-        </ul>
+          <li>
+            <p className="mb-4">
+              <span className="font-bold">Virtual Assets </span>{" "}
+              <span className="text-red-ff0">{`->`}</span> A two-fold periodic
+              release of Virtual assets that enable true ownership and expansion
+              of the ecosystem.
+            </p>
+            <ul className="mb-10 list-disc pl-4 text-white w-3/4">
+              <li>
+                <p>
+                  NFTs in the form of skins, items, cosmetics, weapons, loot etc
+                  that can be traded in the native marketplace
+                </p>
+              </li>
+              <li>
+                <p>
+                  Open-sourced or purchase-able game content & assets from
+                  Chakra games ecosystem (and community creators)
+                </p>
+              </li>
+            </ul>
+          </li>
+        </ol>
 
-        <figure>
-          <img
-            className="mb-10 w-full"
-            src="/images/litepaper/virtual-assets.png"
-            alt="1"
-          />
-        </figure>
+        <div className="grid grid-cols-2 gap-8">
+          <figure className="mb-10">
+            <img className="w-full" src="/images/litepaper/va-1.png" alt="1" />
+            <figcaption className="text-white text-xs capitalize">
+              virtual assets
+            </figcaption>
+          </figure>
+          <figure className="mb-10">
+            <img className="w-full" src="/images/litepaper/va-2.png" alt="1" />
+            <figcaption className="text-white text-xs capitalize">
+              virtual assets
+            </figcaption>
+          </figure>
+        </div>
 
         <p className="mb-6">
           Chakra ecosystem is envisioned as a platform designed to empower
@@ -273,7 +308,8 @@ const LitepaperArticle = (props: Props) => {
         </p>
 
         <p className="font-bold mb-6">
-          <strong>For Content Creators</strong>
+          <strong className="underline">For Content Creators</strong>
+          <span className="text-red-ff0 ml-1">{`->`}</span>
         </p>
         <p className="mb-6">
           Creative energy of the community is harnessed to enrich and help
@@ -284,7 +320,8 @@ const LitepaperArticle = (props: Props) => {
         </p>
 
         <p className="font-bold mb-6">
-          <strong>For Game Developers</strong>
+          <strong className="underline">For Game Developers</strong>
+          <span className="text-red-ff0 ml-1">{`->`}</span>
         </p>
         <p className="mb-6">
           Developers are invited to actively participate and influence the
@@ -303,9 +340,10 @@ const LitepaperArticle = (props: Props) => {
           </i>
         </p>
 
-        <p className="font-bold mb-2">
+        <p className="font-bold mb-2 underline">
           <strong>What this Achieves</strong>
         </p>
+
         <ul className="mb-10 list-disc pl-4 text-white w-3/4">
           <li>
             <p>Community participation in expanding ecosystem</p>
@@ -354,9 +392,28 @@ const LitepaperArticle = (props: Props) => {
           account ($SOMA) to provide greater control and value to users whose
           incentives are aligned with those of Chakra Ecosystem.
         </p>
-        <figure>
-          <img className="mb-10 w-full" src="/images/litepaper/7.png" alt="1" />
-        </figure>
+        <div className="grid grid-cols-2 gap-8">
+          <figure className="mb-10">
+            <img
+              className="h-full object-cover w-full"
+              src="/images/litepaper/web3-1.png"
+              alt="1"
+            />
+            <figcaption className="text-white text-xs capitalize">
+              chakra chieftains
+            </figcaption>
+          </figure>
+          <figure className="mb-10">
+            <img
+              className="h-full object-cover w-full"
+              src="/images/litepaper/web3-2.png"
+              alt="1"
+            />
+            <figcaption className="text-white text-xs capitalize">
+              chakra 10k
+            </figcaption>
+          </figure>
+        </div>
         <p className="mb-4">
           <span className="font-bold">NFTs | Two Core Collections of NFTs</span>{" "}
         </p>
@@ -389,12 +446,12 @@ const LitepaperArticle = (props: Props) => {
           such as cosmetics, weapons, loot, skins, access passes and
           consumables.
         </p>
-        <h4
+        {/* <h4
           className="font-marco font-semibold text-white mb-10"
           id="public-goods"
         >
           Public Goods
-        </h4>
+        </h4> */}
         <p className="mb-10 w-4/5">
           Core public infrastructure to help create a virtuous cycle of
           activity, expansion & commerce within the Chakra ecosystem.
@@ -403,50 +460,69 @@ const LitepaperArticle = (props: Props) => {
           <img className="mb-10 w-full" src="/images/litepaper/8.png" alt="1" />
         </figure>
 
-        <p className="mb-4">
-          <span className="font-bold">Playable Game Content</span>{" "}
-          <span className="text-red-ff0">{`->`}</span>Chakra games accessible
-          for all users to play and engage with the ecosystem
-        </p>
-        <p className="mb-4">
-          <span className="font-bold">Rule Book</span>{" "}
-          <span className="text-red-ff0">{`->`}</span> Codified guides informing
-          on several critical aspects of content creation
-        </p>
-        <p className="mb-4">
-          <span className="font-bold">DEX</span>{" "}
-          <span className="text-red-ff0">{`->`}</span>AMM DEX that helps onboard
-          and off ramp crypto users from across chains
-        </p>
-        <p className="mb-4">
-          <span className="font-bold">Marketplace</span>{" "}
-          <span className="text-red-ff0">{`->`}</span>NFT and virtual asset
-          market place for P2P trading
-        </p>
-        <p className="mb-4">
-          <span className="font-bold">Content Store</span>{" "}
-          <span className="text-red-ff0">{`->`}</span>Native content store to
-          buy and sell community created (community approved) game ready
-          content.
-        </p>
-        <p className="mb-4">
-          <span className="font-bold">Game Vendor</span>{" "}
-          <span className="text-red-ff0">{`->`}</span>Vendor acting as main sink
-          for tokens through which players can access NFT drops and DLC
-        </p>
-        <p className="mb-4">
-          <span className="font-bold">Wagering System</span>{" "}
-          <span className="text-red-ff0">{`->`}</span>Wagering contracts that
-          enable a robust wager 2 earn mechanisms for certain PvP and PvE game
-          modes
-        </p>
-        <p className="mb-10">
-          <span className="font-bold">Governance System</span>{" "}
-          <span className="text-red-ff0">{`->`}</span> Governance infrastructure
-          (discussion & proposal forums and voting) using quadratic funding
-          principles to facilitate optimal and fair governance of ecosystem
-          expansion
-        </p>
+        <ol>
+          <li>
+            <p className="mb-4">
+              <span className="font-bold">Playable Game Content</span>{" "}
+              <span className="text-red-ff0">{`->`}</span>Chakra games
+              accessible for all users to play and engage with the ecosystem
+            </p>
+          </li>
+          <li>
+            <p className="mb-4">
+              <span className="font-bold">Rule Book</span>{" "}
+              <span className="text-red-ff0">{`->`}</span> Codified guides
+              informing on several critical aspects of content creation
+            </p>
+          </li>
+          <li>
+            <p className="mb-4">
+              <span className="font-bold">DEX</span>{" "}
+              <span className="text-red-ff0">{`->`}</span>AMM DEX that helps
+              onboard and off ramp crypto users from across chains
+            </p>
+          </li>
+          <li>
+            <p className="mb-4">
+              <span className="font-bold">Marketplace</span>{" "}
+              <span className="text-red-ff0">{`->`}</span>NFT and virtual asset
+              market place for P2P trading
+            </p>
+          </li>
+          <li>
+            <p className="mb-4">
+              <span className="font-bold">Content Store</span>{" "}
+              <span className="text-red-ff0">{`->`}</span>Native content store
+              to buy and sell community created (community approved) game ready
+              content.
+            </p>
+          </li>
+          <li>
+            <p className="mb-4">
+              <span className="font-bold">Game Vendor</span>{" "}
+              <span className="text-red-ff0">{`->`}</span>Vendor acting as main
+              sink for tokens through which players can access NFT drops and DLC
+            </p>
+          </li>
+          <li>
+            <p className="mb-4">
+              <span className="font-bold">Wagering System</span>{" "}
+              <span className="text-red-ff0">{`->`}</span>Wagering contracts
+              that enable a robust wager 2 earn mechanisms for certain PvP and
+              PvE game modes
+            </p>
+          </li>
+          <li>
+            <p className="mb-10">
+              <span className="font-bold">Governance System</span>{" "}
+              <span className="text-red-ff0">{`->`}</span> Governance
+              infrastructure (discussion & proposal forums and voting) using
+              quadratic funding principles to facilitate optimal and fair
+              governance of ecosystem expansion
+            </p>
+          </li>
+        </ol>
+
         {/* <h4
           className="font-marco font-semibold text-white mb-10"
           id="game-expansion"
@@ -638,7 +714,7 @@ const LitepaperArticle = (props: Props) => {
       </figure> */}
 
       <p className="mb-4">
-        <span className="font-bold">Token Objectives</span>
+        <span className="font-bold underline">Token Objectives</span>
       </p>
 
       <p className="mb-6">
@@ -694,7 +770,7 @@ const LitepaperArticle = (props: Props) => {
       </p>
 
       <p className="mb-4">
-        <span className="font-bold">Supply</span>
+        <span className="font-bold underline">Supply</span>
       </p>
       <p className="mb-6">
         <span className="font-bold">How to get $SOMA token?</span>
@@ -731,7 +807,7 @@ const LitepaperArticle = (props: Props) => {
           </p>
         </li>
       </ul>
-      <p className="font-bold text-white mb-4" id="utility">
+      <p className="font-bold text-white mb-4 underline" id="utility">
         Utility
       </p>
       <p className="mb-3">
@@ -759,41 +835,54 @@ const LitepaperArticle = (props: Props) => {
       </p>
 
       <p className="mb-3">
-        <span className="font-bold">Other Key Assets</span>
+        <span className="font-bold underline">Other Key Assets</span>
       </p>
-      <p className="mb-3">
-        <span className="font-bold">Stablecoin</span>
-        <span className="text-red-ff0">{` -> `}</span>The stablecoin back the
-        CHAKRA token and maintain liquidity in the AMM and Pools. It’s crucial
-        for the {`ecosystem's`} sustainability and stability.
-      </p>
-      <p className="mb-3">
-        <span className="font-bold">Chieftain NFT</span>
-        <span className="text-red-ff0">{` -> `}</span>500 OG PFP characters play
-        a crucial role in the ownership of the ecosystem. They help in value
-        accrual to their holder by acting as a reward multiplier.
-      </p>
-      <p className="mb-3">
-        <span className="font-bold">Chakra 10k</span>
-        <span className="text-red-ff0">{` -> `}</span>10k 3D characters
-        functional in gaming. They are a notch lower in tier than Chieftain NFT
-        and are aimed at a wider audience of the ecosystem. Their value accrual
-        as a multiplier is comparatively lower.
-      </p>
-      <p className="mb-3">
-        <span className="font-bold">Gems</span>
-        <span className="text-red-ff0">{` -> `}</span> These tokens are limited
-        to in-game purchases and act as a Fiat on-ramp. Gems can be bought with
-        USD (credit card/ fiat on-ramp). They cannot be swapped from GEM to
-        CHAKRA tokens or vice-versa
-      </p>
-      <p className="mb-10">
-        <span className="font-bold">Chakra Points (CP)</span>
-        <span className="text-red-ff0">{` -> `}</span>CP measures the value a
-        user adds to the protocol. Provides waiting list priority for early
-        access privileges. Used as a metric in algorithms determining seasonal
-        airdrop rewards and other functions.
-      </p>
+
+      <ul className="text-white list-disc pl-5">
+        <li>
+          <p className="mb-5">
+            <span className="font-bold">Stablecoin</span>
+            <span className="text-red-ff0">{` -> `}</span>The stablecoin back
+            the CHAKRA token and maintain liquidity in the AMM and Pools. It’s
+            crucial for the {`ecosystem's`} sustainability and stability.
+          </p>
+        </li>
+        <li>
+          <p className="mb-5">
+            <span className="font-bold">Chieftain NFT</span>
+            <span className="text-red-ff0">{` -> `}</span>500 OG PFP characters
+            play a crucial role in the ownership of the ecosystem. They help in
+            value accrual to their holder by acting as a reward multiplier.
+          </p>
+        </li>
+        <li>
+          <p className="mb-5">
+            <span className="font-bold">Chakra 10k</span>
+            <span className="text-red-ff0">{` -> `}</span>10k 3D characters
+            functional in gaming. They are a notch lower in tier than Chieftain
+            NFT and are aimed at a wider audience of the ecosystem. Their value
+            accrual as a multiplier is comparatively lower.
+          </p>
+        </li>
+        <li>
+          <p className="mb-5">
+            <span className="font-bold">Gems</span>
+            <span className="text-red-ff0">{` -> `}</span> These tokens are
+            limited to in-game purchases and act as a Fiat on-ramp. Gems can be
+            bought with USD (credit card/ fiat on-ramp). They cannot be swapped
+            from GEM to CHAKRA tokens or vice-versa
+          </p>
+        </li>
+        <li>
+          <p className="mb-10">
+            <span className="font-bold">Chakra Points (CP)</span>
+            <span className="text-red-ff0">{` -> `}</span>CP measures the value
+            a user adds to the protocol. Provides waiting list priority for
+            early access privileges. Used as a metric in algorithms determining
+            seasonal airdrop rewards and other functions.
+          </p>
+        </li>
+      </ul>
 
       <h4
         className="font-marco font-semibold text-white mb-10"
@@ -813,7 +902,7 @@ const LitepaperArticle = (props: Props) => {
       </p>
 
       <figure className="mb-10">
-        <img className=" w-1/4" src="/images/litepaper/table-1.png" alt="" />
+        <img className=" w-1/4" src="/images/litepaper/table-1.svg" alt="" />
       </figure>
 
       <p className="mb-6">Other Revenue Streams (100%)- Goes to Treasury</p>
@@ -899,7 +988,14 @@ const LitepaperArticle = (props: Props) => {
       </figure>
 
       <figure className="mb-10">
-        <img src="/images/litepaper/eco-2.png" alt="ecosystem" />
+        <img
+          className="w-full"
+          src="/images/litepaper/eco-2.png"
+          alt="ecosystem"
+        />
+        <figcaption className="text-white text-xs">
+          Stakeholder Value Flow
+        </figcaption>
       </figure>
 
       <h4
@@ -921,43 +1017,50 @@ const LitepaperArticle = (props: Props) => {
       </p>
 
       <p className="mb-6">
-        <span className="font-bold">Rewards </span>
-        <i>(for network participation)</i>
+        <span className="font-bold underline">Rewards</span>
+        <i>{` `}(for network participation)</i>
       </p>
 
       <p className="mb-4">Rewards are offered in the following forms:</p>
 
-      <p className="mb-2">
-        <span className="text-red-ff0">{`-> `}</span>Liquid Provision (or
-        Staking) rewards
-      </p>
-      <p className="mb-6">
-        <span className="text-red-ff0">{`-> `}</span>Seasonal Airdrops.
-      </p>
+      <ol>
+        <li>
+          <p className="mb-2">Liquid Provision (or Staking) rewards</p>
+        </li>
+        <li>
+          <p className="mb-2">Seasonal Airdrops</p>
+        </li>
+      </ol>
 
-      <p className="mb-6">
-        <span className="font-bold">Staking Reward :</span>
-      </p>
-      <p className="mb-10">
-        <span className="">
-          90% of Revenue Pool will be allocated to liquidity providers (and
-          stakers), with the remaining 10% going to the {`protocol's`} treasury.
-          Additionally, a portion of token supply will be allocated to reward
-          liquidity providers to encourage a rich market depth.
-        </span>{" "}
-      </p>
-      <p className="mb-6">
-        <span className="font-bold">Seasonal Airdrops :</span>
-      </p>
-      <p className="mb-10">
-        <span className="">
-          Rewards are distributed in a series of seasons to continually
-          incentivize network participation. The reward distribution is
-          strategic and gamified, aligning with the {`protocol's`} gaming theme.
-          The Chakra incentive system is inspired by Nir {`Eyal's`} Hook Model
-          and Sequential Airdrops pioneered by Blur NFT Marketplace.
-        </span>{" "}
-      </p>
+      <ul className="text-white list-disc pl-5">
+        <li>
+          <p className="mb-6">
+            <span className="font-bold">Staking Reward :</span>
+            <span className="text-red-ff0">{` -> `}</span>
+            <span className="">
+              90% of Revenue Pool will be allocated to liquidity providers (and
+              stakers), with the remaining 10% going to the {`protocol's`}{" "}
+              treasury. Additionally, a portion of token supply will be
+              allocated to reward liquidity providers to encourage a rich market
+              depth.
+            </span>{" "}
+          </p>
+        </li>
+        <li>
+          <p className="mb-6">
+            <span className="font-bold">Seasonal Airdrops :</span>
+            <span className="text-red-ff0">{` -> `}</span>
+            <span className="">
+              Rewards are distributed in a series of seasons to continually
+              incentivize network participation. The reward distribution is
+              strategic and gamified, aligning with the {`protocol's`} gaming
+              theme. The Chakra incentive system is inspired by Nir {`Eyal's`}{" "}
+              Hook Model and Sequential Airdrops pioneered by Blur NFT
+              Marketplace.
+            </span>{" "}
+          </p>
+        </li>
+      </ul>
 
       <p className="mb-10">
         <i>
@@ -972,48 +1075,72 @@ const LitepaperArticle = (props: Props) => {
         <i>Airdrops are composed of Tokens and Loot (virtual assets)</i>
       </p>
 
-      <p className="text-white mb-6" id="distribution-process">
-        <span className="font-bold capitalize">Distribution Process</span>
-      </p>
+      <h4
+        className="font-marco font-semibold text-white mb-6"
+        id="distribution-process"
+      >
+        Distribution Process
+      </h4>
 
-      <p className="mb-4">
-        <span className="font-bold">
-          PHASE I: [ <i>Announce Upcoming Airdrop</i> ]
-        </span>
-      </p>
+      <ul className="text-white pl-5 list-disc">
+        <li>
+          <p className="mb-4">
+            <span className="font-bold">PHASE I :</span>
+            <span className="text-red-ff0">{` -> `}</span>[{" "}
+            <i>Announce Upcoming Airdrop</i> ]<span></span>
+          </p>
+        </li>
+      </ul>
+
       <p className="mb-6">
         Chakra will announce an upcoming airdrop, which is a treasure chest, and
         the eligibility requirements to receive it. This announcement motivates
         users to interact with the platform to generate CP.
       </p>
 
-      <p className="mb-2">
-        <span className="font-bold">
-          PHASE II: [ <i>Treasure Chest NFT Airdrop</i> ]
-        </span>
-      </p>
+      <ul className="text-white pl-5 list-disc">
+        <li>
+          <p className="mb-4">
+            <span className="font-bold">PHASE II :</span>
+            <span className="text-red-ff0">{` -> `}</span>[{" "}
+            <i>Treasure Chest NFT Airdrop</i> ]<span></span>
+          </p>
+        </li>
+      </ul>
+
       <p className="mb-6">
         The Treasure Chest NFT is distributed to all users who generated up to
         the minimum required CP for Airdrop. The rarity (and value) of the chest
         received is determined by the {`user's`} CPs.
       </p>
 
-      <p className="mb-2">
-        <span className="font-bold">
-          PHASE III: [ <i>Use the Chest to more Accrue Chakra Points (CP)]</i> ]
-        </span>
-      </p>
+      <ul className="text-white pl-5 list-disc">
+        <li>
+          <p className="mb-4">
+            <span className="font-bold">PHASE III :</span>
+            <span className="text-red-ff0">{` -> `}</span>[{" "}
+            <i>Use the Chest to more Accrue Chakra Points (CP)]</i> ]
+            <span></span>
+          </p>
+        </li>
+      </ul>
+
       <p className="mb-6">
         The Treasury Chest is used to multiply subsequent CP accrued by the
         holder. All CPs accrued are boosted by a multiplier effect associated
         with the chest, with rarer chests providing higher multipliers.
       </p>
 
-      <p className="mb-2">
-        <span className="font-bold">
-          PHASE IV: [ <i>CHAKRA Airdrop]</i> ]
-        </span>
-      </p>
+      <ul className="text-white pl-5 list-disc">
+        <li>
+          <p className="mb-4">
+            <span className="font-bold">PHASE III :</span>
+            <span className="text-red-ff0">{` -> `}</span>[{" "}
+            <i>CHAKRA Airdrop]</i> ]<span></span>
+          </p>
+        </li>
+      </ul>
+
       <p className="mb-10">
         At the end of each season, CHAKRA tokens are distributed proportionally
         to stakeholders based on their CP holding. The {`protocol's`} CPs and
@@ -1022,7 +1149,8 @@ const LitepaperArticle = (props: Props) => {
       </p>
 
       <p className="mb-6">
-        <span className="font-bold">User Reward Share (Formula)</span>
+        <span className="font-bold underline">User Reward Share</span>
+        {` `}(Formula)
       </p>
 
       <p className="mb-6">
@@ -1051,7 +1179,7 @@ const LitepaperArticle = (props: Props) => {
       </figure>
 
       <p className="mb-6">
-        <span className="font-bold">Treasure Chest Design</span>
+        <span className="font-bold underline">Treasure Chest Design</span>
       </p>
 
       <p className="mb-6">
@@ -1068,7 +1196,9 @@ const LitepaperArticle = (props: Props) => {
       </figure>
 
       <p className="mb-6">
-        <span className="font-bold">Defining User Actions Reward</span>
+        <span className="font-bold underline">
+          Defining User Actions Reward
+        </span>
       </p>
 
       <p className="mb-6">
@@ -1095,7 +1225,7 @@ const LitepaperArticle = (props: Props) => {
       </figure>
 
       <p className="mb-4">
-        <span className="font-bold">Airdrop Distribution Design</span>
+        <span className="font-bold underline">Airdrop Distribution Design</span>
       </p>
 
       <p className="mb-6">
@@ -1119,21 +1249,23 @@ const LitepaperArticle = (props: Props) => {
       <ul className="list-disc text-white pl-5 mb-12">
         <li className="mb-3">
           <p>
-            <span className="font-semibold">Set I :</span> <i>Social sharing</i>
+            <span className="font-semibold">Set I :</span>
+            <span className="text-red-ff0">{` -> `}</span> <i>Social sharing</i>
           </p>
         </li>
         <li className="mb-3">
           <p>
-            <span className="font-semibold">Set II :</span>{" "}
+            <span className="font-semibold">Set II :</span>
+            <span className="text-red-ff0">{` -> `}</span>
             <i>General DeFi and GameFi user</i>
           </p>
-          <ul className="list-disc text-white pl-5">
+          <ul className="text-white pl-5">
             <li>
-              <p>Reward for existing web3 users (gamers and DeFi users)</p>
+              <p>a. Reward for existing web3 users (gamers and DeFi users)</p>
             </li>
             <li>
               <p>
-                To claim the reward, users have to engage with the Chakra
+                b. To claim the reward, users have to engage with the Chakra
                 ecosystem)
               </p>
             </li>
@@ -1141,26 +1273,30 @@ const LitepaperArticle = (props: Props) => {
         </li>
         <li className="mb-3">
           <p>
-            <span className="font-semibold">Set III :</span>{" "}
+            <span className="font-semibold">Set III :</span>
+            <span className="text-red-ff0">{` -> `}</span>
             <i>Supply side action</i>
           </p>
-          <ul className="list-disc text-white pl-5">
+          <ul className="text-white pl-5">
             <li>
               <p>
-                Incentivize actions in supply row of the reward grouping table
+                a. Incentivize actions in supply row of the reward grouping
+                table
               </p>
             </li>
           </ul>
         </li>
         <li className="mb-3">
           <p>
-            <span className="font-semibold">Set IV :</span>{" "}
+            <span className="font-semibold">Set IV :</span>
+            <span className="text-red-ff0">{` -> `}</span>
             <i>Demand side action</i>
           </p>
-          <ul className="list-disc text-white pl-5">
+          <ul className="text-white pl-5">
             <li>
               <p>
-                Incentivize actions in supply row of the reward grouping table
+                a. Incentivize actions in supply row of the reward grouping
+                table
               </p>
             </li>
           </ul>
@@ -1179,7 +1315,7 @@ const LitepaperArticle = (props: Props) => {
       </h4>
 
       <p className="mb-6">
-        <span className="font-bold">Economy Balancing</span>
+        <span className="font-bold underline">Economy Balancing</span>
       </p>
 
       <p className="mb-6">
@@ -1201,7 +1337,7 @@ const LitepaperArticle = (props: Props) => {
       </p>
 
       <p className="mb-4">
-        <span className="font-bold">TOKEN ALLOCATION</span>
+        <span className="font-bold underline">Token Allocation</span>
       </p>
 
       <p className="mb-6">
@@ -1217,26 +1353,36 @@ const LitepaperArticle = (props: Props) => {
         to access the token allocation sheet.
       </p>
 
-      <figure>
+      <figure className="mb-10">
         <img
-          className="mb-10 w-full"
+          className="w-full"
           src="/images/litepaper/token-1.png"
           alt="token allocation"
         />
+        <figcaption className="text-white text-xs capitalize">
+          token allocation
+        </figcaption>
       </figure>
-      <figure>
+
+      <figure className="mb-10">
         <img
-          className="mb-10 w-full"
+          className="w-full"
           src="/images/litepaper/token-2.png"
           alt="token supply"
         />
+        <figcaption className="text-white text-xs capitalize">
+          Token Supply Curve
+        </figcaption>
       </figure>
-      <figure>
+      <figure className="mb-10">
         <img
-          className="mb-10 w-full"
+          className="w-full"
           src="/images/litepaper/token-3.png"
           alt="token vesting"
         />
+        <figcaption className="text-white text-xs capitalize">
+          token vesting
+        </figcaption>
       </figure>
 
       <h4
@@ -1260,10 +1406,10 @@ const LitepaperArticle = (props: Props) => {
       </p>
 
       <p className="mb-4">
-        <span className="font-bold">Flywheel</span>
+        <span className="font-bold underline">Flywheel</span>
       </p>
 
-      <p className="mb-10">
+      <p className="mb-6">
         The Chakra ecosystem aims to create a robust flywheel effect by
         synergistically combining elements of web3, gaming, collaborative
         storytelling, and community involvement. The ecosystem focuses on three
@@ -1272,7 +1418,7 @@ const LitepaperArticle = (props: Props) => {
       </p>
 
       <p className="mb-4">
-        <span className="font-bold">Leveraging web3</span>
+        <span className="font-bold underline">Leveraging web3</span>
       </p>
 
       <p className="mb-6">
@@ -1281,146 +1427,161 @@ const LitepaperArticle = (props: Props) => {
         ownership layer via NFTs.
       </p>
 
-      <ul className="list-disc text-white pl-5 mb-10">
+      <ul className="text-white mb-10">
         <li className="mb-2">
           <p>
-            Utilizing NFTs to establish verifiable digital ownership, enable
-            seamless transferability, and create unique identifiers for enhanced
-            gaming experiences.
+            <span className="text-red-ff0 text-lg">{` ◇ `}</span>Utilizing NFTs
+            to establish verifiable digital ownership, enable seamless
+            transferability, and create unique identifiers for enhanced gaming
+            experiences.
           </p>
         </li>
         <li className="mb-4">
           <p>
-            Employing Fungible Tokens to equitize participants within the
-            ecosystem, incentivize desired behaviors, and provide a native unit
-            of account for commerce and value capture.
+            <span className="text-red-ff0 text-lg">{` ◇ `}</span>Employing
+            Fungible Tokens to equitize participants within the ecosystem,
+            incentivize desired behaviors, and provide a native unit of account
+            for commerce and value capture.
           </p>
         </li>
         <li className="mb-4">
           <p>
-            Leveraging DeFi and decentralized governance to create a
-            transparent, accessible, and self-regulating ecosystem.
+            <span className="text-red-ff0 text-lg">{` ◇ `}</span>Leveraging DeFi
+            and decentralized governance to create a transparent, accessible,
+            and self-regulating ecosystem.
           </p>
         </li>
       </ul>
 
-      <p className="mb-6">
-        <span className="text-red-ff0">{`-> `}</span>
-        <span className="font-bold">Clear Tokenomics</span>
-      </p>
+      <ul>
+        <li className="mb-10">
+          <p className="mb-4">
+            <span className="font-bold">1. Clear Tokenomics</span>
+            <span className="text-red-ff0">{` ->`}</span>
+          </p>
 
-      <p className="mb-6">
-        {`Chakra's`} tokenomics is explicitly designed to be comprehensible &
-        transparent. The token supply, emissions schedule, and fee structure
-        will be delineated, ensuring that all stakeholders have a clear
-        understanding of the {`ecosystem's`} financial dynamics. The unlocks are
-        timed to enhance the long-term sustainability of the ecosystem,
-        balancing immediate rewards with future growth.
-      </p>
+          <p className="mb-4">
+            {`Chakra's`} tokenomics is explicitly designed to be comprehensible
+            & transparent. The token supply, emissions schedule, and fee
+            structure will be delineated, ensuring that all stakeholders have a
+            clear understanding of the {`ecosystem's`} financial dynamics. The
+            unlocks are timed to enhance the long-term sustainability of the
+            ecosystem, balancing immediate rewards with future growth.
+          </p>
 
-      <p className="mb-6">
-        Our guiding principle is synergy – all aspects of our tokenomics is
-        designed to reinforce and enhance the operation of our {`ecosystem's`}
-        flywheel.
-      </p>
+          <p className="mb-4">
+            Our guiding principle is synergy – all aspects of our tokenomics is
+            designed to reinforce and enhance the operation of our{" "}
+            {`ecosystem's`}
+            flywheel.
+          </p>
+        </li>
+        <li className="mb-10">
+          <p className="mb-4">
+            <span className="font-bold">2. Real Yield</span>
+            <span className="text-red-ff0">{` ->`}</span>
+          </p>
 
-      <p className="mb-6">
-        <span className="text-red-ff0">{`-> `}</span>
-        <span className="font-bold">Real Yield</span>
-      </p>
+          <p className="mb-4">
+            This plays a pivotal role in enabling the {`"Play and Earn"`}{" "}
+            paradigm, where users can earn real value through NFT assets and
+            tokens. To this end, we implement a nuanced balance of economic
+            rules and market dynamics.
+          </p>
 
-      <p className="mb-6">
-        This plays a pivotal role in enabling the {`"Play and Earn"`} paradigm,
-        where users can earn real value through NFT assets and tokens. To this
-        end, we implement a nuanced balance of economic rules and market
-        dynamics.
-      </p>
+          <p className="mb-4">
+            Using modeling, simulation, and analysis, we maintain an equilibrium
+            between inflationary and deflationary pressures, ensuring that user
+            & ecosystem earnings remain valuable and sustainable.
+          </p>
+        </li>
+        <li className="mb-10">
+          <p className="mb-4">
+            <span className="font-bold">
+              3. Gamified Incentivization & Reward Mechanisms
+            </span>
+            <span className="text-red-ff0">{` ->`}</span>
+          </p>
 
-      <p className="mb-6">
-        Using modeling, simulation, and analysis, we maintain an equilibrium
-        between inflationary and deflationary pressures, ensuring that user &
-        ecosystem earnings remain valuable and sustainable.
-      </p>
+          <p className="mb-4">
+            <i>
+              “Good Institutions align Self-Interest with the Social Interest”
+            </i>
+          </p>
 
-      <p className="mb-6">
-        <span className="text-red-ff0">{`-> `}</span>
-        <span className="font-bold">
-          Gamified Incentivization & Reward Mechanisms
-        </span>
-      </p>
+          <p className="mb-4">
+            Chakra ecosystem aligns user behavior with beneficial outcomes for
+            the ecosystem as a whole by incentivizing desired behaviors. Drawing
+            on Nir
+            {`Eyal's`} Hook Model, {`we've`} devised a cyclical system that
+            triggers user engagement, rewards action, and encourages
+            reinvestment into the ecosystem.
+          </p>
 
-      <p className="mb-6">
-        <i>“Good Institutions align Self-Interest with the Social Interest”</i>
-      </p>
+          <p className="mb-4">
+            We plan continuously incentivize network participation through a
+            gamified seasonal reward system. The first season will be powered by
+            the initial token allocation, which will serve as a blueprint for
+            future seasons. Subsequent seasons will be fueled by a combination{" "}
+            {`ecosystems's`}
+            revenue & token supply. To ensure sufficient revenue for the{" "}
+            {`project's`}
+            development, there will be a minimum gap between successive seasons.
+          </p>
+          <p className="mb-4">
+            This alignment of self-interest with the social interest ensures
+            that the ecosystem remains vibrant, active, and growing.
+          </p>
+        </li>
+        <li className="mb-10">
+          <p className="mb-6">
+            <span className="font-bold">
+              4. Collaborative World-building & Immersive Gaming
+            </span>
+            <span className="text-red-ff0">{` ->`}</span>
+          </p>
 
-      <p className="mb-6">
-        Chakra ecosystem aligns user behavior with beneficial outcomes for the
-        ecosystem as a whole by incentivizing desired behaviors. Drawing on Nir
-        {`Eyal's`} Hook Model, {`we've`} devised a cyclical system that triggers
-        user engagement, rewards action, and encourages reinvestment into the
-        ecosystem.
-      </p>
+          <p className="mb-6">
+            The Chakra ecosystem flourishes on community participation. Each
+            game and content piece contributes to an unfolding narrative,
+            allowing for long-term development and ongoing story arcs. We
+            provide free-to-play experiences for frictionless onboarding.
+            Inspired by shared storytelling modules like DnD, we allow users to
+            actively participate in the narrative, contributing to a dynamic,
+            evolving world.
+          </p>
 
-      <p className="mb-6">
-        We plan continuously incentivize network participation through a
-        gamified seasonal reward system. The first season will be powered by the
-        initial token allocation, which will serve as a blueprint for future
-        seasons. Subsequent seasons will be fueled by a combination{" "}
-        {`ecosystems's`}
-        revenue & token supply. To ensure sufficient revenue for the{" "}
-        {`project's`}
-        development, there will be a minimum gap between successive seasons.
-      </p>
+          <p className="mb-6">
+            Gaming is the intersection of mind-blowing art & bleeding-edge tech,
+            entertainment & engineering, immersion & interaction. The gaming
+            thesis for crypto is extremely bullish. {`It's`} the lowest hanging
+            bonafide fruit to onboard the next 100 million users to web3
+          </p>
+        </li>
+        <li className="mb-10">
+          <p className="mb-6">
+            <span className="font-bold">5. Virtuous Economy Design</span>
+            <span className="text-red-ff0">{` ->`}</span>
+          </p>
 
-      <p className="mb-6">
-        This alignment of self-interest with the social interest ensures that
-        the ecosystem remains vibrant, active, and growing.
-      </p>
+          <p className="mb-6">
+            {`Chakra's`} economy is designed with a virtuous cycle at its core.
+            NFTs and tokens enhance the user experience and are distributed
+            through gameplay and network participation, creating inherent value.
+            The economic engine is powered by both inherent value from utility
+            and speculative value from adoption and scarcity of resources. Our
+            aim is to maximize inherent value for virtual assets while creating
+            a robust framework for adoption and expansion. This virtuous cycle
+            design drives the success of our
+            {`"token go up"`} objective, laying the foundation for a prosperous
+            and sustainable ecosystem.
+          </p>
 
-      <p className="mb-6">
-        <span className="text-red-ff0">{`-> `}</span>
-        <span className="font-bold">
-          Collaborative World-building & Immersive Gaming
-        </span>
-      </p>
-
-      <p className="mb-6">
-        The Chakra ecosystem flourishes on community participation. Each game
-        and content piece contributes to an unfolding narrative, allowing for
-        long-term development and ongoing story arcs. We provide free-to-play
-        experiences for frictionless onboarding. Inspired by shared storytelling
-        modules like DnD, we allow users to actively participate in the
-        narrative, contributing to a dynamic, evolving world.
-      </p>
-
-      <p className="mb-6">
-        Gaming is the intersection of mind-blowing art & bleeding-edge tech,
-        entertainment & engineering, immersion & interaction. The gaming thesis
-        for crypto is extremely bullish. {`It's`} the lowest hanging bonafide
-        fruit to onboard the next 100 million users to web3
-      </p>
-
-      <p className="mb-6">
-        <span className="text-red-ff0">{`-> `}</span>
-        <span className="font-bold">Virtuous Economy Design</span>
-      </p>
-
-      <p className="mb-6">
-        {`Chakra's`} economy is designed with a virtuous cycle at its core. NFTs
-        and tokens enhance the user experience and are distributed through
-        gameplay and network participation, creating inherent value. The
-        economic engine is powered by both inherent value from utility and
-        speculative value from adoption and scarcity of resources. Our aim is to
-        maximize inherent value for virtual assets while creating a robust
-        framework for adoption and expansion. This virtuous cycle design drives
-        the success of our
-        {`"token go up"`} objective, laying the foundation for a prosperous and
-        sustainable ecosystem.
-      </p>
-
-      <p className="mb-10">
-        Fiat and non-crypto onramps ensure accessibility for all users.
-      </p>
+          <p className="mb-10">
+            Fiat and non-crypto onramps ensure accessibility for all users.
+          </p>
+        </li>
+      </ul>
 
       <h4 className="font-marco font-semibold text-white mb-10" id="disclaimer">
         Disclaimer

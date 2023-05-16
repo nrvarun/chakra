@@ -47,10 +47,10 @@ const NAV_LIST = [
         id: "web3",
         title: "web3",
       },
-      {
-        id: "public-goods",
-        title: "public goods",
-      },
+      // {
+      //   id: "public-goods",
+      //   title: "public goods",
+      // },
       // {
       //   id: "game-expansion",
       //   title: "game expansion",
