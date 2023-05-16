@@ -156,6 +156,7 @@ export const StyledLitePaperArticle = styled.article`
     font-size: 16px;
     line-height: 1.25;
     color: #ffffff;
+    max-width: 85%;
   }
 
   ol {
