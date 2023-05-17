@@ -92,10 +92,10 @@ const LitepaperArticle = (props: Props) => {
         </p>
         <ol className="mb-10">
           <li>
-            <p>Gaming- Immersive video games</p>
+            <p>Gaming - Immersive Video Games</p>
           </li>
           <li>
-            <p>Worldbuilding- Manga and Cinematics</p>
+            <p>Worldbuilding - Manga and Cinematics</p>
           </li>
           <li>
             <p>DLC & Virtual assets</p>
@@ -107,19 +107,21 @@ const LitepaperArticle = (props: Props) => {
         </p>
         <ol className="mb-10">
           <li>
-            <p>Native unit of account- $SOMA</p>
+            <p>Native unit of account - $SOMA</p>
           </li>
           <li>
-            <p>DeFi- Dex and LP</p>
+            <p>DeFi - Dex and LP</p>
           </li>
           <li>
-            <p>Marketplace- NFT and virtual assets trade</p>
+            <p>Marketplace - NFT and Virtual Assets trade</p>
           </li>
           <li>
-            <p>Game Vendor- In-game purchases</p>
+            <p>Game Vendor - In-game purchases</p>
           </li>
           <li>
-            <p>Content Store- Open content marketplace for game ready assets</p>
+            <p>
+              Content Store - Open content marketplace for game ready assets
+            </p>
           </li>
         </ol>
 
@@ -128,16 +130,16 @@ const LitepaperArticle = (props: Props) => {
         </p>
         <ol className="mb-10">
           <li>
-            <p>Content store and library - purchasable content</p>
+            <p>Content store and library - Purchasable Content</p>
           </li>
           <li>
-            <p>Rule Books- Rule set for content creation</p>
+            <p>Rule Books - Rule Set for Content Creation</p>
           </li>
           <li>
-            <p>Governance- vetting and onboarding creators</p>
+            <p>Governance - Vetting and Onboarding Creators</p>
           </li>
           <li>
-            <p>Accelerator- grants and incubation</p>
+            <p>Accelerator - Grants and Incubation</p>
           </li>
         </ol>
 
@@ -168,8 +170,8 @@ const LitepaperArticle = (props: Props) => {
           {`prisoner's`} dilemma
         </p>
 
+        <p className="mb-2">Game description :</p>
         <p className="mb-6">
-          Game description :{" "}
           <i>
             In this world of infinite possibility and endless treachery, only
             the strongest and most cunning will prevail. Only by mastering the
@@ -185,8 +187,8 @@ const LitepaperArticle = (props: Props) => {
           with rogue—like elements. This is a flagship Chakra ecosystem game
           whose key objective is to immerse players into the world of chakra.
         </p>
+        <p className="mb-3">Game description : </p>
         <p className="mb-6">
-          Game description :{" "}
           <i>
             Delve into digital catacombs and slaughter enemies for a
             never-ending shower of loot. Team up with friends to increase the
@@ -205,10 +207,15 @@ const LitepaperArticle = (props: Props) => {
         </p>
         <ol className="mb-10">
           <li>
-            <p>PvP (supporting wagering & leaderboard rewards)</p>
+            <p>
+              <strong>PvP :</strong> supporting wagering & leaderboard rewards
+            </p>
           </li>
           <li>
-            <p>PvE (loot based gameplay with level progression system)</p>
+            <p>
+              <strong>PvE :</strong> loot based gameplay with level progression
+              system
+            </p>
           </li>
         </ol>
 
@@ -268,7 +275,13 @@ const LitepaperArticle = (props: Props) => {
               release of Virtual assets that enable true ownership and expansion
               of the ecosystem.
             </p>
-            <ul className="mb-10 list-disc pl-4 text-white w-3/4">
+            <ol
+              type="i"
+              style={{
+                listStyleType: "lower-roman !important",
+              }}
+              className="mb-10 pl-4 text-white w-3/4"
+            >
               <li>
                 <p>
                   NFTs in the form of skins, items, cosmetics, weapons, loot etc
@@ -281,7 +294,7 @@ const LitepaperArticle = (props: Props) => {
                   Chakra games ecosystem (and community creators)
                 </p>
               </li>
-            </ul>
+            </ol>
           </li>
         </ol>
 
@@ -344,7 +357,7 @@ const LitepaperArticle = (props: Props) => {
           <strong>What this Achieves</strong>
         </p>
 
-        <ul className="mb-10 list-disc pl-4 text-white w-3/4">
+        <ol className="mb-10 list-disc pl-4 text-white w-3/4">
           <li>
             <p>Community participation in expanding ecosystem</p>
           </li>
@@ -377,7 +390,7 @@ const LitepaperArticle = (props: Props) => {
               more revenue streams
             </p>
           </li>
-        </ul>
+        </ol>
 
         <h4 className="font-marco font-semibold text-white mb-10" id="web3">
           Web3
@@ -446,16 +459,17 @@ const LitepaperArticle = (props: Props) => {
           such as cosmetics, weapons, loot, skins, access passes and
           consumables.
         </p>
-        {/* <h4
-          className="font-marco font-semibold text-white mb-10"
-          id="public-goods"
-        >
-          Public Goods
-        </h4> */}
         <p className="mb-10 w-4/5">
           Core public infrastructure to help create a virtuous cycle of
           activity, expansion & commerce within the Chakra ecosystem.
         </p>
+        <h4
+          className="font-marco font-semibold text-white mb-10"
+          id="public-goods"
+        >
+          Public Goods
+        </h4>
+
         <figure>
           <img className="mb-10 w-full" src="/images/litepaper/8.png" alt="1" />
         </figure>
@@ -722,7 +736,7 @@ const LitepaperArticle = (props: Props) => {
         achieving the following goals:
       </p>
 
-      <ul className="mb-10 text-white pl-5 list-disc">
+      <ol className="mb-10 text-white pl-5 list-disc">
         <li>
           <p>Create a sustainable and transparent Token Economy</p>
         </li>
@@ -753,7 +767,7 @@ const LitepaperArticle = (props: Props) => {
         <li>
           <p>Discourage Bad actors from affecting the game’s design.</p>
         </li>
-      </ul>
+      </ol>
 
       <p className="mb-10">
         The Chakra ecosystem has been optimized with the use of multiple assets,
@@ -810,23 +824,23 @@ const LitepaperArticle = (props: Props) => {
       <p className="font-bold text-white mb-4 underline" id="utility">
         Utility
       </p>
-      <p className="mb-3">
+      <p className="mb-4">
         <span className="font-bold">$SOMA Token Utility</span>
       </p>
-      <p className="mb-3">
+      <p className="">
         <span className="text-red-ff0">{`◇`}</span> Staking
       </p>
-      <p className="mb-3">
+      <p className="">
         <span className="text-red-ff0">{`◇`}</span> Purchase virtual assets
         (NFTs, DLCs & Content)
       </p>
-      <p className="mb-3">
+      <p className="">
         <span className="text-red-ff0">{`◇`}</span> Wagering in PvP
       </p>
-      <p className="mb-3">
+      <p className="">
         <span className="text-red-ff0">{`◇`}</span> LP for DEX
       </p>
-      <p className="mb-3">
+      <p className="">
         <span className="text-red-ff0">{`◇`}</span> Governance
       </p>
       <p className="mb-10">
@@ -909,13 +923,13 @@ const LitepaperArticle = (props: Props) => {
 
       <ol>
         <li>
-          <p>NFT sales (characters, items, cosmetics, skins, passes)</p>
+          <p>NFT sales - Characters, items, cosmetics, skins, passes</p>
         </li>
         <li>
           <p>Gem Sales - Fiat users</p>
         </li>
         <li>
-          <p>Loot (mystery box) & Loot Rerolls</p>
+          <p>Loot [Mystery Box] & Loot Rerolls</p>
         </li>
       </ol>
 
@@ -928,45 +942,50 @@ const LitepaperArticle = (props: Props) => {
 
       <ol>
         <li className="mb-10">
-          <p className="mb-1">
+          <p className="mb-6">
             <span className="font-bold">Game Players</span>
-          </p>
-          <p className="mb-6">
-            Game players are individuals who play games within the Chakra
-            ecosystem. They are a vital stakeholder within the Chakra ecosystem
-            as they drive engagement and commerce within the platform.
+            <span className="text-red-ff0">{` -> `}</span>
+            <span>
+              Game players are individuals who play games within the Chakra
+              ecosystem. They are a vital stakeholder within the Chakra
+              ecosystem as they drive engagement and commerce within the
+              platform.
+            </span>
           </p>
         </li>
         <li className="mb-10">
-          <p className="mb-1">
+          <p className="mb-6">
             <span className="font-bold">Game developers</span>
-          </p>
-          <p className="mb-6">
-            Game developers are individuals or entities that create games for
-            the Chakra ecosystem. They play a crucial role in expanding the
-            platform and driving adoption.
+            <span className="text-red-ff0">{` -> `}</span>
+            <span>
+              Game developers are individuals or entities that create games for
+              the Chakra ecosystem. They play a crucial role in expanding the
+              platform and driving adoption.
+            </span>
           </p>
         </li>
         <li className="mb-10">
-          <p className="mb-1">
+          <p className="mb-6">
             <span className="font-bold">Traders</span>
-          </p>
-          <p className="mb-6">
-            Traders are individuals who trade tokens and NFTs within the Chakra
-            ecosystem. They play a crucial role in driving commerce and
-            mobilizing liquidity within the platform.
+            <span className="text-red-ff0">{` -> `}</span>
+            <span>
+              Traders are individuals who trade tokens and NFTs within the
+              Chakra ecosystem. They play a crucial role in driving commerce and
+              mobilizing liquidity within the platform.
+            </span>
           </p>
         </li>
         <li className="mb-10">
-          <p className="mb-1">
-            <span className="font-bold">Content Creators</span>
-          </p>
           <p className="mb-6">
-            Content Creators are individuals who create content like game
-            assets, skins, game environments, character designs, models, etc for
-            the Chakra ecosystem. They play a crucial role in the expansion of
-            the chakra ecosystem as game developers can buy this content to
-            develop new games.
+            <span className="font-bold">Content Creators</span>
+            <span className="text-red-ff0">{` -> `}</span>
+            <span>
+              Content Creators are individuals who create content like game
+              assets, skins, game environments, character designs, models, etc
+              for the Chakra ecosystem. They play a crucial role in the
+              expansion of the chakra ecosystem as game developers can buy this
+              content to develop new games.
+            </span>
           </p>
         </li>
       </ol>
@@ -1035,7 +1054,7 @@ const LitepaperArticle = (props: Props) => {
       <ul className="text-white list-disc pl-5">
         <li>
           <p className="mb-6">
-            <span className="font-bold">Staking Reward :</span>
+            <span className="font-bold">Staking Reward</span>
             <span className="text-red-ff0">{` -> `}</span>
             <span className="">
               90% of Revenue Pool will be allocated to liquidity providers (and
@@ -1048,7 +1067,7 @@ const LitepaperArticle = (props: Props) => {
         </li>
         <li>
           <p className="mb-6">
-            <span className="font-bold">Seasonal Airdrops :</span>
+            <span className="font-bold">Seasonal Airdrops</span>
             <span className="text-red-ff0">{` -> `}</span>
             <span className="">
               Rewards are distributed in a series of seasons to continually
@@ -1085,7 +1104,7 @@ const LitepaperArticle = (props: Props) => {
       <ul className="text-white pl-5 list-disc">
         <li>
           <p className="mb-4">
-            <span className="font-bold">PHASE I :</span>
+            <span className="font-bold">PHASE I</span>
             <span className="text-red-ff0">{` -> `}</span>[{" "}
             <i>Announce Upcoming Airdrop</i> ]<span></span>
           </p>
@@ -1101,7 +1120,7 @@ const LitepaperArticle = (props: Props) => {
       <ul className="text-white pl-5 list-disc">
         <li>
           <p className="mb-4">
-            <span className="font-bold">PHASE II :</span>
+            <span className="font-bold">PHASE II</span>
             <span className="text-red-ff0">{` -> `}</span>[{" "}
             <i>Treasure Chest NFT Airdrop</i> ]<span></span>
           </p>
@@ -1117,7 +1136,7 @@ const LitepaperArticle = (props: Props) => {
       <ul className="text-white pl-5 list-disc">
         <li>
           <p className="mb-4">
-            <span className="font-bold">PHASE III :</span>
+            <span className="font-bold">PHASE III</span>
             <span className="text-red-ff0">{` -> `}</span>[{" "}
             <i>Use the Chest to more Accrue Chakra Points (CP)]</i> ]
             <span></span>
@@ -1134,7 +1153,7 @@ const LitepaperArticle = (props: Props) => {
       <ul className="text-white pl-5 list-disc">
         <li>
           <p className="mb-4">
-            <span className="font-bold">PHASE III :</span>
+            <span className="font-bold">PHASE IV</span>
             <span className="text-red-ff0">{` -> `}</span>[{" "}
             <i>CHAKRA Airdrop]</i> ]<span></span>
           </p>
@@ -1249,15 +1268,15 @@ const LitepaperArticle = (props: Props) => {
       <ul className="list-disc text-white pl-5 mb-12">
         <li className="mb-3">
           <p>
-            <span className="font-semibold">Set I :</span>
-            <span className="text-red-ff0">{` -> `}</span> <i>Social sharing</i>
+            <span className="font-semibold">Set I</span>
+            <span className="text-red-ff0">{` -> `}</span> Social sharing
           </p>
         </li>
         <li className="mb-3">
           <p>
-            <span className="font-semibold">Set II :</span>
+            <span className="font-semibold">Set II</span>
             <span className="text-red-ff0">{` -> `}</span>
-            <i>General DeFi and GameFi user</i>
+            General DeFi and GameFi user
           </p>
           <ul className="text-white pl-5">
             <li>
@@ -1273,9 +1292,9 @@ const LitepaperArticle = (props: Props) => {
         </li>
         <li className="mb-3">
           <p>
-            <span className="font-semibold">Set III :</span>
+            <span className="font-semibold">Set III</span>
             <span className="text-red-ff0">{` -> `}</span>
-            <i>Supply side action</i>
+            Supply side action
           </p>
           <ul className="text-white pl-5">
             <li>
@@ -1288,9 +1307,9 @@ const LitepaperArticle = (props: Props) => {
         </li>
         <li className="mb-3">
           <p>
-            <span className="font-semibold">Set IV :</span>
+            <span className="font-semibold">Set IV</span>
             <span className="text-red-ff0">{` -> `}</span>
-            <i>Demand side action</i>
+            Demand side action
           </p>
           <ul className="text-white pl-5">
             <li>
