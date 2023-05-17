@@ -33,7 +33,7 @@ const NAV_LIST = [
     subList: [
       {
         id: "ecosystem",
-        title: "Fly wheel",
+        title: "Flywheel",
       },
       {
         id: "gaming",
@@ -81,10 +81,10 @@ const NAV_LIST = [
         id: "incentivization",
         title: "Incentivization",
       },
-      // {
-      //   id: "distribution-process",
-      //   title: "Distribution Process",
-      // },
+      {
+        id: "distribution-process",
+        title: "Distribution Process",
+      },
     ],
   },
   {
