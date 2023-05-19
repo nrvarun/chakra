@@ -166,8 +166,8 @@ const LitepaperArticle = (props: Props) => {
         <p className="mb-6">
           <span className="font-bold underline">Chakra Conundrum </span>{" "}
           <span className="text-red-ff0">{`->`}</span> In Conundrum, players
-          face off in the ultimate game of strategy and deception: the iterative
-          {`prisoner's`} dilemma
+          face off (PvP) in the ultimate game of strategy and deception: the
+          iterative {`prisoner's `} dilemma.
         </p>
 
         <p className="mb-2">Game description :</p>
@@ -183,9 +183,9 @@ const LitepaperArticle = (props: Props) => {
 
         <p className="mb-6">
           <span className="font-bold underline">Chakra Dungeons </span>{" "}
-          <span className="text-red-ff0">{`->`}</span> A high—quality 3D ARPG
-          with rogue—like elements. This is a flagship Chakra ecosystem game
-          whose key objective is to immerse players into the world of chakra.
+          <span className="text-red-ff0">{`->`}</span> A 3D ARPG survivor with
+          comprehensive loot mechanics supporting single player and team based
+          gameplay. (PvE)
         </p>
         <p className="mb-3">Game description : </p>
         <p className="mb-6">
@@ -198,8 +198,8 @@ const LitepaperArticle = (props: Props) => {
 
         <p className="mb-6">
           <span className="font-bold underline">Chakra Duels </span>{" "}
-          <span className="text-red-ff0">{`->`}</span> A PvP fighting game with
-          comprehensive duel mechanics and wagering
+          <span className="text-red-ff0">{`->`}</span> A PvP turn based fighting
+          game with progressive duel mechanics and wagering. (In development)
         </p>
 
         <p className="mb-2">
@@ -263,8 +263,8 @@ const LitepaperArticle = (props: Props) => {
           <li>
             <p className="mb-6">
               <span className="font-bold">Manga & Cinematics </span>{" "}
-              <span className="text-red-ff0">{`->`}</span> Comic and Cinematics
-              releases each week with embedded mini-arcs, clues and alpha that
+              <span className="text-red-ff0">{`->`}</span> Manga and Cinematics
+              releases each week with embedded plot-arcs, clues and alpha that
               inform further development
             </p>
           </li>
@@ -284,8 +284,8 @@ const LitepaperArticle = (props: Props) => {
             >
               <li>
                 <p>
-                  NFTs in the form of skins, items, cosmetics, weapons, loot etc
-                  that can be traded in the native marketplace
+                  NFTs in the form of characters, skins, items, cosmetics,
+                  weapons, loot etc that can be traded in the native marketplace
                 </p>
               </li>
               <li>
@@ -373,7 +373,7 @@ const LitepaperArticle = (props: Props) => {
             </p>
           </li>
           <li>
-            <p>Enhances liquidity of the $SOMA token.</p>
+            <p>Enhances liquidity of the native token.</p>
           </li>
           <li>
             <p>Earning opportunities to creators of game content</p>
@@ -401,9 +401,9 @@ const LitepaperArticle = (props: Props) => {
           and ownership layer via NFTs.
         </p>
         <p className="mb-10">
-          We leverage web3 technologies NFTs, DeFi primitives & a Native unit of
-          account ($SOMA) to provide greater control and value to users whose
-          incentives are aligned with those of Chakra Ecosystem.
+          Ecosystem leverages web3 technologies NFTs, DeFi primitives & a Native
+          unit of account ($SOMA) to provide greater control and value to users
+          whose incentives are aligned with those of Chakra Ecosystem.
         </p>
         <div className="grid grid-cols-2 gap-8">
           <figure className="mb-10">
@@ -469,6 +469,11 @@ const LitepaperArticle = (props: Props) => {
         >
           Public Goods
         </h4>
+
+        <p className="mb-10">
+          Core non-rivalrous public infrastructure to help create a virtuous
+          cycle of activity, expansion & commerce within the Chakra ecosystem.
+        </p>
 
         <figure>
           <img className="mb-10 w-full" src="/images/litepaper/8.png" alt="1" />
@@ -779,8 +784,9 @@ const LitepaperArticle = (props: Props) => {
         <span className="font-bold">$SOMA</span>
       </p>
       <p className="mb-6">
-        The primary utility token of the Chakra ecosystem.An EVM compatible
-        token for use on Arbitrum
+        The primary token for the CHAKRA ecosystem that allow interactions and
+        value transfer in the whole ecosystem. It’s An EVM compatible token for
+        use on Arbitrum.
       </p>
 
       <p className="mb-4">
@@ -853,14 +859,6 @@ const LitepaperArticle = (props: Props) => {
       </p>
 
       <ul className="text-white list-disc pl-5">
-        <li>
-          <p className="mb-5">
-            <span className="font-bold">Stablecoin</span>
-            <span className="text-red-ff0">{` -> `}</span>The stablecoin back
-            the CHAKRA token and maintain liquidity in the AMM and Pools. It’s
-            crucial for the {`ecosystem's`} sustainability and stability.
-          </p>
-        </li>
         <li>
           <p className="mb-5">
             <span className="font-bold">Chieftain NFT</span>
@@ -994,7 +992,7 @@ const LitepaperArticle = (props: Props) => {
         className="font-marco font-semibold text-white mb-10"
         id="ecosystem-birds-view"
       >
-        Ecosystem [Birds-Eye View]
+        Ecosystem [{`Bird's-eye view`}]
       </h4>
 
       <p className="mb-10">
@@ -1051,17 +1049,17 @@ const LitepaperArticle = (props: Props) => {
         </li>
       </ol>
 
-      <ul className="text-white list-disc pl-5">
+      <ul className="text-white list-decimal pl-5">
         <li>
           <p className="mb-6">
             <span className="font-bold">Staking Reward</span>
             <span className="text-red-ff0">{` -> `}</span>
             <span className="">
-              90% of Revenue Pool will be allocated to liquidity providers (and
-              stakers), with the remaining 10% going to the {`protocol's`}{" "}
-              treasury. Additionally, a portion of token supply will be
-              allocated to reward liquidity providers to encourage a rich market
-              depth.
+              A substantial % of Revenue Pool will be allocated to liquidity
+              providers (and stakers), with the remaining going to the
+              {`protocol's`} treasury. Additionally, a portion of token supply
+              will be allocated to reward liquidity providers to encourage a
+              rich market depth.
             </span>{" "}
           </p>
         </li>
@@ -1070,6 +1068,7 @@ const LitepaperArticle = (props: Props) => {
             <span className="font-bold">Seasonal Airdrops</span>
             <span className="text-red-ff0">{` -> `}</span>
             <span className="">
+              [Airdrops are composed of Tokens and Loot {`(virtual assets] ->`}{" "}
               Rewards are distributed in a series of seasons to continually
               incentivize network participation. The reward distribution is
               strategic and gamified, aligning with the {`protocol's`} gaming
@@ -1094,76 +1093,81 @@ const LitepaperArticle = (props: Props) => {
         <i>Airdrops are composed of Tokens and Loot (virtual assets)</i>
       </p>
 
-      <h4
-        className="font-marco font-semibold text-white mb-6"
-        id="distribution-process"
-      >
-        Distribution Process
-      </h4>
-
-      <ul className="text-white pl-5 list-disc">
-        <li>
-          <p className="mb-4">
-            <span className="font-bold">PHASE I</span>
-            <span className="text-red-ff0">{` -> `}</span>[{" "}
-            <i>Announce Upcoming Airdrop</i> ]<span></span>
-          </p>
-        </li>
-      </ul>
-
-      <p className="mb-6">
-        Chakra will announce an upcoming airdrop, which is a treasure chest, and
-        the eligibility requirements to receive it. This announcement motivates
-        users to interact with the platform to generate CP.
+      <p className="font-semibold text-white mb-6" id="distribution-process">
+        <span className="underline">Distribution Process</span>
       </p>
 
       <ul className="text-white pl-5 list-disc">
         <li>
           <p className="mb-4">
-            <span className="font-bold">PHASE II</span>
-            <span className="text-red-ff0">{` -> `}</span>[{" "}
-            <i>Treasure Chest NFT Airdrop</i> ]<span></span>
+            <span className="font-bold"> Announce Airdrop </span>
+            <span className="text-red-ff0">{` -> `}</span>
+          </p>
+        </li>
+      </ul>
+
+      <p className="mb-6">
+        This announcement motivates users to interact with the platform to
+        generate CP, which measures the value a user adds to the protocol.
+      </p>
+
+      <ul className="text-white pl-5 list-disc">
+        <li>
+          <p className="mb-4">
+            <span className="font-bold">Treasure Chest NFT Airdrop</span>
+            <span className="text-red-ff0">{` -> `}</span>
           </p>
         </li>
       </ul>
 
       <p className="mb-6">
         The Treasure Chest NFT is distributed to all users who generated up to
-        the minimum required CP for Airdrop. The rarity (and value) of the chest
-        received is determined by the {`user's`} CPs.
+        the minimum required CP for Airdrop. Player now have two choices.
       </p>
+
+      <ul className="text-white list-disc pl-10 mb-8">
+        <li>
+          <p>Cash out the reward instantly by burning chakra points</p>
+        </li>
+        <li>
+          <p>
+            Stick around and receive a treasure chest which will then accrue
+            higher rewards towards the end of the seasons
+          </p>
+        </li>
+      </ul>
 
       <ul className="text-white pl-5 list-disc">
         <li>
           <p className="mb-4">
-            <span className="font-bold">PHASE III</span>
-            <span className="text-red-ff0">{` -> `}</span>[{" "}
-            <i>Use the Chest to more Accrue Chakra Points (CP)]</i> ]
+            <span className="font-bold">
+              Use the Chest to Accrue Chakra Points (CP){" "}
+            </span>
+            <span className="text-red-ff0">{` -> `}</span>
             <span></span>
           </p>
         </li>
       </ul>
 
       <p className="mb-6">
-        The Treasury Chest is used to multiply subsequent CP accrued by the
-        holder. All CPs accrued are boosted by a multiplier effect associated
-        with the chest, with rarer chests providing higher multipliers.
+        All CPs accrued are boosted by the tier value of each chest. What chests
+        you receive would again be based on your interaction with the ecosystem
+        and the existing CP you hold.
       </p>
 
       <ul className="text-white pl-5 list-disc">
         <li>
           <p className="mb-4">
-            <span className="font-bold">PHASE IV</span>
-            <span className="text-red-ff0">{` -> `}</span>[{" "}
-            <i>CHAKRA Airdrop]</i> ]<span></span>
+            <span className="font-bold">CHAKRA Airdrop</span>
+            <span className="text-red-ff0">{` -> `}</span>
           </p>
         </li>
       </ul>
 
       <p className="mb-10">
-        At the end of each season, CHAKRA tokens are distributed proportionally
-        to stakeholders based on their CP holding. The {`protocol's`} CPs and
-        treasure chest NFT are burned to redeem CHAKRA tokens. points are reset
+        At the end of each season, airdrops are distributed proportionally to
+        stakeholders based on their CP holding. The {`protocol's`} CPs and
+        treasure chest NFT are burned to redeem CHAKRA tokens. Points are reset
         at the end of each season, and all airdrop tokens are vested.
       </p>
 
@@ -1198,7 +1202,7 @@ const LitepaperArticle = (props: Props) => {
       </figure>
 
       <p className="mb-6">
-        <span className="font-bold underline">Treasure Chest Design</span>
+        <span className="font-bold underline">Treasure Chest Design (WIP)</span>
       </p>
 
       <p className="mb-6">
@@ -1211,8 +1215,12 @@ const LitepaperArticle = (props: Props) => {
       </p>
 
       <figure>
-        <img className="mb-12" src="/images/litepaper/dp-3.svg" alt="" />
+        <img className="mb-10" src="/images/litepaper/dp-3.svg" alt="" />
       </figure>
+
+      <p className="mb-12">
+        <i>Note: The tiers will be defined in the near future</i>
+      </p>
 
       <p className="mb-6">
         <span className="font-bold underline">
@@ -1234,6 +1242,13 @@ const LitepaperArticle = (props: Props) => {
         <img className="mb-12" src="/images/litepaper/dp-4.svg" alt="" />
       </figure>
 
+      <p className="mb-10">
+        <i>
+          Note: The full set of actions and their point rewards will be defined
+          in the near future
+        </i>
+      </p>
+
       <p className="mb-6">
         <span className="font-bold">
           Grouping rewardable actions by Sectors and Economic structure
@@ -1247,7 +1262,7 @@ const LitepaperArticle = (props: Props) => {
         <span className="font-bold underline">Airdrop Distribution Design</span>
       </p>
 
-      <p className="mb-6">
+      <p className="mb-12">
         <span className="">
           We plan to continuously incentivize user participation through a
           gamified seasonal reward system throughout the project{`'s`} lifetime.
@@ -1449,7 +1464,8 @@ const LitepaperArticle = (props: Props) => {
       <ul className="text-white mb-10">
         <li className="mb-2">
           <p>
-            <span className="text-red-ff0 text-lg">{` ◇ `}</span>Utilizing NFTs
+            <span className="text-red-ff0 text-lg">{` ◇ `}</span>
+            <strong>Utilizing NFTs </strong>
             to establish verifiable digital ownership, enable seamless
             transferability, and create unique identifiers for enhanced gaming
             experiences.
@@ -1457,17 +1473,17 @@ const LitepaperArticle = (props: Props) => {
         </li>
         <li className="mb-4">
           <p>
-            <span className="text-red-ff0 text-lg">{` ◇ `}</span>Employing
-            Fungible Tokens to equitize participants within the ecosystem,
-            incentivize desired behaviors, and provide a native unit of account
-            for commerce and value capture.
+            <span className="text-red-ff0 text-lg">{` ◇ `}</span>
+            <strong>Employing Fungible Tokens</strong> to equitize participants
+            within the ecosystem, incentivize desired behaviors, and provide a
+            native unit of account for commerce and value capture.
           </p>
         </li>
         <li className="mb-4">
           <p>
-            <span className="text-red-ff0 text-lg">{` ◇ `}</span>Leveraging DeFi
-            and decentralized governance to create a transparent, accessible,
-            and self-regulating ecosystem.
+            <span className="text-red-ff0 text-lg">{` ◇ `}</span>
+            <strong>Leveraging DeFi and decentralized governance</strong> to
+            create a transparent, accessible, and self-regulating ecosystem.
           </p>
         </li>
       </ul>
