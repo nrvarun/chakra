@@ -26,19 +26,19 @@ const NAV_LINKS = [
     tooltipContent: "🚧",
   },
   {
-    path: "/litepaper",
-    title: "litepaper",
+    path: "/whitepaper",
+    title: "whitepaper",
     disabled: false,
     target: "",
     tooltipContent: "",
   },
-  {
-    path: "https://continuous-rover-864.notion.site/Litepaper-85bcde5f6c18473a8a87f4c53bb4c88c",
-    title: "Docs",
-    disabled: false,
-    target: "_blank",
-    tooltipContent: "",
-  },
+  // {
+  //   path: "https://continuous-rover-864.notion.site/Litepaper-85bcde5f6c18473a8a87f4c53bb4c88c",
+  //   title: "Docs",
+  //   disabled: false,
+  //   target: "_blank",
+  //   tooltipContent: "",
+  // },
   {
     path: "/connect",
     title: "Play",

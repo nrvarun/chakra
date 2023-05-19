@@ -6,12 +6,12 @@ import CustomHead from "@components/CustomHead";
 import Footer from "@components/Footer";
 import Header from "@components/Header";
 
-import LitePaperModule from "modules/LitePaperModule";
+import WhitePaperModule from "modules/WhitePaperModule";
 import PageLoadAnim from "modules/PageLoadAnim";
 
 // const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600"] });
 
-export default function Home() {
+export default function WhitePaper() {
   const pathname = usePathname();
 
   const isHome = pathname === "/";
@@ -33,7 +33,7 @@ export default function Home() {
       {isLoading && <PageLoadAnim />}
       <CustomHead />
       <Header customClass="white" />
-      <LitePaperModule />
+      <WhitePaperModule />
       <Footer />
     </>
   );

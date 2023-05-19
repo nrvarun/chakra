@@ -8,29 +8,29 @@ import {
   StyledLitePaperSubListText,
   StyledLitePaperText,
   StyledLitePaperWrapper,
-} from "./litepaper.style";
-import LitepaperNav from "./LitepaperNav";
-import LitepaperArticle from "./LitepaperArticle";
+} from "./whitepaper.style";
+import WhitepaperNav from "./WhitepaperNav";
+import WhitepaperArticle from "./WhitepaperArticle";
 
 type Props = {};
 
-const LitePaperModule = (props: Props) => {
+const WhitePaperModule = (props: Props) => {
   return (
     <StyledLitePaperWrapper>
       <StyledLitePaperContentWrapper>
         <StyledLitePaperNav>
           {/* <h4 className="font-marco">litepaper</h4> */}
-          <LitepaperNav />
+          <WhitepaperNav />
         </StyledLitePaperNav>
         <StyledLitePaperContent className="flex-1 relative w-full h-full bg-black">
           <StyledLitePaperBgImg>
             <img src="/images/litepaperbg.png" alt="" />
           </StyledLitePaperBgImg>
-          <LitepaperArticle />
+          <WhitepaperArticle />
         </StyledLitePaperContent>
       </StyledLitePaperContentWrapper>
     </StyledLitePaperWrapper>
   );
 };
 
-export default LitePaperModule;
+export default WhitePaperModule;

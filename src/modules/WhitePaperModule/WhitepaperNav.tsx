@@ -3,7 +3,7 @@ import {
   StyledLitePaperListTitle,
   StyledLitePaperSubListText,
   StyledLitePaperText,
-} from "./litepaper.style";
+} from "./whitepaper.style";
 
 type Props = {};
 
@@ -81,10 +81,10 @@ const NAV_LIST = [
         id: "incentivization",
         title: "Incentivization",
       },
-      {
-        id: "distribution-process",
-        title: "Distribution Process",
-      },
+      // {
+      //   id: "distribution-process",
+      //   title: "Distribution Process",
+      // },
     ],
   },
   {
@@ -108,7 +108,7 @@ const NAV_LIST = [
   },
 ];
 
-const LitepaperNav = (props: Props) => {
+const WhitepaperNav = (props: Props) => {
   const handleClickScroll = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -150,4 +150,4 @@ const LitepaperNav = (props: Props) => {
   );
 };
 
-export default LitepaperNav;
+export default WhitepaperNav;

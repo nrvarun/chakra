@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import { StyledLitePaperArticle } from "./litepaper.style";
+import { StyledLitePaperArticle } from "./whitepaper.style";
 
 type Props = {};
 
-const LitepaperArticle = (props: Props) => {
+const WhitepaperArticle = (props: Props) => {
   return (
     <StyledLitePaperArticle className="scroll-smooth">
       <section id="world-of-chakra">
@@ -1690,4 +1690,4 @@ const LitepaperArticle = (props: Props) => {
   );
 };
 
-export default LitepaperArticle;
+export default WhitepaperArticle;
