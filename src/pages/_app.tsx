@@ -11,11 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <GlobalStyle />
-      {width > 1280 ? (
-        <Component {...pageProps} />
-      ) : (
-        <MobileBanner {...pageProps} />
-      )}
+      <Component {...pageProps} />
     </>
   );
 }
