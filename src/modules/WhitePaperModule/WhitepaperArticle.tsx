@@ -237,7 +237,7 @@ const WhitepaperArticle = (props: Props) => {
           Cinematics and Digital Assets. This body of work serves as the
           scaffolding for community to expand upon.
         </p>
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid xl:grid-cols-2 gap-8">
           <figure className="mb-10">
             <img className="w-full" src="/images/litepaper/6-1.png" alt="1" />
             <figcaption className="text-white text-xs capitalize">
@@ -298,7 +298,7 @@ const WhitepaperArticle = (props: Props) => {
           </li>
         </ol>
 
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid xl:grid-cols-2 gap-8">
           <figure className="mb-10">
             <img className="w-full" src="/images/litepaper/va-1.png" alt="1" />
             <figcaption className="text-white text-xs capitalize">
@@ -405,7 +405,7 @@ const WhitepaperArticle = (props: Props) => {
           unit of account ($SOMA) to provide greater control and value to users
           whose incentives are aligned with those of Chakra Ecosystem.
         </p>
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid xl:grid-cols-2 gap-8">
           <figure className="mb-10">
             <img
               className="h-full object-cover w-full"

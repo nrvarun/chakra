@@ -36,11 +36,14 @@ export const StyledLitePaperBgImg = styled.div`
 
 export const StyledLitePaperNav = styled.aside`
   min-height: calc(100vh - 76px);
-
+  display: none;
   width: auto;
   flex: 1 1 25%;
   padding: 0 75px;
-  display: flex;
+
+  @media (min-width: 1200px) {
+    display: flex;
+  }
 
   h4 {
     font-style: normal;
@@ -128,22 +131,34 @@ export const StyledLitePaperArticle = styled.article`
   right: 0;
   width: 100%;
   height: 100%;
-  padding: 0 120px 180px 120px;
   height: 100vh;
   overflow: scroll;
+  padding: 0 36px 100px 24px;
+
+  @media (min-width: 1200px) {
+    padding: 0 120px 180px 120px;
+  }
 
   h3 {
     font-weight: 400;
-    font-size: 72px;
+    font-size: 48px;
     line-height: 1.5;
     background-color: transparent !important;
+
+    @media (min-width: 1200px) {
+      font-size: 72px;
+    }
   }
 
   h4 {
+    font-size: 24px;
     font-weight: 400;
-    font-size: 48px;
     line-height: 1.25;
     background-color: transparent !important;
+
+    @media (min-width: 1200px) {
+      font-size: 48px;
+    }
 
     span {
       font-size: 24px;
@@ -153,10 +168,14 @@ export const StyledLitePaperArticle = styled.article`
 
   p {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.25;
     color: #ffffff;
-    max-width: 85%;
+
+    @media (min-width: 1200px) {
+      max-width: 85%;
+      font-size: 16px;
+    }
   }
 
   ol {
