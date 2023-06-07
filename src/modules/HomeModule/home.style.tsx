@@ -86,3 +86,28 @@ export const StyledHomeBannerContent = styled.div`
     }
   }
 `;
+
+export const StyledHomeMobileNavWrapper = styled.aside`
+  position: relative;
+  height: 100vh;
+  padding: 150px 34px 180px;
+  display: flex;
+
+  nav {
+    margin: auto 0 0 0;
+
+    ul {
+      li {
+        margin: 0 0 16px 0;
+
+        p {
+          font-weight: 400;
+          font-size: 48px;
+          line-height: 58px;
+          letter-spacing: 0.01em;
+          color: #fafafa;
+        }
+      }
+    }
+  }
+`;

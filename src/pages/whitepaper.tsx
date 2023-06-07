@@ -34,7 +34,7 @@ export default function WhitePaper() {
       <CustomHead />
       <Header customClass="white" />
       <WhitePaperModule />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

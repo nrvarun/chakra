@@ -6,7 +6,7 @@ export const StyledFooter = styled.footer`
   left: 0;
   right: 0;
   width: 100%;
-  padding: 12px;
+  padding: 16px;
   z-index: 100;
 
   @media (min-width: 1024px) {

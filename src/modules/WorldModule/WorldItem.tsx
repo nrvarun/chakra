@@ -22,7 +22,7 @@ const WorldItem = ({ title, desc, img, path, bgPattern }: Props) => {
         <StyledWorldContent>
           <div className="world-inner-element">
             <h3 className="font-marco world-inner-element">{title}</h3>
-            <p className="mb-8 font-medium font-inter">{desc}</p>
+            <p className="xl:mb-8 font-medium font-inter">{desc}</p>
             <p className="text-md text-white capitalize py-2 font-semibold font-inter explore-item">
               {`Explore ->`}
             </p>
