@@ -191,3 +191,55 @@ export const StyledLitePaperArticle = styled.article`
     }
   }
 `;
+
+export const StyledWhitepaperNav = styled.aside`
+  position: fixed;
+  top: 56px;
+  left: 0;
+  right: 0;
+  background: #010101;
+  border: 0.5px solid #484848;
+  z-index: 100;
+  height: auto;
+`;
+
+export const StyledWhitepaperNavHeading = styled.h3`
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.01em;
+  color: #e11d48;
+  padding: 12px;
+  text-align: center;
+  border-bottom: 0.5px solid #484848;
+`;
+
+export const StyledWhitepaperNavSubHeading = styled.p`
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #e11d48;
+  padding: 12px;
+  text-align: center;
+`;
+
+export const StyledWhitepaperNavToggleCTA = styled.button`
+  background: #010101;
+  border: 0.5px solid #484848;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  svg {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+  }
+
+  &.open {
+    svg {
+      transform: rotate(0deg);
+    }
+  }
+`;
