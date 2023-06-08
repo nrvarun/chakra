@@ -9,6 +9,7 @@ import {
 } from "./whitepaper.style";
 
 import { motion } from "framer-motion";
+import { useWindowSize } from "react-use";
 
 type Props = {};
 
@@ -115,13 +116,17 @@ const NAV_LIST = [
 
 const WhitepaperMobileNav = (props: Props) => {
   const [navOpen, setNavOpen] = useState(false);
+  const { width } = useWindowSize();
 
   const handleClickScroll = (id) => {
     const element = document.getElementById(id);
     if (element) {
       // 👇 Will scroll smoothly to the top of the next section
       setNavOpen(false);
-      element.scrollIntoView({ behavior: "smooth" });
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: width > 1200 ? "center" : "start",
+      });
     }
   };
 
