@@ -164,7 +164,7 @@ const WhitepaperMobileNav = (props: Props) => {
         style={{
           height: navOpen ? "calc(100vh - 120px)" : "0",
         }}
-        className="list-decimal px-14 pt-14 text-white overflow-auto min-h-full"
+        className="list-decimal px-14 text-white overflow-auto min-h-full"
       >
         {NAV_LIST.map((nav) => (
           <li key={nav.id} className="mb-4">
