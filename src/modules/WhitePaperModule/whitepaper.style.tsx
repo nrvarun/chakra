@@ -133,7 +133,7 @@ export const StyledLitePaperArticle = styled.article`
   height: 100%;
   height: 100vh;
   overflow: scroll;
-  padding: 0 36px 100px 24px;
+  padding: 120px 36px;
 
   @media (min-width: 1200px) {
     padding: 0 120px 180px 120px;
@@ -198,7 +198,6 @@ export const StyledWhitepaperNav = styled.aside`
   left: 0;
   right: 0;
   background: #010101;
-  border: 0.5px solid #484848;
   z-index: 100;
   height: auto;
 `;
@@ -211,28 +210,25 @@ export const StyledWhitepaperNavHeading = styled.h3`
   color: #e11d48;
   padding: 12px;
   text-align: center;
-  border-bottom: 0.5px solid #484848;
 `;
 
 export const StyledWhitepaperNavSubHeading = styled.p`
   font-weight: 600;
   font-size: 12px;
   line-height: 15px;
-  color: #e11d48;
-  padding: 12px;
   text-align: center;
 `;
 
 export const StyledWhitepaperNavToggleCTA = styled.button`
   background: #010101;
-  border: 0.5px solid #484848;
   padding: 10px;
   text-align: center;
-  width: 100%;
+  width: auto;
   display: flex;
   justify-content: center;
 
   svg {
+    margin: 0 0 0 8px;
     transform: rotate(180deg);
     transition: transform 0.3s ease;
   }
@@ -242,4 +238,8 @@ export const StyledWhitepaperNavToggleCTA = styled.button`
       transform: rotate(0deg);
     }
   }
+`;
+
+export const StyledWhitepaperMobileNavWrapper = styled.div`
+  border: 0.5px solid #484848;
 `;

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import {
   StyledLitePaperListTitle,
   StyledLitePaperSubListText,
+  StyledWhitepaperMobileNavWrapper,
   StyledWhitepaperNav,
   StyledWhitepaperNavHeading,
   StyledWhitepaperNavSubHeading,
@@ -136,18 +137,34 @@ const WhitepaperMobileNav = (props: Props) => {
 
   return (
     <StyledWhitepaperNav>
-      <StyledWhitepaperNavHeading className="font-marco">
-        Whitepaper
-      </StyledWhitepaperNavHeading>
-      <StyledWhitepaperNavSubHeading className="uppercase">
-        table of contents
-      </StyledWhitepaperNavSubHeading>
+      <StyledWhitepaperMobileNavWrapper className="grid grid-cols-2 items-center">
+        <StyledWhitepaperNavHeading className="font-marco">
+          Whitepaper
+        </StyledWhitepaperNavHeading>
+        <StyledWhitepaperNavToggleCTA
+          onClick={toggleWhitePaperNav}
+          className={`flex items-center ${navOpen ? "open" : "close"}`}
+        >
+          <StyledWhitepaperNavSubHeading className="uppercase text-white">
+            table of contents
+          </StyledWhitepaperNavSubHeading>
+          <motion.svg
+            width="16"
+            height="8"
+            viewBox="0 0 16 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M16 8L8 0L0 8L16 8Z" fill="#E11D48" />
+          </motion.svg>
+        </StyledWhitepaperNavToggleCTA>
+      </StyledWhitepaperMobileNavWrapper>
       <motion.ol
         layout
         style={{
-          height: navOpen ? "calc(100vh - 180px)" : "0",
+          height: navOpen ? "calc(100vh - 120px)" : "0",
         }}
-        className="list-decimal px-14 text-white overflow-auto min-h-full"
+        className="list-decimal px-14 pt-14 text-white overflow-auto min-h-full"
       >
         {NAV_LIST.map((nav) => (
           <li key={nav.id} className="mb-4">
@@ -172,20 +189,6 @@ const WhitepaperMobileNav = (props: Props) => {
           </li>
         ))}
       </motion.ol>
-      <StyledWhitepaperNavToggleCTA
-        onClick={toggleWhitePaperNav}
-        className={navOpen ? "open" : "close"}
-      >
-        <motion.svg
-          width="16"
-          height="8"
-          viewBox="0 0 16 8"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M16 8L8 0L0 8L16 8Z" fill="#E11D48" />
-        </motion.svg>
-      </StyledWhitepaperNavToggleCTA>
     </StyledWhitepaperNav>
   );
 };
