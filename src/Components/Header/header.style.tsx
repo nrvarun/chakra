@@ -186,6 +186,10 @@ export const StyledHeader = styled.header`
     }
   }
 
+  &.litepaper {
+    background-color: #000000;
+  }
+
   &.landing {
     .mobile-menu {
       display: none;
