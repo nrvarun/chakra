@@ -169,34 +169,40 @@ const WhitepaperArticle = (props: Props) => {
           iterative {`prisoner's `} dilemma.
         </p>
 
-        <p className="mb-2">Game description :</p>
-        <p className="mb-6">
-          <i>
-            In this world of infinite possibility and endless treachery, only
-            the strongest and most cunning will prevail. Only by mastering the
-            art of coordination and outsmarting your opponents can you hope to
-            succeed in your quest and emerge as a true champion of the Chakra
-            Conundrum
-          </i>
+        <p className="mb-8">
+          Game description :{" "}
+          <span>
+            {" "}
+            <i>
+              In this world of infinite possibility and endless treachery, only
+              the strongest and most cunning will prevail. Only by mastering the
+              art of coordination and outsmarting your opponents can you hope to
+              succeed in your quest and emerge as a true champion of the Chakra
+              Conundrum
+            </i>
+          </span>
         </p>
 
         <p className="mb-6">
-          <span className="font-bold underline">Chakra Dungeons </span>{" "}
-          <span className="text-red-e11">{`->`}</span> A 3D ARPG survivor with
-          comprehensive loot mechanics supporting single player and team based
-          gameplay. (PvE)
+          <span className="font-bold underline">Chakra Ascension </span>{" "}
+          <span className="text-red-e11">{`->`}</span> A high—quality 3D ARPG
+          with rogue—like elements. This is a flagship Chakra ecosystem game
+          whose key objective is to immerse players into the world of chakra.
         </p>
-        <p className="mb-3">Game description : </p>
-        <p className="mb-6">
-          <i>
-            Delve into digital catacombs and slaughter enemies for a
-            never-ending shower of loot. Team up with friends to increase the
-            challenge (and loot quality).
-          </i>
+        <p className="mb-3">
+          Game description :{" "}
+          <span>
+            <i>
+              Embrace the fusion of strategy and intuition as you delve into the
+              ancient World of Chakra Outmaneuver your foes, unlock the secrets
+              of energy manipulation, and emerge as the supreme warrior in this
+              captivating duel of mystical might.
+            </i>
+          </span>
         </p>
 
         <p className="mb-6">
-          <span className="font-bold underline">Chakra Duels </span>{" "}
+          <span className="font-bold underline">Chakra Clash </span>{" "}
           <span className="text-red-e11">{`->`}</span> A PvP turn based fighting
           game with progressive duel mechanics and wagering. (In development)
         </p>
@@ -207,13 +213,13 @@ const WhitepaperArticle = (props: Props) => {
         <ol className="mb-10">
           <li>
             <p>
-              <strong>PvP :</strong> supporting wagering & leaderboard rewards
+              <strong>PvP </strong> (supporting wagering & leaderboard rewards)
             </p>
           </li>
           <li>
             <p>
-              <strong>PvE :</strong> loot based gameplay with level progression
-              system
+              <strong>PvE </strong> (loot based gameplay with level progression
+              system) system
             </p>
           </li>
         </ol>
