@@ -14,7 +14,7 @@ module.exports = {
       sm: '480px',
       md: '768px',
       lg: '976px',
-      xl: '1440px',
+      xl: '1200px',
       hd: '1920px',
     },
     colors: {
@@ -25,6 +25,7 @@ module.exports = {
       'green': '#13ce66',
       'red': '#E52E3D',
       'red-ff0': '#FF0000',
+      'red-e11': '#E11D48',
       'yellow': '#ffc82c',
       'gray-dark': '#273444',
       'gray': '#8492a6',

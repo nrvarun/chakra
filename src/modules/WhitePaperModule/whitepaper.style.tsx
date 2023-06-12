@@ -36,11 +36,14 @@ export const StyledLitePaperBgImg = styled.div`
 
 export const StyledLitePaperNav = styled.aside`
   min-height: calc(100vh - 76px);
-
+  display: none;
   width: auto;
   flex: 1 1 25%;
   padding: 0 75px;
-  display: flex;
+
+  @media (min-width: 1200px) {
+    display: flex;
+  }
 
   h4 {
     font-style: normal;
@@ -128,22 +131,34 @@ export const StyledLitePaperArticle = styled.article`
   right: 0;
   width: 100%;
   height: 100%;
-  padding: 0 120px 180px 120px;
   height: 100vh;
   overflow: scroll;
+  padding: 90px 36px 120px 36px;
+
+  @media (min-width: 1200px) {
+    padding: 0 120px 180px 120px;
+  }
 
   h3 {
     font-weight: 400;
-    font-size: 72px;
+    font-size: 48px;
     line-height: 1.5;
     background-color: transparent !important;
+
+    @media (min-width: 1200px) {
+      font-size: 72px;
+    }
   }
 
   h4 {
+    font-size: 24px;
     font-weight: 400;
-    font-size: 48px;
     line-height: 1.25;
     background-color: transparent !important;
+
+    @media (min-width: 1200px) {
+      font-size: 48px;
+    }
 
     span {
       font-size: 24px;
@@ -153,10 +168,14 @@ export const StyledLitePaperArticle = styled.article`
 
   p {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.25;
     color: #ffffff;
-    max-width: 85%;
+
+    @media (min-width: 1200px) {
+      max-width: 85%;
+      font-size: 16px;
+    }
   }
 
   ol {
@@ -171,4 +190,56 @@ export const StyledLitePaperArticle = styled.article`
       margin: 0 0 8px 0;
     }
   }
+`;
+
+export const StyledWhitepaperNav = styled.aside`
+  position: fixed;
+  top: 56px;
+  left: 0;
+  right: 0;
+  background: #010101;
+  z-index: 100;
+  height: auto;
+`;
+
+export const StyledWhitepaperNavHeading = styled.h3`
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.01em;
+  color: #e11d48;
+  padding: 12px;
+  text-align: center;
+`;
+
+export const StyledWhitepaperNavSubHeading = styled.p`
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+`;
+
+export const StyledWhitepaperNavToggleCTA = styled.button`
+  background: #010101;
+  padding: 10px;
+  text-align: center;
+  width: auto;
+  display: flex;
+  justify-content: center;
+
+  svg {
+    margin: 0 0 0 8px;
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+  }
+
+  &.open {
+    svg {
+      transform: rotate(0deg);
+    }
+  }
+`;
+
+export const StyledWhitepaperMobileNavWrapper = styled.div`
+  border: 0.5px solid #484848;
 `;

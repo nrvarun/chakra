@@ -4,17 +4,20 @@ export const StyledHeaderLogoWrapper = styled.div`
   a {
     &,
     &:hover {
+      text-align: right;
     }
   }
 
   svg {
-    width: 61px;
-    height: 20px;
+    width: auto;
+    height: 24px;
     color: #ffffff;
+    margin: 0 auto;
 
-    @media (min-width: 1280px) {
+    @media (min-width: 1200px) {
       width: 165.61px;
       height: 40px;
+      margin: 0;
     }
 
     path {
@@ -24,7 +27,7 @@ export const StyledHeaderLogoWrapper = styled.div`
 `;
 
 export const StyledHeader = styled.header`
-  padding: 8px 12px;
+  padding: 16px 12px;
   position: fixed;
   top: 0;
   left: 0;
@@ -183,9 +186,19 @@ export const StyledHeader = styled.header`
     }
   }
 
+  &.litepaper {
+    background-color: #000000;
+  }
+
   &.landing {
-    svg {
+    .mobile-menu {
       display: none;
+    }
+
+    svg {
+      @media (min-width: 1200px) {
+        display: none;
+      }
     }
 
     a {
@@ -194,5 +207,16 @@ export const StyledHeader = styled.header`
         color: #ffffff;
       }
     }
+  }
+`;
+
+export const StyledMobileMenuCTA = styled.button`
+  svg {
+    height: 20px;
+    width: 20px;
+  }
+
+  @media (min-width: 1200px) {
+    display: none;
   }
 `;

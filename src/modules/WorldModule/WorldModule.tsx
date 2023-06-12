@@ -4,6 +4,7 @@ import WorldItem from "./WorldItem";
 
 import Tilt from "react-parallax-tilt";
 import { useRouter } from "next/router";
+import { useWindowSize } from "react-use";
 
 type Props = {};
 
@@ -37,6 +38,8 @@ const WORLD_ITEMS = [
 const WorldModule = (props: Props) => {
   const router = useRouter();
 
+  const { width } = useWindowSize();
+
   useEffect(() => {
     /**
      * Redirect to home on landing
@@ -47,7 +50,14 @@ const WorldModule = (props: Props) => {
   return (
     <main className="non-landing">
       <StyledWorldPageBgImgWrapper>
-        <img src="/images/world/bgimg.png" alt="background of world" />
+        <img
+          src={
+            width > 1200
+              ? "/images/world/bgimg.png"
+              : "/images/mobile/world.png"
+          }
+          alt="background of world"
+        />
       </StyledWorldPageBgImgWrapper>
       <StyledWorldSection className="mt-2">
         <div className="grid lg:grid-cols-3">

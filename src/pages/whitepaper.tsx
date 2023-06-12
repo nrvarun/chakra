@@ -32,9 +32,9 @@ export default function WhitePaper() {
     <>
       {isLoading && <PageLoadAnim />}
       <CustomHead />
-      <Header customClass="white" />
+      <Header customClass="white litepaper" />
       <WhitePaperModule />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

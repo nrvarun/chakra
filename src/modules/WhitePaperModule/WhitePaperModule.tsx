@@ -11,17 +11,30 @@ import {
 } from "./whitepaper.style";
 import WhitepaperNav from "./WhitepaperNav";
 import WhitepaperArticle from "./WhitepaperArticle";
+import { useWindowSize } from "react-use";
+import WhitepaperMobileNav from "./WhitepaperMobileNav";
 
 type Props = {};
 
 const WhitePaperModule = (props: Props) => {
+  const { width } = useWindowSize();
+
+  const renderNav = () => {
+    if (width > 1200) {
+      return (
+        <StyledLitePaperNav>
+          <WhitepaperNav />
+        </StyledLitePaperNav>
+      );
+    }
+
+    return <WhitepaperMobileNav />;
+  };
+
   return (
     <StyledLitePaperWrapper>
       <StyledLitePaperContentWrapper>
-        <StyledLitePaperNav>
-          {/* <h4 className="font-marco">litepaper</h4> */}
-          <WhitepaperNav />
-        </StyledLitePaperNav>
+        {renderNav()}
         <StyledLitePaperContent className="flex-1 relative w-full h-full bg-black">
           <StyledLitePaperBgImg>
             <img src="/images/litepaperbg.png" alt="" />

@@ -26,9 +26,9 @@ const Footer = (props: Props) => {
   return (
     <StyledFooter>
       <div className="relative flex">
-        <ul className="flex items-start mr-auto">
+        <ul className="flex items-start m-auto mb-6 xl:mr-auto xl:mb-0">
           {FOOTER_LINKS.map((link) => (
-            <li className="px-1 md:px-2 py-2 mr-1" key={link.path}>
+            <li className="px-1 md:px-2 py-2 mr-10" key={link.path}>
               <Link
                 href={link.path}
                 target="_blank"
@@ -45,6 +45,9 @@ const Footer = (props: Props) => {
           ))}
         </ul>
       </div>
+      <p className="uppercase text-xs text-center text-white xl:hidden">
+        view on desktop for a better viewing experience
+      </p>
     </StyledFooter>
   );
 };

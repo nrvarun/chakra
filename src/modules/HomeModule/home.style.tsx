@@ -5,6 +5,22 @@ export const StyledHomeBanner = styled.section`
   min-height: 100vh;
 `;
 
+export const StyledHomeMobileBanner = styled.section`
+  position: relative;
+  min-height: 100vh;
+
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+`;
+
 export const StyledHomeBannerBgImgWrapper = styled.div`
   height: 100%;
   width: 100%;
@@ -66,6 +82,31 @@ export const StyledHomeBannerContent = styled.div`
       @media (min-width: 1280px) {
         width: 496.84px;
         height: 120px;
+      }
+    }
+  }
+`;
+
+export const StyledHomeMobileNavWrapper = styled.aside`
+  position: relative;
+  height: 100vh;
+  padding: 150px 34px 180px;
+  display: flex;
+
+  nav {
+    margin: auto 0 0 0;
+
+    ul {
+      li {
+        margin: 0 0 16px 0;
+
+        p {
+          font-weight: 400;
+          font-size: 48px;
+          line-height: 58px;
+          letter-spacing: 0.01em;
+          color: #fafafa;
+        }
       }
     }
   }
