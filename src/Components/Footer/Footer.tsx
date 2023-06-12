@@ -26,9 +26,9 @@ const Footer = (props: Props) => {
   return (
     <StyledFooter>
       <div className="relative flex">
-        <ul className="flex items-start m-auto mb-6 xl:mr-auto xl:mb-0">
+        <ul className="flex items-start m-auto mb-6 xl:ml-0 xl:mb-0">
           {FOOTER_LINKS.map((link) => (
-            <li className="px-1 md:px-2 py-2 mr-10" key={link.path}>
+            <li className="px-1 md:px-2 py-2 mr-10 xl:mr-4" key={link.path}>
               <Link
                 href={link.path}
                 target="_blank"
