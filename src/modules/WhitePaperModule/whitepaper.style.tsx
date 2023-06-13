@@ -133,7 +133,7 @@ export const StyledLitePaperArticle = styled.article`
   height: 100%;
   height: 100vh;
   overflow: scroll;
-  padding: 90px 36px 120px 36px;
+  padding: 140px 36px 120px 36px;
 
   @media (min-width: 1200px) {
     padding: 0 120px 180px 120px;

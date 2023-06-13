@@ -163,11 +163,12 @@ const WhitepaperMobileNav = (props: Props) => {
         layout
         style={{
           height: navOpen ? "calc(100vh - 120px)" : "0",
+          // display: navOpen ? "block" : "none",
         }}
         className="list-decimal px-14 text-white overflow-auto min-h-full"
       >
-        {NAV_LIST.map((nav) => (
-          <li key={nav.id} className="mb-4">
+        {NAV_LIST.map((nav, index) => (
+          <li key={nav.id} className={`mb-4 ${index === 0 ? "pt-8" : "pt-0"}`}>
             <button onClick={() => handleClickScroll(nav.id)}>
               <StyledLitePaperListTitle className="text-white uppercase mb-1">
                 {nav.title}
