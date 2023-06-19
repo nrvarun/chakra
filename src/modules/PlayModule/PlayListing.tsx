@@ -31,7 +31,7 @@ const GAMES = [
 
 const PlayListing = (props: Props) => {
   return (
-    <section className="grid md:grid-cols-2 xl:grid-cols-3 px-8 xl:px-12 gap-4 xl:gap-12 pb-16">
+    <section className="grid md:grid-cols-2 xl:grid-cols-3 px-8 xl:px-12 gap-4 xl:gap-12 py-16">
       {GAMES.map((game) => (
         <GameItem key={game.id} {...game} />
       ))}

@@ -90,7 +90,7 @@ export const StyledBannerItemWrapper = styled.article`
 
   h3 {
     font-weight: 400;
-    font-size: 30px;
+    font-size: 24px;
     line-height: 99%;
     text-align: right;
     color: #e11d48;
