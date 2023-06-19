@@ -158,6 +158,10 @@ export const StyledHeader = styled.header`
           p {
             color: #e52e3d;
           }
+
+          &:after {
+            background-color: currentColor;
+          }
         }
       }
     }

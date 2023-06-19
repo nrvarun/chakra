@@ -6,11 +6,19 @@ export const StyledBannerWrapper = styled.section`
   .slick-dots {
     bottom: -34px;
 
+    @media (min-width: 1200px) {
+      bottom: 34px;
+    }
+
     li {
       &.slick-active {
         button {
           opacity: 1;
         }
+      }
+
+      @media (min-width: 1200px) {
+        width: 60px;
       }
 
       button {
@@ -22,6 +30,10 @@ export const StyledBannerWrapper = styled.section`
 
         &:before {
           display: none;
+        }
+
+        @media (min-width: 1200px) {
+          width: 50px;
         }
       }
     }
@@ -55,6 +67,10 @@ export const StyledBannerItemWrapper = styled.article`
       #000000 17.49%,
       rgba(0, 0, 0, 0) 48.24%
     );
+
+    @media (min-width: 1200px) {
+      bottom: -100px;
+    }
   }
 
   aside {
@@ -67,6 +83,7 @@ export const StyledBannerItemWrapper = styled.article`
     padding: 20px;
 
     @media (min-width: 1200px) {
+      bottom: 120px;
       padding: 18px 60px;
     }
   }
@@ -99,7 +116,7 @@ export const StyledBannerItemWrapper = styled.article`
 
       @media (min-width: 1200px) {
         font-size: 30px;
-        padding: 18px;
+        padding: 18px 60px;
         line-height: 36px;
       }
     }
