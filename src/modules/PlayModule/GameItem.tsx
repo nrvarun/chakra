@@ -7,6 +7,7 @@ import {
   StyledGameItemTitle,
   StyledGameItemWrapper,
 } from "./play.style";
+import Link from "next/link";
 
 type Props = {
   imgUrl: string;
@@ -54,7 +55,11 @@ const GameItem = ({ imgUrl, title, subHeading, category, link }: Props) => {
         <StyledGameItemCategory className="mb-2">
           {category}
         </StyledGameItemCategory>
-        <StyledGameItemCTA className="font-marco">Play</StyledGameItemCTA>
+        <Link href={link} target="_blank">
+          <StyledGameItemCTA className="font-marco">
+            {link.length > 1 ? "play" : "coming soon"}
+          </StyledGameItemCTA>
+        </Link>
       </div>
     </StyledGameItemWrapper>
   );

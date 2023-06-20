@@ -1,7 +1,23 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
-export const StyledBannerWrapper = styled.section`
+export const StyledBannerWrapper = styled(motion.section)`
   padding: 0 0 20px 0;
+
+  .slick-slide {
+    article aside {
+      opacity: 0;
+      transform: translateY(20%);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    &.slick-active {
+      aside {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }
+  }
 
   .slick-dots {
     bottom: -34px;
@@ -40,13 +56,14 @@ export const StyledBannerWrapper = styled.section`
   }
 `;
 
-export const StyledBannerItemWrapper = styled.article`
+export const StyledBannerItemWrapper = styled(motion.article)`
   position: relative;
   display: flex;
 
   img {
     width: 100%;
     height: auto;
+    pointer-events: none;
 
     @media (min-width: 1200px) {
       // height: 600px;
@@ -81,6 +98,8 @@ export const StyledBannerItemWrapper = styled.article`
     bottom: -20px;
     left: 0;
     padding: 20px;
+    max-width: 75%;
+    margin: 0 0 0 auto;
 
     @media (min-width: 1200px) {
       bottom: 120px;

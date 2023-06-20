@@ -2,28 +2,42 @@ import React from "react";
 
 import Link from "next/link";
 import { StyledBannerItemWrapper } from "./banner.style";
+import { motion } from "framer-motion";
 
 type Props = {
   imgUrl: string;
-  title: string | React.ReactNode;
+  title: string;
+  titleSubText: string;
   path: string;
   hasCTA: boolean;
 };
 
-const BannerItem = ({ imgUrl, title, path }: Props) => {
+const BannerItem = ({ imgUrl, title, titleSubText, path, hasCTA }: Props) => {
   return (
-    <StyledBannerItemWrapper>
+    <StyledBannerItemWrapper
+      whileInView="visible"
+      viewport={{ once: true }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
       <img src={imgUrl} alt={title} />
       <div className="gradient"></div>
-      <aside>
+      <motion.aside>
         <h3 className="font-marco text-right">
-          FIGHT YOUR BEASTS <br></br>
-          <span className="text-white">IN THE CHAKRA WORLD</span>
+          {title} <br></br>
+          <span className="text-white">{titleSubText}</span>
         </h3>
-        <Link href={path}>
-          <button className="font-marco uppercase">play now</button>
-        </Link>
-      </aside>
+        {hasCTA ? (
+          <Link href={path} target="_blank">
+            <button className="font-marco uppercase">play now</button>
+          </Link>
+        ) : (
+          <button className="font-marco uppercase pointer-events-none">
+            coming soon
+          </button>
+        )}
+      </motion.aside>
     </StyledBannerItemWrapper>
   );
 };

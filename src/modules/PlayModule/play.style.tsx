@@ -1,6 +1,7 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
-export const StyledGameItemWrapper = styled.article`
+export const StyledGameItemWrapper = styled(motion.article)`
   background: #232323;
   border-radius: 4px;
   padding: 20px 16px;
