@@ -55,11 +55,15 @@ const GameItem = ({ imgUrl, title, subHeading, category, link }: Props) => {
         <StyledGameItemCategory className="mb-2">
           {category}
         </StyledGameItemCategory>
-        <Link href={link} target="_blank">
+        {link.length > 1 ? (
+          <Link href={link} target="_blank">
+            <StyledGameItemCTA className="font-marco">play</StyledGameItemCTA>
+          </Link>
+        ) : (
           <StyledGameItemCTA className="font-marco">
-            {link.length > 1 ? "play" : "coming soon"}
+            coming soon
           </StyledGameItemCTA>
-        </Link>
+        )}
       </div>
     </StyledGameItemWrapper>
   );
