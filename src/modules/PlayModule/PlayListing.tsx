@@ -9,7 +9,7 @@ const GAMES = [
     imgUrl: "/images/play/ascension.png",
     title: "Chakra Ascension",
     subHeading: "3D ARPG Hack & Slash",
-    category: "pc + epic games",
+    category: "pc // epic games",
     link: "https://store.epicgames.com/en-US/redeem",
   },
   {
@@ -33,18 +33,20 @@ const GAMES = [
 const PlayListing = (props: Props) => {
   return (
     <section className="px-8 xl:px-12 py-16">
-      <ul className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-12">
-        {GAMES.map((game, index) => (
-          <motion.li
-            key={game.id}
-            initial={{ opacity: 0, y: "10%" }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.15 }}
-          >
-            <GameItem {...game} />
-          </motion.li>
-        ))}
-      </ul>
+      <div className="container mx-auto max-w-[1440px]">
+        <ul className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-12">
+          {GAMES.map((game, index) => (
+            <motion.li
+              key={game.id}
+              initial={{ opacity: 0, y: "10%" }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.15 }}
+            >
+              <GameItem {...game} />
+            </motion.li>
+          ))}
+        </ul>
+      </div>
     </section>
   );
 };

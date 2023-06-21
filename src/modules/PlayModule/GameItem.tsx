@@ -31,22 +31,7 @@ const GameItem = ({ imgUrl, title, subHeading, category, link }: Props) => {
         </div>
         <div className="text-right">
           <StyledGameItemDemoCTA className="flex ml-auto">
-            free demo{" "}
-            <span className="ml-2">
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 18 18"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="8.625" cy="8.625" r="8.625" fill="white" />
-                <path
-                  d="M12.3212 9.03683L6.16045 12.5937L6.16045 5.47994L12.3212 9.03683Z"
-                  fill="#010101"
-                />
-              </svg>
-            </span>
+            demo{" "}
           </StyledGameItemDemoCTA>
         </div>
       </div>
