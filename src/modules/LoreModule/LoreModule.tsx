@@ -16,7 +16,7 @@ import {
 import Premise from "./Premise";
 import Story from "./Story";
 import Philosophy from "./Philosophy";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 type Props = {};
 
@@ -93,6 +93,8 @@ const NAV_ITEMS = [
 ];
 
 const LoreModule = (props: Props) => {
+  const [activeSlide, setActiveSlide] = useState(1);
+
   const settings = {
     dots: true,
     fade: true,
@@ -102,10 +104,13 @@ const LoreModule = (props: Props) => {
     slidesToScroll: 1,
     arrows: false,
     autoplay: false,
+    dotsClass: "slick-dots slick-thumb",
     customPaging: function (i) {
       return <button></button>;
     },
-    dotsClass: "slick-dots slick-thumb",
+    beforeChange: (current, next) => {
+      setActiveSlide(next + 1);
+    },
   };
 
   const sliderRef = useRef<any>(null);
@@ -129,17 +134,17 @@ const LoreModule = (props: Props) => {
         <Slider ref={sliderRef} {...settings}>
           <div>
             <StyledLoreContent>
-              <Story />
+              <Story canPlay={activeSlide === 1} />
             </StyledLoreContent>
           </div>
           <div>
             <StyledLoreContent>
-              <Premise />
+              <Premise canPlay={activeSlide === 2} />
             </StyledLoreContent>
           </div>
           <div>
             <StyledLoreContent>
-              <Philosophy />
+              <Philosophy canPlay={activeSlide === 3} />
             </StyledLoreContent>
           </div>
         </Slider>

@@ -1,3 +1,4 @@
+import { AnimatePresence, motion } from "framer-motion";
 import {
   StyledLoreBgImgWrapper,
   StyledLoreContentDesc,
@@ -6,15 +7,29 @@ import {
   StyledLoreContentSubHeading,
 } from "../lore.style";
 
-type Props = {};
+type Props = {
+  canPlay: boolean;
+};
 
-const Philosophy = (props: Props) => {
+const Philosophy = ({ canPlay }: Props) => {
   return (
     <StyledLoreContentSection>
       <StyledLoreBgImgWrapper>
-        <video loop playsInline autoPlay={true} muted>
-          <source src="/videos/lore/3.mp4" />
-        </video>
+        <AnimatePresence>
+          {canPlay && (
+            <motion.video
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              loop
+              playsInline
+              autoPlay
+              muted
+            >
+              <source src="/videos/lore/3.mp4" />
+            </motion.video>
+          )}
+        </AnimatePresence>
       </StyledLoreBgImgWrapper>
       <div className="px-10 xl:px-0 mb-20 mt-auto mx-auto relative z-10">
         <div className="text-left">
