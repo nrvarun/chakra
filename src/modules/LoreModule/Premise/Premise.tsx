@@ -22,10 +22,11 @@ const Premise = (props: Props) => {
             Premise
           </StyledLoreContentHeading>
           <StyledLoreContentSubHeading className="mb-4 text-white zarathustra-font">
-            And one fine day, she came out tearing the womb of King Sagara, the
-            god of oceans. Her birth was acknowledged by the elements, the
-            volcanoes puffed, the oceans swelled and the air ravaged the surface
-            of the planet.
+            Chakra is an alternate universe based on our current reality; set in
+            a time when the ancient myths and mythologies rooted in the eternal
+            order come alive. The significance of humans is in question as they
+            find out, they are but a footnote in the infinite expanse of
+            creation.
           </StyledLoreContentSubHeading>
         </div>
       </div>

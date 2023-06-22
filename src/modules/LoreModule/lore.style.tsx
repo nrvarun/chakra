@@ -35,7 +35,7 @@ export const StyledLoreBgImgWrapper = styled("div")`
 
   .slick-dots {
     position: absolute;
-    bottom: 30px;
+    bottom: 110px;
     left: 0;
     right: 0;
     z-index: 20;
@@ -52,7 +52,7 @@ export const StyledLoreBgImgWrapper = styled("div")`
       button {
         width: 20px;
         height: 0px;
-        border: 4px solid #6f767e;
+        border: 2px solid #6f767e;
         margin: 0 12px 0 0;
       }
     }
@@ -102,7 +102,7 @@ export const StyledLoreContentDescTitle = styled.h6`
 `;
 
 export const StyledLoreContentSection = styled.article`
-  height: 100%;
+  height: 90%;
   width: 100%;
   display: flex;
 `;
@@ -168,7 +168,7 @@ export const StyledSliderNavBtn = styled.button`
 
 export const StyledSliderNavWrapper = styled.div`
   position: absolute;
-  bottom: 60px;
+  bottom: 100px;
   left: 0;
   right: 0;
   max-width: 660px;

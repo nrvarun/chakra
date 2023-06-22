@@ -22,9 +22,11 @@ const Philosophy = (props: Props) => {
             Philosophy
           </StyledLoreContentHeading>
           <StyledLoreContentSubHeading className="mb-4 text-white zarathustra-font">
-            Chakra is a whole alternate universe based on our reality; set in a
-            time when the ancient myths and mythologies rooted in the eternal
-            order come alive.
+            Chakra symbolizes the cyclic aspect of the formation and destruction
+            of reality, but after each iteration, it moves closer to
+            singularity. Unlike mainstream good vs evil, Chakra focuses on
+            understanding the plurality of things. The greater of good and the
+            lesser of evil.
           </StyledLoreContentSubHeading>
         </div>
       </div>

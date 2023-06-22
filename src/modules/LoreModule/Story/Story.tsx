@@ -22,10 +22,10 @@ const Story = (props: Props) => {
             Story
           </StyledLoreContentHeading>
           <StyledLoreContentSubHeading className="mb-4 text-white zarathustra-font">
-            The accepted history of humans becomes questionable as beings from
-            various dimensions pour into the earth. The legendary creatures
-            holding enormous power are now eyeing this domain to conquer. Can
-            the evolution of humans combat these ancient entities?
+            And one fine day, she came out tearing the womb of King Sagara, the
+            god of oceans. Her birth was acknowledged by the elements, the
+            volcanoes puffed, the oceans swelled and the air ravaged the surface
+            of the planet. Ancient legends call it her by the name Kumari.
           </StyledLoreContentSubHeading>
         </div>
       </div>
