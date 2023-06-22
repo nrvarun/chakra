@@ -8,9 +8,8 @@ export const StyledLoreBgImgWrapper = styled("div")`
   left: 0;
   right: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
   z-index: 0;
-  pointer-events: none;
   transition: opacity 1s ease;
 
   &:after {
@@ -21,19 +20,53 @@ export const StyledLoreBgImgWrapper = styled("div")`
     left: 0;
     right: 0;
     bottom: 0;
+    opacity: 0.25;
     z-index: 1;
+    pointer-events: none;
   }
 
-  img {
-    height: auto;
+  video {
+    height: 100%;
     width: 100%;
+    pointer-events: none;
+    object-fit: cover;
     transition: opacity 0.3s ease, transform 1s ease;
+  }
+
+  .slick-dots {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    display: flex !important;
+    justify-content: center;
+
+    li {
+      &.slick-active {
+        button {
+          border-color: #ffffff;
+        }
+      }
+
+      button {
+        width: 20px;
+        height: 0px;
+        border: 4px solid #6f767e;
+        margin: 0 12px 0 0;
+      }
+    }
   }
 `;
 
 export const StyledLoreContent = styled.section`
-  padding: 2rem 1.5rem;
-  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
 `;
 
 export const StyledLoreContentHeading = styled.h4`
@@ -44,11 +77,11 @@ export const StyledLoreContentHeading = styled.h4`
 `;
 
 export const StyledLoreContentSubHeading = styled.h5`
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 32px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
   letter-spacing: 0.01em;
-  max-width: 800px;
+  max-width: 660px;
 `;
 
 export const StyledLoreContentDesc = styled.p`
@@ -57,7 +90,7 @@ export const StyledLoreContentDesc = styled.p`
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
-  max-width: 800px;
+  max-width: 630px;
 `;
 
 export const StyledLoreContentDescTitle = styled.h6`
@@ -68,8 +101,9 @@ export const StyledLoreContentDescTitle = styled.h6`
   color: #fafafa;
 `;
 
-export const StyledLoreContentSection = styled.section`
-  min-height: calc(100vh - 118px);
+export const StyledLoreContentSection = styled.article`
+  height: 100%;
+  width: 100%;
   display: flex;
 `;
 
@@ -117,5 +151,34 @@ export const StyledFactionNavList = styled.ul`
         }
       }
     }
+  }
+`;
+
+export const StyledSliderNavBtn = styled.button`
+  padding: 4px 8px 4px 8px;
+  border-radius: 4px;
+  background-color: #252525; /* Back */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+`;
+
+export const StyledSliderNavWrapper = styled.div`
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  max-width: 660px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  z-index: 20;
+  padding: 0 40px;
+
+  @media (min-width: 1200px) {
+    padding: 0;
   }
 `;

@@ -1,4 +1,5 @@
 import {
+  StyledLoreBgImgWrapper,
   StyledLoreContentDesc,
   StyledLoreContentHeading,
   StyledLoreContentSection,
@@ -10,24 +11,22 @@ type Props = {};
 const Premise = (props: Props) => {
   return (
     <StyledLoreContentSection>
-      <div className="grid grid-cols-1 m-auto">
-        <div id="premise-section" className="text-center">
-          <StyledLoreContentHeading className="font-marco text-white mb-32">
+      <StyledLoreBgImgWrapper>
+        <video loop playsInline autoPlay={true} muted>
+          <source src="/videos/lore/2.mp4" />
+        </video>
+      </StyledLoreBgImgWrapper>
+      <div className="px-10 xl:px-0 mt-auto mx-auto mb-20 relative z-10">
+        <div className="text-left">
+          <StyledLoreContentHeading className="font-marco text-white mb-4">
             Premise
           </StyledLoreContentHeading>
-          <StyledLoreContentSubHeading className="mb-4 text-white ">
-            Chakra is a whole alternate universe based on our reality; set in a
-            time when the ancient myths and mythologies rooted in the eternal
-            order come alive. The significance of humans is in question as they
-            find out, they are but a footnote in the infinite expanse of
-            creation.
+          <StyledLoreContentSubHeading className="mb-4 text-white zarathustra-font">
+            And one fine day, she came out tearing the womb of King Sagara, the
+            god of oceans. Her birth was acknowledged by the elements, the
+            volcanoes puffed, the oceans swelled and the air ravaged the surface
+            of the planet.
           </StyledLoreContentSubHeading>
-          <StyledLoreContentDesc className="mb-4 text-gray-c8c">
-            The accepted history of humans becomes questionable as beings from
-            various dimensions pour into the earth.The legendary creatures
-            holding enormous power are now eyeing this domain to conquer. Can
-            the evolution of humans combat these ancient entities?
-          </StyledLoreContentDesc>
         </div>
       </div>
     </StyledLoreContentSection>

@@ -37,7 +37,7 @@ module.exports = {
       black: "#000000",
     },
     fontFamily: {
-      inter: ["Inter", "sans-serif"],
+      inter: ["Inter", "sans-serif", "zarathustra"],
       marco: ["Marcovaldo", "serif"],
     },
     extend: {

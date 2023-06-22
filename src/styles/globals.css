@@ -14,12 +14,22 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "zarathustra-v01";
+  src: url("/fonts/zarathustra-v01.woff") format("woff");
+  font-style: normal;
+}
+
 .marco-font {
   font-family: "Marcovaldo", sans-serif;
 }
 
 .inter-font {
   font-family: "Inter", sans-serif;
+}
+
+.zarathustra-font {
+  font-family: "zarathustra", sans-serif;
 }
 
 .non-landing {

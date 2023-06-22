@@ -1,4 +1,5 @@
 import {
+  StyledLoreBgImgWrapper,
   StyledLoreContentDesc,
   StyledLoreContentHeading,
   StyledLoreContentSection,
@@ -10,29 +11,22 @@ type Props = {};
 const Story = (props: Props) => {
   return (
     <StyledLoreContentSection>
-      <div className="grid grid-cols-[360px_minmax(800px,_1fr)] gap-4">
-        <div id="story-section" className="">
-          <StyledLoreContentHeading className="font-marco text-white mb-10">
+      <StyledLoreBgImgWrapper>
+        <video loop playsInline autoPlay={true} muted>
+          <source src="/videos/lore/1.mp4" />
+        </video>
+      </StyledLoreBgImgWrapper>
+      <div className="px-10 xl:px-0 mt-auto mx-auto mb-20 relative z-10">
+        <div className="text-left">
+          <StyledLoreContentHeading className="font-marco text-white mb-4">
             Story
           </StyledLoreContentHeading>
-          <StyledLoreContentSubHeading className="mb-20 text-white ">
-            And one fine day, she came out tearing the womb of King Sagara, the
-            god of oceans. Her birth was acknowledged by the elements, the
-            volcanoes puffed, the oceans swelled and the air ravaged the surface
-            of the planet.
+          <StyledLoreContentSubHeading className="mb-4 text-white zarathustra-font">
+            The accepted history of humans becomes questionable as beings from
+            various dimensions pour into the earth. The legendary creatures
+            holding enormous power are now eyeing this domain to conquer. Can
+            the evolution of humans combat these ancient entities?
           </StyledLoreContentSubHeading>
-          <StyledLoreContentDesc className="mb-4 text-gray-c8c">
-            In the midst of the Indian ocean, a humongous land mass stares at
-            humanity. Ancient legends call it by the name Kumari With ancient
-            architecture and temple cities, the new continent Kumari was
-            recognized and attributed by various prominent personalities. Some
-            claimed it theirs but none dared to explore it yet.
-          </StyledLoreContentDesc>
-        </div>
-        <div>
-          <figure>
-            <img src="/images/lore/story.png" alt="story" className="w-full" />
-          </figure>
         </div>
       </div>
     </StyledLoreContentSection>

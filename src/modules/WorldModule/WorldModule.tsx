@@ -14,7 +14,7 @@ const WORLD_ITEMS = [
     title: "Lore",
     desc: "An alternate universe inspired by current reality; set in a time when the ancient myths and mythologies come alive. The significance of humans is in question as they find out, they are but a footnote in the infinite expanse of creation.",
     img: "/images/world/1.png",
-    path: "/world",
+    path: "/world/lore",
     bgPattern: "/icons/lore-bg.svg",
   },
   {

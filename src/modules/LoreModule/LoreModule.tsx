@@ -1,20 +1,22 @@
 /* eslint-disable @next/next/no-img-element */
-import { motion, useScroll, useInView, cubicBezier } from "framer-motion";
 
-import WorldNav from "@components/WorldNav";
+import Slider from "react-slick";
+
 import {
+  StyledSliderNavBtn,
   StyledLoreBgImgWrapper,
   StyledLoreContent,
   StyledLoreFactionSection,
+  StyledSliderNavWrapper,
 } from "./lore.style";
-import Philosophy from "./Philosophy";
+
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+
 import Premise from "./Premise";
 import Story from "./Story";
-import { useEffect, useRef, useState } from "react";
-import Faction from "./Faction";
-import { useTransform } from "framer-motion";
-import { useRouter } from "next/router";
-import FactionItem from "@components/FactionItem";
+import Philosophy from "./Philosophy";
+import { useRef } from "react";
 
 type Props = {};
 
@@ -91,132 +93,61 @@ const NAV_ITEMS = [
 ];
 
 const LoreModule = (props: Props) => {
-  const router = useRouter();
+  const settings = {
+    dots: true,
+    fade: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: false,
+    customPaging: function (i) {
+      return <button></button>;
+    },
+    dotsClass: "slick-dots slick-thumb",
+  };
 
-  useEffect(() => {
-    /**
-     * Redirect to home on landing
-     */
-    router.push("/");
-  }, []);
+  const sliderRef = useRef<any>(null);
 
-  const scrollableDivRef = useRef(null);
-
-  const { scrollYProgress } = useScroll({
-    target: scrollableDivRef,
-    offset: ["start start", "end end"],
-  });
-
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", "-40%"]);
-
-  const [activeSection, setActiveSection] = useState(NAV_ITEMS[0].id);
-
-  const premiseRef = useRef(null);
-  const premiseInView = useInView(premiseRef);
-
-  const storyRef = useRef(null);
-  const storyInView = useInView(storyRef);
-
-  const philosophyRef = useRef(null);
-  const philosophyInView = useInView(philosophyRef);
-
-  const factionRef = useRef(null);
-  const factionInView = useInView(factionRef);
-
-  useEffect(() => {
-    if (premiseInView) {
-      setActiveSection("premise");
+  const goToNext = () => {
+    if (sliderRef) {
+      sliderRef.current.slickNext();
     }
-  }, [premiseInView]);
+  };
 
-  useEffect(() => {
-    if (storyInView) {
-      setActiveSection("story");
+  const goToPrev = () => {
+    if (sliderRef) {
+      sliderRef.current.slickPrev();
     }
-  }, [storyInView]);
-
-  useEffect(() => {
-    if (philosophyInView) {
-      setActiveSection("philosophy");
-    }
-  }, [philosophyInView]);
-
-  useEffect(() => {
-    if (factionInView) {
-      setActiveSection("faction");
-    }
-  }, [factionInView]);
+  };
 
   return (
     <main className="non-landing lore">
-      <WorldNav title="lore" list={NAV_ITEMS} activeSection={activeSection} />
+      {/* <WorldNav title="lore" list={NAV_ITEMS} activeSection={activeSection} /> */}
       <StyledLoreBgImgWrapper>
-        <motion.img src="/images/world-bgimg.png" alt="world background" />
+        <Slider ref={sliderRef} {...settings}>
+          <div>
+            <StyledLoreContent>
+              <Story />
+            </StyledLoreContent>
+          </div>
+          <div>
+            <StyledLoreContent>
+              <Premise />
+            </StyledLoreContent>
+          </div>
+          <div>
+            <StyledLoreContent>
+              <Philosophy />
+            </StyledLoreContent>
+          </div>
+        </Slider>
+        <StyledSliderNavWrapper>
+          <StyledSliderNavBtn onClick={goToPrev}>Back</StyledSliderNavBtn>
+          <StyledSliderNavBtn onClick={goToNext}>Next</StyledSliderNavBtn>
+        </StyledSliderNavWrapper>
       </StyledLoreBgImgWrapper>
-      <section ref={scrollableDivRef}>
-        <StyledLoreContent className="relative z-10" ref={premiseRef}>
-          <div className="grid grid-cols-[240px_minmax(900px,_1fr)]">
-            <div className="relative"></div>
-            <Premise />
-          </div>
-        </StyledLoreContent>
-
-        <StyledLoreContent className="relative z-10" ref={storyRef}>
-          <div className="grid grid-cols-[260px_minmax(860px,_1fr)]">
-            <div className="relative"></div>
-            <Story />
-          </div>
-        </StyledLoreContent>
-
-        <StyledLoreContent className="relative z-10" ref={philosophyRef}>
-          <div className="grid grid-cols-[240px_minmax(900px,_1fr)]">
-            <div className="relative"></div>
-            <Philosophy />
-          </div>
-        </StyledLoreContent>
-      </section>
-
-      <section className="pt-64"></section>
-      <StyledLoreFactionSection
-        className="relative z-10"
-        ref={factionRef}
-        id="faction-section"
-      >
-        <div className="grid grid-cols-[270px_240px_minmax(900px,_1fr)]">
-          <div className="relative"></div>
-          <Faction />
-        </div>
-      </StyledLoreFactionSection>
-      <StyledLoreFactionSection
-        className="relative z-10 mb-24"
-        ref={factionRef}
-        id="faction-section"
-      >
-        <div className="grid grid-cols-[270px_240px_minmax(900px,_1fr)] mb-16">
-          <div className="relative"></div>
-          <FactionItem
-            title="Rakshasha"
-            desc="The demon of the night Creature of darkness, filled with might With fangs and claws and glowing eyes You haunt the shadows, a fearsome guise. Your power is great."
-            img="/images/factions/1.png"
-          />
-        </div>
-        <div className="grid grid-cols-[270px_240px_minmax(900px,_1fr)] mb-16">
-          <div className="relative"></div>
-          <FactionItem
-            title="Rakshasha"
-            desc="The demon of the night Creature of darkness, filled with might With fangs and claws and glowing eyes You haunt the shadows, a fearsome guise. Your power is great."
-            img="/images/factions/2.png"
-          />
-        </div>
-        <div className="grid grid-cols-[270px_240px_minmax(900px,_1fr)] mb-16">
-          <div className="relative"></div>
-          <FactionItem
-            title="Rakshasha"
-            desc="The demon of the night Creature of darkness, filled with might With fangs and claws and glowing eyes You haunt the shadows, a fearsome guise. Your power is great."
-            img="/images/factions/3.png"
-          />
-        </div>
-      </StyledLoreFactionSection>
     </main>
   );
 };
