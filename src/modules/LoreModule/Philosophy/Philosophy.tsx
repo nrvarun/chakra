@@ -24,6 +24,7 @@ const Philosophy = ({ canPlay }: Props) => {
               loop
               playsInline
               autoPlay
+              poster="/images/lore/splash-screen.png"
               muted
             >
               <source src="/videos/lore/3.mp4" />

@@ -24,6 +24,7 @@ const Premise = ({ canPlay }: Props) => {
               loop
               playsInline
               autoPlay
+              poster="/images/lore/splash-screen.png"
               muted
             >
               <source src="/videos/lore/2.mp4" />

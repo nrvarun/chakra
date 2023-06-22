@@ -26,6 +26,7 @@ const Story = ({ canPlay }: Props) => {
               playsInline
               autoPlay
               muted
+              poster="/images/lore/splash-screen.png"
             >
               <source src="/videos/lore/1.mp4" />
             </motion.video>
