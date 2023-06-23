@@ -28,7 +28,7 @@ const Story = ({ canPlay }: Props) => {
               muted
               poster="/images/lore/splash-screen.png"
             >
-              <source src="/videos/lore/1.mp4" />
+              <source src="/videos/lore/2.mp4" />
             </motion.video>
           )}
         </AnimatePresence>
