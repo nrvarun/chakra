@@ -182,3 +182,38 @@ export const StyledSliderNavWrapper = styled.div`
     padding: 0;
   }
 `;
+
+export const StyledLoreBreadCrumbWrapper = styled.div`
+  position: fixed;
+  top: 100px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 0 20px;
+  max-width: 1440px;
+`;
+
+export const StyledStoryNav = styled.nav`
+  position: relative;
+  margin: 0 0 0 -20px;
+
+  @media (min-width: 1200px) {
+    margin: 0 0 0 -50px;
+  }
+
+  button {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 8px 20px 8px 20px;
+
+    @media (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+`;

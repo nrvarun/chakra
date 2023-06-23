@@ -8,6 +8,8 @@ import {
   StyledLoreContent,
   StyledLoreFactionSection,
   StyledSliderNavWrapper,
+  StyledLoreBreadCrumbWrapper,
+  StyledStoryNav,
 } from "./lore.style";
 
 // import "slick-carousel/slick/slick.css";
@@ -17,6 +19,7 @@ import Premise from "./Premise";
 import Story from "./Story";
 import Philosophy from "./Philosophy";
 import { useRef, useState } from "react";
+import Link from "next/link";
 
 type Props = {};
 
@@ -130,6 +133,32 @@ const LoreModule = (props: Props) => {
   return (
     <main className="non-landing lore">
       {/* <WorldNav title="lore" list={NAV_ITEMS} activeSection={activeSection} /> */}
+      <StyledLoreBreadCrumbWrapper className="grid grid-cols-2 items-center container mx-auto">
+        <div className="text-left flex items-center">
+          <Link href="/world">
+            <p className="text-xs font-semibold capitalize text-white">world</p>
+          </Link>
+          <span className="text-xs font-semibold capitalize text-white mx-1">{`>`}</span>
+          <span className="text-xs font-semibold capitalize text-white">
+            Lore
+          </span>
+        </div>
+        <div className="text-left">
+          <StyledStoryNav>
+            <Link href="/world/lore">
+              <button className="text-sm xl:text-base text-red-e11 capitalize">
+                story
+              </button>
+            </Link>
+            <button
+              className="text-sm xl:text-base text-white capitalize pointer-events-none"
+              title="coming soon!"
+            >
+              Factions
+            </button>
+          </StyledStoryNav>
+        </div>
+      </StyledLoreBreadCrumbWrapper>
       <StyledLoreBgImgWrapper>
         <Slider ref={sliderRef} {...settings}>
           <div>
