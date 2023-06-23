@@ -132,7 +132,7 @@ export const StyledWorldContent = styled.div`
     &:hover {
       span {
         display: inline-block;
-        transform: translateX(10px);
+        transform: translateX(5px);
       }
     }
 
