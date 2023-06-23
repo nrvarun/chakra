@@ -6,7 +6,7 @@ export default function Lore() {
   return (
     <>
       <CustomHead />
-      <Header customClass="red" />
+      <Header customClass="red with-underline" />
       <LoreModule />
     </>
   );

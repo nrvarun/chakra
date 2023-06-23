@@ -117,10 +117,24 @@ export const StyledWorldContent = styled.div`
     border-radius: 16px;
     padding: 8px 16px;
     background: transparent;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     width: auto;
     transition: opacity 0.6s ease;
     transition-delay: 0.25s;
+
+    span {
+      margin: 0 0 0 4px;
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover {
+      span {
+        display: inline-block;
+        transform: translateX(10px);
+      }
+    }
 
     @media (min-width: 1200px) {
       opacity: 0;

@@ -115,6 +115,10 @@ export const StyledHeader = styled.header`
     }
   }
 
+  &.with-underline {
+    border-bottom: 1px solid #484848;
+  }
+
   &.black-red {
     svg {
       color: #000000;

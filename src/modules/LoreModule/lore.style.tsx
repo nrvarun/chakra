@@ -185,22 +185,45 @@ export const StyledSliderNavWrapper = styled.div`
 
 export const StyledLoreBreadCrumbWrapper = styled.div`
   position: fixed;
+  width: 30%;
   top: 100px;
-  left: 0;
-  right: 0;
-  width: 100%;
-  z-index: 10;
+  left: 20px;
+  z-index: 20;
   padding: 0 20px;
   max-width: 1440px;
+
+  p {
+    position: relative;
+    color: #ffffff;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1.5px;
+      background-color: currentColor;
+      bottom: -1px;
+      right: 0;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover {
+      &:after {
+        transform: scaleX(1);
+      }
+    }
+  }
 `;
 
 export const StyledStoryNav = styled.nav`
-  position: relative;
-  margin: 0 0 0 -20px;
-
-  @media (min-width: 1200px) {
-    margin: 0 0 0 -50px;
-  }
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 11;
+  top: 90px;
 
   button {
     font-family: Inter;
@@ -210,6 +233,35 @@ export const StyledStoryNav = styled.nav`
     letter-spacing: 0em;
     text-align: left;
     padding: 8px 20px 8px 20px;
+
+    &.active {
+      p {
+        color: #e11d48;
+      }
+    }
+
+    p {
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1.5px;
+        background-color: currentColor;
+        bottom: -1px;
+        right: 0;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.3s ease;
+      }
+
+      &:hover {
+        &:after {
+          transform: scaleX(1);
+        }
+      }
+    }
 
     @media (min-width: 1200px) {
       font-size: 16px;
