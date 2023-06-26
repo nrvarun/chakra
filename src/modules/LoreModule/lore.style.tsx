@@ -186,11 +186,15 @@ export const StyledSliderNavWrapper = styled.div`
 export const StyledLoreBreadCrumbWrapper = styled.div`
   position: fixed;
   width: 30%;
+  left: 0px;
   top: 100px;
-  left: 20px;
   z-index: 20;
   padding: 0 20px;
   max-width: 1440px;
+
+  @media (min-width: 1200px) {
+    left: 20px;
+  }
 
   p {
     position: relative;

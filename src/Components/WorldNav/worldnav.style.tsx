@@ -37,8 +37,8 @@ export const StyledWorldNavList = styled.nav`
 
 export const StyledWorldNavWrapper = styled.aside`
   position: fixed;
-  top: 86px;
-  left: 24px;
+  top: 24%;
+  left: 10%;
   bottom: 0;
   width: auto;
   z-index: 100;

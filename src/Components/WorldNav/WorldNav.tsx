@@ -18,8 +18,9 @@ type NAV_ITEM = {
 type Props = {
   list: NAV_ITEM[];
   title: string;
-  activeSection: string;
+  activeSection?: string;
   customClass?: string;
+  handleCB: any;
 };
 
 const WorldNav = ({
@@ -27,28 +28,31 @@ const WorldNav = ({
   list = [],
   activeSection = "premise",
   customClass = "",
+  handleCB,
 }: Props) => {
-  const handleClickScroll = (id: string) => {
-    const element = document.getElementById(`${id}-section`);
+  // const handleClickScroll = (id: string) => {
+  //   const element = document.getElementById(`${id}-section`);
 
-    console.log(element);
-    if (element) {
-      // 👇 Will scroll smoothly to the top of the next section
-      element.scrollIntoView({ behavior: "smooth", block: "nearest" });
-    }
-  };
+  //   console.log(element);
+  //   if (element) {
+  //     // 👇 Will scroll smoothly to the top of the next section
+  //     element.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  //   }
+  // };
 
   return (
     <StyledWorldNavWrapper className={customClass}>
-      <StyledWorldNavHeading className="font-marco capitalize">
-        {title}
-      </StyledWorldNavHeading>
+      {title !== "" && (
+        <StyledWorldNavHeading className="font-marco capitalize">
+          {title}
+        </StyledWorldNavHeading>
+      )}
       <StyledWorldNavList>
         <ul>
           {list.map((nav, index) => (
             <li key={nav.id}>
               <a
-                onClick={() => handleClickScroll(nav.id)}
+                onClick={() => handleCB(nav.id)}
                 href="javascript:void(0);"
                 className={`font-inter capitalize inline-block ${
                   activeSection === nav.id ? "active" : ""
@@ -57,25 +61,6 @@ const WorldNav = ({
               >
                 {nav.title}
               </a>
-              <StyledFactionNav>
-                <StyledFactionNavList>
-                  {nav.subList &&
-                    nav.subList.map((faction) => (
-                      <li key={faction.id} className={`mb-3 `}>
-                        <a
-                          href="javascript:void(0);"
-                          // className={`${
-                          //   activeFaction === faction.id ? "active" : "in-active"
-                          // }`}
-                          onClick={() => handleClickScroll(faction.id)}
-                          data-section-id={faction.id}
-                        >
-                          {faction.title}
-                        </a>
-                      </li>
-                    ))}
-                </StyledFactionNavList>
-              </StyledFactionNav>
             </li>
           ))}
         </ul>
