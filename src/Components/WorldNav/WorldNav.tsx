@@ -20,7 +20,7 @@ type Props = {
   title: string;
   activeSection?: string;
   customClass?: string;
-  handleCB: any;
+  handleCB?: any;
 };
 
 const WorldNav = ({
