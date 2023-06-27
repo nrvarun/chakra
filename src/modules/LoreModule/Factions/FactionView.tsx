@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledFactionContent } from "./factions.style";
+import { StyledFactionContent, StyledFactionItem } from "./factions.style";
 
 type Props = {
   activeSection: string;
@@ -8,18 +8,16 @@ type Props = {
 
 const FactionView = ({ activeSection, faction }: Props) => {
   return (
-    <div
-      className={`grid grid-cols-[20%_60%_20%] relative z-10 h-full ${
+    <StyledFactionItem
+      className={`grid grid-cols-[20%_55%_25%] relative z-10 h-full ${
         activeSection === faction.id ? "active" : "in-active"
       }`}
     >
       <div></div>
       <div className="flex">
-        <img
-          className="m-auto w-auto h-full"
-          src={faction.img}
-          alt={faction.title}
-        />
+        <div className="py-12 m-auto">
+          <img className="" src={faction.img} alt={faction.title} />
+        </div>
       </div>
       <div className="flex">
         <StyledFactionContent className="m-auto relative z-10">
@@ -29,7 +27,7 @@ const FactionView = ({ activeSection, faction }: Props) => {
           <div>{faction.desc}</div>
         </StyledFactionContent>
       </div>
-    </div>
+    </StyledFactionItem>
   );
 };
 

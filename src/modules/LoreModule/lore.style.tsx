@@ -187,13 +187,14 @@ export const StyledLoreBreadCrumbWrapper = styled.div`
   position: fixed;
   width: 30%;
   left: 0px;
-  top: 100px;
+  top: 126px;
   z-index: 20;
   padding: 0 20px;
   max-width: 1440px;
 
   @media (min-width: 1200px) {
     left: 20px;
+    top: 100px;
   }
 
   p {
@@ -227,7 +228,11 @@ export const StyledStoryNav = styled.nav`
   display: flex;
   justify-content: center;
   z-index: 11;
-  top: 90px;
+  top: 120px;
+
+  @media (min-width: 1200px) {
+    top: 90px;
+  }
 
   button {
     font-family: Inter;

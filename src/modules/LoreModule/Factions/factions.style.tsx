@@ -44,11 +44,15 @@ export const StyledFactionsContent = styled.div`
 
 export const StyledFactionNavWrapper = styled.div`
   position: fixed;
-  top: 90px;
+  top: 60px;
   left: 10%;
   bottom: 0;
-  height: 100vh;
+  height: 90vh;
   z-index: 11;
+
+  @media (min-width: 1920px) {
+    top: 15%;
+  }
 `;
 
 export const StyledFactionContent = styled.div`
@@ -127,8 +131,21 @@ export const StyledFactionMobileCard = styled.article`
 `;
 
 export const StyledFactionMobileWrapper = styled.div`
-  padding: 20px 0 24px 0;
+  padding: 90px 0 24px 0;
   position: relative;
   z-index: 10;
   background: #000000;
+`;
+
+export const StyledFactionItem = styled.article`
+  img {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (min-width: 1200px) {
+      height: 100%;
+      max-height: 83vh;
+    }
+  }
 `;
