@@ -119,6 +119,7 @@ export const StyledFactionMobileCard = styled.article`
     letter-spacing: 0.01em;
     text-align: left;
     color: rgba(225, 29, 72, 1);
+    text-transform: capitalize;
     margin: 0 0 12px 0;
   }
 

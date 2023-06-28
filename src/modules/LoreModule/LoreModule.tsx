@@ -7,7 +7,9 @@ import Link from "next/link";
 import StoryContent from "./StoryContent";
 import Factions from "./Factions";
 
-type Props = {};
+type Props = {
+  handleFactionChange: (f: boolean) => void;
+};
 
 const FACTION_NAV_LIST = [
   {
@@ -81,20 +83,21 @@ const NAV_ITEMS = [
   },
 ];
 
-const LoreModule = (props: Props) => {
+const LoreModule = ({ handleFactionChange }: Props) => {
   const [activeTab, setActiveTab] = useState("story");
 
   const getStoryContent = () => {
     if (activeTab === "factions") {
+      handleFactionChange(true);
       return <Factions />;
     }
 
+    handleFactionChange(false);
     return <StoryContent />;
   };
 
   return (
     <main className="non-landing lore">
-      {/* <WorldNav title="lore" list={NAV_ITEMS} activeSection={activeSection} /> */}
       <StyledLoreBreadCrumbWrapper className="grid grid-cols-3 items-center container mx-auto relative">
         <div className="text-left flex items-center relative z-10">
           <Link href="/world">
