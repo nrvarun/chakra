@@ -80,13 +80,17 @@ export const StyledFactionContent = styled.div`
 
   p {
     font-family: Inter;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 1.15;
     letter-spacing: 0em;
     text-align: left;
     color: rgba(174, 177, 179, 1);
     margin: 0 0 12px 0;
+
+    @media (min-width: 1200px) {
+      font-size: 14px;
+    }
   }
 `;
 
