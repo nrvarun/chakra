@@ -20,7 +20,7 @@ const FACTION_NAV_LIST = [
   {
     id: "deva",
     title: "Devas",
-    img: "/images/factions/1.png",
+    img: "/images/factions/1.gif",
     desc: (
       <>
         <p>
@@ -45,7 +45,7 @@ const FACTION_NAV_LIST = [
   {
     id: "naga",
     title: "Nagas",
-    img: "/images/factions/2.png",
+    img: "/images/factions/2.gif",
     desc: (
       <>
         <p>
@@ -71,7 +71,7 @@ const FACTION_NAV_LIST = [
   {
     id: "shakti",
     title: "shakti",
-    img: "/images/factions/3.png",
+    img: "/images/factions/3.gif",
     desc: (
       <>
         <p>
@@ -98,7 +98,7 @@ const FACTION_NAV_LIST = [
   {
     id: "apsara",
     title: "apsara",
-    img: "/images/factions/4.png",
+    img: "/images/factions/4.gif",
     desc: (
       <>
         <p>
@@ -211,7 +211,7 @@ const FACTION_NAV_LIST = [
   {
     id: "vanara",
     title: "vanara",
-    img: "/images/factions/8.png",
+    img: "/images/factions/8.gif",
     desc: (
       <>
         <p>

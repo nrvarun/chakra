@@ -80,9 +80,9 @@ export const StyledFactionContent = styled.div`
 
   p {
     font-family: Inter;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
-    line-height: 13px;
+    line-height: 1.15;
     letter-spacing: 0em;
     text-align: left;
     color: rgba(174, 177, 179, 1);
