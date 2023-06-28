@@ -181,7 +181,7 @@ const FACTION_NAV_LIST = [
   },
   {
     id: "asura",
-    img: "/images/factions/7.png",
+    img: "/images/factions/7.gif",
     title: "asura",
     desc: (
       <>
