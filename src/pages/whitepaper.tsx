@@ -31,7 +31,10 @@ export default function WhitePaper() {
   return (
     <>
       {isLoading && <PageLoadAnim />}
-      <CustomHead />
+      <CustomHead
+        title="Chakra | The Whitepaper"
+        bannerImg="https://www.chakra.world/images/ogg/whitepaper.png"
+      />
       <Header customClass="white litepaper" />
       <WhitePaperModule />
       {/* <Footer /> */}
