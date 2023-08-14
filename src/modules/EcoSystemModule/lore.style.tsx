@@ -24,12 +24,20 @@ export const StyledLoreContent = styled.section`
   min-height: 100vh;
 `;
 
+export const StyledEcoSystemContent = styled.section`
+  padding: 1rem 7.5rem;
+`;
+
 export const StyledLoreContentHeading = styled.h4`
   font-weight: 400;
   font-size: 48px;
   line-height: 58px;
   letter-spacing: 0.01em;
   margin: 0 0 2rem 0;
+
+  .play-btn {
+    display: inline-block;
+  }
 `;
 
 export const StyledLoreContentSubHeading = styled.h5`
@@ -57,6 +65,10 @@ export const StyledLoreContentDescTitle = styled.h6`
 `;
 
 export const StyledLoreContentSection = styled.section`
+  min-height: calc(100vh - 118px);
+`;
+
+export const StyledEcoSystemContentSection = styled.section`
   min-height: calc(100vh - 118px);
 `;
 
@@ -104,6 +116,26 @@ export const StyledFactionNavList = styled.ul`
           text-decoration: underline;
         }
       }
+    }
+  }
+`;
+
+export const StyledEcoSystemGrid = styled.div`
+  display: grid;
+  grid-template-columns: 30% 60%;
+  grid-gap: 10rem;
+  height: calc(100vh - 110px);
+  padding: 70px 40px 0 40px;
+`;
+
+export const StyledEcoSystemSliderContent = styled.div`
+  figure {
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
     }
   }
 `;

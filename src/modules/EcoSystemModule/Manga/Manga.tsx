@@ -1,5 +1,8 @@
 import Image from "next/image";
 import {
+  StyledEcoSystemContentSection,
+  StyledEcoSystemGrid,
+  StyledEcoSystemSliderContent,
   StyledLoreContentDesc,
   StyledLoreContentHeading,
   StyledLoreContentSection,
@@ -9,27 +12,45 @@ type Props = {};
 
 const Manga = (props: Props) => {
   return (
-    <StyledLoreContentSection>
-      <div className="grid grid-cols-[270px_minmax(600px,_1fr)] gap-4">
-        <div id="manga-section">
-          <StyledLoreContentHeading className="font-marco text-red">
-            Manga
-          </StyledLoreContentHeading>
-          <StyledLoreContentDesc className="mb-4 text-red">
-            Chakra is a dynamic, ever expanding IP anchored in eastern
-            mythologies that mimics natural evolution of human mythos and
-            culture. Chakra seeks to speedrun millennia-long mythmaking by
-            bringing it to life within a high-fidelity sandbox by leveraging mix
-            media (Gaming, Cinematics & Comics) & web3 tech- [DeFi & NFTs]
-          </StyledLoreContentDesc>
+    <StyledEcoSystemContentSection>
+      <StyledEcoSystemGrid className="gap-4 overflow-hidden">
+        <div id="gaming-section">
+          <div className="flex items-center mb-4">
+            <StyledLoreContentHeading
+              className="font-marco text-red flex items-center"
+              style={{
+                margin: 0,
+              }}
+            >
+              Manga & Animated Series
+            </StyledLoreContentHeading>
+          </div>
+
+          <ul>
+            <li>
+              <p className="mt-6 mb-3 text-sm text-white">
+                Codified texts and supplementary resources that offers community
+                additional information, guidance, and inspiration to enhance
+                it’s experience and provide handrails for expansion of the
+                ecosystem.
+              </p>
+            </li>
+            <li>
+              <p className="text-white text-sm">
+                {`Player's Handbook, Monster Manuals, Character guides & Adventure
+            modules etc`}
+              </p>
+            </li>
+          </ul>
         </div>
-        <div>
+
+        <StyledEcoSystemSliderContent>
           <figure>
-            <img src="/images/eco-system/manga/1.png" />
+            <img src="/images/eco-system/gaming/1.png" />
           </figure>
-        </div>
-      </div>
-    </StyledLoreContentSection>
+        </StyledEcoSystemSliderContent>
+      </StyledEcoSystemGrid>
+    </StyledEcoSystemContentSection>
   );
 };
 
