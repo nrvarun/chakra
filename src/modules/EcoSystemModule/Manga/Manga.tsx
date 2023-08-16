@@ -1,4 +1,7 @@
-import Image from "next/image";
+import Slider from "react-slick";
+
+import "slick-carousel/slick/slick.css";
+
 import {
   StyledEcoSystemContentSection,
   StyledEcoSystemGrid,
@@ -6,11 +9,49 @@ import {
   StyledLoreContentDesc,
   StyledLoreContentHeading,
   StyledLoreContentSection,
+  StyledMangaDetailsTextList,
 } from "../lore.style";
+import { useState } from "react";
 
 type Props = {};
 
+const MANGA_DETAILS = [
+  {
+    id: 0,
+    text: "Chakra mythos is codified through a series of guidebooks, manga, cinematics and digital assets. This body of work serves as the scaffolding for community to expand upon.",
+  },
+  {
+    id: 1,
+    text: "The manga and animated series are designed to to deepen the game's lore and worldbuilding, adding complexity and depth to the game's universe.",
+  },
+  {
+    id: 2,
+    text: "With these mediums, community can dive deeper into the world of our game and get to know the characters on a whole new level.",
+  },
+  {
+    id: 3,
+    text: "These weekly releases are embedded with mini-arcs, clues and alpha that inform further development.",
+  },
+];
+
 const Manga = (props: Props) => {
+  const [activeSlide, setActiveSlide] = useState(0);
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 1000,
+    fade: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    beforeChange: (current, next) => {
+      console.log(current, next);
+      setActiveSlide(next);
+    },
+  };
+
   return (
     <StyledEcoSystemContentSection>
       <StyledEcoSystemGrid className="gap-4 overflow-hidden">
@@ -26,28 +67,43 @@ const Manga = (props: Props) => {
             </StyledLoreContentHeading>
           </div>
 
-          <ul>
-            <li>
-              <p className="mt-6 mb-3 text-sm text-white">
-                Codified texts and supplementary resources that offers community
-                additional information, guidance, and inspiration to enhance
-                it’s experience and provide handrails for expansion of the
-                ecosystem.
-              </p>
-            </li>
-            <li>
-              <p className="text-white text-sm">
-                {`Player's Handbook, Monster Manuals, Character guides & Adventure
-            modules etc`}
-              </p>
-            </li>
-          </ul>
+          <StyledMangaDetailsTextList>
+            {MANGA_DETAILS.map((detail) => (
+              <li
+                className={`mb-6 ${
+                  detail.id === activeSlide ? "active" : "in-active"
+                }`}
+                key={detail.id}
+              >
+                <p className="mt-6 text-sm text-white">{detail.text}</p>
+              </li>
+            ))}
+          </StyledMangaDetailsTextList>
         </div>
 
         <StyledEcoSystemSliderContent>
-          <figure>
-            <img src="/images/eco-system/gaming/1.png" />
-          </figure>
+          <Slider {...settings}>
+            <div>
+              <figure>
+                <img src="/images/eco-system/gaming/1.png" />
+              </figure>
+            </div>
+            <div>
+              <figure>
+                <img src="/images/eco-system/gaming/1.png" />
+              </figure>
+            </div>
+            <div>
+              <figure>
+                <img src="/images/eco-system/gaming/1.png" />
+              </figure>
+            </div>
+            <div>
+              <figure>
+                <img src="/images/eco-system/gaming/1.png" />
+              </figure>
+            </div>
+          </Slider>
         </StyledEcoSystemSliderContent>
       </StyledEcoSystemGrid>
     </StyledEcoSystemContentSection>

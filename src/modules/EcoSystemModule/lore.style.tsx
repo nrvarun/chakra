@@ -122,7 +122,7 @@ export const StyledFactionNavList = styled.ul`
 
 export const StyledEcoSystemGrid = styled.div`
   display: grid;
-  grid-template-columns: 30% 60%;
+  grid-template-columns: 32% 57%;
   grid-gap: 10rem;
   height: calc(100vh - 110px);
   padding: 70px 40px 0 40px;
@@ -136,6 +136,17 @@ export const StyledEcoSystemSliderContent = styled.div`
     img {
       width: 100%;
       height: 100%;
+    }
+  }
+`;
+
+export const StyledMangaDetailsTextList = styled.ul`
+  li {
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+
+    &.active {
+      opacity: 1;
     }
   }
 `;
