@@ -65,11 +65,18 @@ export const StyledLoreContentDescTitle = styled.h6`
 `;
 
 export const StyledLoreContentSection = styled.section`
-  min-height: calc(100vh - 118px);
+  @media (min-width: 1200px) {
+    min-height: calc(100vh - 118px);
+  }
 `;
 
 export const StyledEcoSystemContentSection = styled.section`
-  min-height: calc(100vh - 118px);
+  padding: 100px 20px;
+
+  @media (min-width: 1200px) {
+    padding: 10px 0;
+    min-height: calc(100vh - 118px);
+  }
 `;
 
 export const StyledLoreFactionSection = styled("section")`
@@ -122,10 +129,16 @@ export const StyledFactionNavList = styled.ul`
 
 export const StyledEcoSystemGrid = styled.div`
   display: grid;
-  grid-template-columns: 32% 57%;
-  grid-gap: 10rem;
-  height: calc(100vh - 110px);
-  padding: 70px 40px 0 40px;
+  grid-template-columns: 100%;
+  grid-gap: 5rem;
+
+  @media (min-width: 1200px) {
+    grid-gap: 10rem;
+    align-items: start;
+    grid-template-columns: 32% 58%;
+    height: calc(100vh - 110px);
+    padding: 70px 40px 0 40px;
+  }
 `;
 
 export const StyledEcoSystemSliderContent = styled.div`

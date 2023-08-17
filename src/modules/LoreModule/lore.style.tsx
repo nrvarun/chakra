@@ -185,7 +185,7 @@ export const StyledSliderNavWrapper = styled.div`
 
 export const StyledLoreBreadCrumbWrapper = styled.div`
   position: fixed;
-  width: 30%;
+  width: 100%;
   left: 0px;
   top: 126px;
   z-index: 20;
@@ -195,6 +195,7 @@ export const StyledLoreBreadCrumbWrapper = styled.div`
   @media (min-width: 1200px) {
     left: 20px;
     top: 100px;
+    width: 30%;
   }
 
   p {
@@ -276,5 +277,16 @@ export const StyledStoryNav = styled.nav`
       font-size: 16px;
       line-height: 19px;
     }
+  }
+`;
+
+export const StyledEcoSystemNav = styled(StyledStoryNav)`
+  top: 56px;
+  padding: 10px 0 10px 60px;
+  overflow: auto;
+
+  @media (min-width: 1200px) {
+    padding: 0;
+    top: 85px;
   }
 `;

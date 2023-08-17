@@ -4,6 +4,7 @@ import { useState } from "react";
 
 import Link from "next/link";
 import {
+  StyledEcoSystemNav,
   StyledLoreBreadCrumbWrapper,
   StyledStoryNav,
 } from "modules/LoreModule/lore.style";
@@ -57,7 +58,7 @@ const EcoSystemModule = ({ handleFactionChange }: Props) => {
 
   return (
     <main className="non-landing eco-system min-h-screen">
-      <StyledLoreBreadCrumbWrapper className="grid grid-cols-3 items-center container mx-auto relative">
+      <StyledLoreBreadCrumbWrapper className="grid grid-cols-2 items-center container mx-auto relative">
         <div className="text-left flex items-center relative z-10">
           <Link href="/world">
             <p className="text-xs font-semibold capitalize underline-offset-1">
@@ -83,7 +84,7 @@ const EcoSystemModule = ({ handleFactionChange }: Props) => {
           </span>
         </div>
       </StyledLoreBreadCrumbWrapper>
-      <StyledStoryNav>
+      <StyledEcoSystemNav>
         {NAV_ITEMS.map((nav) => (
           <Link key={nav.id} href={`/world/eco-system`}>
             <button
@@ -96,7 +97,7 @@ const EcoSystemModule = ({ handleFactionChange }: Props) => {
             </button>
           </Link>
         ))}
-      </StyledStoryNav>
+      </StyledEcoSystemNav>
       {getStoryContent(activeTab)}
     </main>
   );
