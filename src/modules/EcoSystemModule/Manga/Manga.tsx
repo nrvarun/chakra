@@ -11,7 +11,7 @@ import {
   StyledLoreContentSection,
   StyledMangaDetailsTextList,
 } from "../lore.style";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 type Props = {};
 
@@ -41,6 +41,8 @@ const MANGA_DETAILS = [
 const Manga = (props: Props) => {
   const [activeSlide, setActiveSlide] = useState(0);
 
+  const sliderRef = useRef<any>(null);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -51,7 +53,6 @@ const Manga = (props: Props) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     beforeChange: (current, next) => {
-      console.log(current, next);
       setActiveSlide(next);
     },
   };
@@ -74,19 +75,25 @@ const Manga = (props: Props) => {
           <StyledMangaDetailsTextList>
             {MANGA_DETAILS.map((detail) => (
               <li
+                onClick={() =>
+                  sliderRef.current != null &&
+                  sliderRef?.current?.slickGoTo(detail.id)
+                }
                 className={`mb-6 ${
                   detail.id === activeSlide ? "active" : "in-active"
                 }`}
                 key={detail.id}
               >
-                <p className="mt-6 text-sm text-white">{detail.text}</p>
+                <p className="mt-6 text-sm text-white cursor-pointer">
+                  {detail.text}
+                </p>
               </li>
             ))}
           </StyledMangaDetailsTextList>
         </div>
 
         <StyledEcoSystemSliderContent>
-          <Slider {...settings}>
+          <Slider {...settings} ref={sliderRef}>
             <div>
               <figure>
                 <img src="/images/eco-system/manga/1.jpg" />
