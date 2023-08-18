@@ -86,9 +86,9 @@ const Gaming = (props: Props) => {
         </div>
 
         <StyledEcoSystemSliderContent>
-          <figure>
-            <img src="/images/eco-system/gaming/1.png" />
-          </figure>
+          <video autoPlay muted playsInline>
+            <source src="/videos/eco-gaming.mp4" />
+          </video>
         </StyledEcoSystemSliderContent>
       </StyledEcoSystemGrid>
     </StyledEcoSystemContentSection>

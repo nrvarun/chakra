@@ -62,7 +62,7 @@ const Web = (props: Props) => {
 
         <StyledEcoSystemSliderContent>
           <figure>
-            <img src="/images/eco-system/gaming/1.png" />
+            <img src="/images/eco-system/web.png" />
           </figure>
         </StyledEcoSystemSliderContent>
       </StyledEcoSystemGrid>
