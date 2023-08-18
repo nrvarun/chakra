@@ -79,11 +79,15 @@ const WhitepaperArticle = (props: Props) => {
         </figure>
         <p className="mb-10">
           The Chakra ecosystem aims to create a robust flywheel effect by
-          synergistically combining elements of web3, gaming, collaborative
-          storytelling, and community involvement. The ecosystem focuses on
-          three main pillars: Content, Commerce, and Expansion, which work
-          together to maximize utility, drive adoption, and ensure sustainable
-          growth.
+          synergistically combining elements of web3, gaming,{" "}
+          <span className="omitted">
+            collaborative storytelling, and community involvement.
+          </span>
+        </p>
+        <p className="mb-10">
+          The ecosystem focuses on three main pillars: Content, Commerce,{" "}
+          <span className="omitted">Expansion,</span> which work together to
+          maximize utility, drive adoption, and ensure sustainable growth.
         </p>
 
         <p className="mb-2">
@@ -125,19 +129,19 @@ const WhitepaperArticle = (props: Props) => {
         </ol>
 
         <p className="mb-2">
-          <span className="font-bold underline">Expansion</span>{" "}
+          <span className="font-bold underline omitted">Expansion</span>{" "}
         </p>
         <ol className="mb-10">
-          <li>
+          <li className="omitted w-1/3 overflow-hidden">
             <p>Content store and library - Purchasable Content</p>
           </li>
-          <li>
+          <li className="omitted w-1/3 overflow-hidden">
             <p>Rule Books - Rule Set for Content Creation</p>
           </li>
-          <li>
+          <li className="omitted w-1/3 overflow-hidden">
             <p>Governance - Vetting and Onboarding Creators</p>
           </li>
-          <li>
+          <li className="omitted w-1/3 overflow-hidden">
             <p>Accelerator - Grants and Incubation</p>
           </li>
         </ol>
@@ -156,7 +160,7 @@ const WhitepaperArticle = (props: Props) => {
           game studio at heart, this is our chosen medium to achieve critical
           mass necessary for capturing platform network effects. Apart from
           driving adoption and commerce gaming as a medium is pivotal to create
-          stickiness through joy rather than “numbers go up”.
+          stickiness through joy rather than <i>“numbers go up”</i>.
         </p>
         <p className="mb-6">
           Chakra universe will be seeded with three game titles in the near term
@@ -260,9 +264,11 @@ const WhitepaperArticle = (props: Props) => {
           <li>
             <p className="mb-6">
               <span className="font-bold">Guidebooks</span>{" "}
-              <span className="text-red-e11">{`->`}</span> Art-style guides,
-              Technical Documentation, Lore and character guides, Game content
-              assets and Guide lines
+              <span className="text-red-e11">{`->`}</span>{" "}
+              <span className="omitted">
+                Art-style guides, Technical Documentation, Lore and character
+                guides, Game content assets and Guide lines
+              </span>
             </p>
           </li>
           <li>
@@ -294,7 +300,7 @@ const WhitepaperArticle = (props: Props) => {
                 </p>
               </li>
               <li>
-                <p>
+                <p className="omitted overflow-hidden">
                   Open-sourced or purchase-able game content & assets from
                   Chakra games ecosystem (and community creators)
                 </p>
@@ -318,14 +324,14 @@ const WhitepaperArticle = (props: Props) => {
           </figure>
         </div>
 
-        <p className="mb-6">
+        <p className="mb-10">
           Chakra ecosystem is envisioned as a platform designed to empower
           community creators to expand the world through Art & Lore, game
           content and game development. All stages of the process are subject to
           community voting, honoring our commitment to decentralization.
         </p>
 
-        <p className="font-bold mb-6">
+        {/* <p className="font-bold mb-6">
           <strong className="underline">For Content Creators</strong>
           <span className="text-red-e11 ml-1">{`->`}</span>
         </p>
@@ -395,7 +401,7 @@ const WhitepaperArticle = (props: Props) => {
               more revenue streams
             </p>
           </li>
-        </ol>
+        </ol> */}
 
         <h4 className="font-marco font-semibold text-white mb-10" id="web3">
           Web3
@@ -449,11 +455,14 @@ const WhitepaperArticle = (props: Props) => {
           <li>
             <p className="mb-3">
               <span className="font-bold">Chakra 10k</span>{" "}
-              <span className="text-red-e11">{`->`}</span>A larger set of 10k 3D
-              characters that are functional in gaming, aimed at engaging a
-              wider audience within the ecosystem. While these also enable value
-              accrual to holders through multipliers, their impact is slightly
-              lower compared to the Chakra Chieftains.
+              <span className="text-red-e11">{`->`}</span>
+              <span className="omitted">
+                A larger set of 10k 3D characters that are functional in gaming,
+                aimed at engaging a wider audience within the ecosystem. While
+                these also enable value accrual to holders through multipliers,
+                their impact is slightly lower compared to the Chakra
+                Chieftains.
+              </span>
             </p>
           </li>
         </ol>
@@ -464,10 +473,10 @@ const WhitepaperArticle = (props: Props) => {
           such as cosmetics, weapons, loot, skins, access passes and
           consumables.
         </p>
-        <p className="mb-10 w-4/5">
+        {/* <p className="mb-10 w-4/5">
           Core public infrastructure to help create a virtuous cycle of
           activity, expansion & commerce within the Chakra ecosystem.
-        </p>
+        </p> */}
         <h4
           className="font-marco font-semibold text-white mb-10"
           id="public-goods"
@@ -495,30 +504,38 @@ const WhitepaperArticle = (props: Props) => {
           <li>
             <p className="mb-4">
               <span className="font-bold">Rule Book</span>{" "}
-              <span className="text-red-e11">{`->`}</span> Codified guides
-              informing on several critical aspects of content creation
+              <span className="text-red-e11">{`->`}</span>{" "}
+              <span className="omitted">
+                Codified guides informing on several critical aspects of content
+                creation
+              </span>
             </p>
           </li>
           <li>
             <p className="mb-4">
               <span className="font-bold">DEX</span>{" "}
-              <span className="text-red-e11">{`->`}</span>AMM DEX that helps
-              onboard and off ramp crypto users from across chains
+              <span className="text-red-e11">{`->`}</span>
+              <span className="omitted">
+                AMM DEX that helps onboard and off ramp crypto users from across
+                chains
+              </span>
             </p>
           </li>
           <li>
             <p className="mb-4">
               <span className="font-bold">Marketplace</span>{" "}
-              <span className="text-red-e11">{`->`}</span>NFT and virtual asset
-              market place for P2P trading
+              <span className="text-red-e11">{`->`}</span>
+              NFT and virtual asset market place for P2P trading
             </p>
           </li>
           <li>
             <p className="mb-4">
               <span className="font-bold">Content Store</span>{" "}
-              <span className="text-red-e11">{`->`}</span>Native content store
-              to buy and sell community created (community approved) game ready
-              content.
+              <span className="omitted">
+                <span className="text-red-e11">{`->`}</span>Native content store
+                to buy and sell community created (community approved) game
+                ready content.
+              </span>
             </p>
           </li>
           <li>
@@ -539,10 +556,12 @@ const WhitepaperArticle = (props: Props) => {
           <li>
             <p className="mb-10">
               <span className="font-bold">Governance System</span>{" "}
-              <span className="text-red-e11">{`->`}</span> Governance
-              infrastructure (discussion & proposal forums and voting) using
-              quadratic funding principles to facilitate optimal and fair
-              governance of ecosystem expansion
+              <span className="text-red-e11">{`->`}</span>{" "}
+              <span className="omitted">
+                Governance infrastructure (discussion & proposal forums and
+                voting) using quadratic funding principles to facilitate optimal
+                and fair governance of ecosystem expansion
+              </span>
             </p>
           </li>
         </ol>
@@ -769,9 +788,8 @@ const WhitepaperArticle = (props: Props) => {
           <p>Balanced rewards and incentives for Exis ting and new users.</p>
         </li>
         <li>
-          <p>
+          <p className="omitted inline-block">
             Establishing a governance mechanism that incentivizes just,
-            appropriate, and truthful decision-making.
           </p>
         </li>
         <li>
@@ -852,7 +870,8 @@ const WhitepaperArticle = (props: Props) => {
         <span className="text-red-e11">{`◇`}</span> LP for DEX
       </p>
       <p className="">
-        <span className="text-red-e11">{`◇`}</span> Governance
+        <span className="text-red-e11">{`◇`}</span>{" "}
+        <span className="omitted">Governance</span>
       </p>
       <p className="mb-10">
         <span className="text-red-e11">{`◇`}</span> Liquidity provision for
@@ -936,7 +955,7 @@ const WhitepaperArticle = (props: Props) => {
         </li>
       </ol>
 
-      <h4
+      {/* <h4
         className="font-marco font-semibold text-white mb-10"
         id="stakeholders"
       >
@@ -1018,7 +1037,7 @@ const WhitepaperArticle = (props: Props) => {
         <figcaption className="text-white text-xs">
           Stakeholder Value Flow
         </figcaption>
-      </figure>
+      </figure> */}
 
       <h4
         className="font-marco font-semibold text-white mb-10"
@@ -1047,19 +1066,21 @@ const WhitepaperArticle = (props: Props) => {
 
       <ol>
         <li>
-          <p className="mb-2">Liquid Provision (or Staking) rewards</p>
+          <p className="mb-2 omitted inline-block">
+            Liquid Provision (or Staking) rewards
+          </p>
         </li>
         <li>
           <p className="mb-2">Seasonal Airdrops</p>
         </li>
       </ol>
 
-      <ul className="text-white list-decimal pl-5">
+      <ul className="text-white list-disc pl-5">
         <li>
-          <p className="mb-6">
-            <span className="font-bold">Staking Reward</span>
-            <span className="text-red-e11">{` -> `}</span>
-            <span className="">
+          <p className="mb-6 ">
+            <span className="font-bold omitted">Staking Reward</span>
+            <span className="text-white omitted">{` -> `}</span>
+            <span className="omitted">
               A substantial % of Revenue Pool will be allocated to liquidity
               providers (and stakers), with the remaining going to the
               {`protocol's`} treasury. Additionally, a portion of token supply
@@ -1071,8 +1092,7 @@ const WhitepaperArticle = (props: Props) => {
         <li>
           <p className="mb-6">
             <span className="font-bold">Seasonal Airdrops</span>
-            <span className="text-red-e11">{` -> `}</span>
-            <span className="">
+            <span className="ml-1">
               [Airdrops are composed of Tokens and Loot {`(virtual assets] ->`}{" "}
               Rewards are distributed in a series of seasons to continually
               incentivize network participation. The reward distribution is
@@ -1094,9 +1114,9 @@ const WhitepaperArticle = (props: Props) => {
         </i>
       </p>
 
-      <p className="font-semibold mb-10">
+      {/* <p className="font-semibold mb-10">
         <i>Airdrops are composed of Tokens and Loot (virtual assets)</i>
-      </p>
+      </p> */}
 
       <p className="font-semibold text-white mb-6" id="distribution-process">
         <span className="underline">Distribution Process</span>
@@ -1125,17 +1145,19 @@ const WhitepaperArticle = (props: Props) => {
         </li>
       </ul>
 
-      <p className="mb-6">
+      <p className="mb-6 omitted">
         The Treasure Chest NFT is distributed to all users who generated up to
         the minimum required CP for Airdrop. Player now have two choices.
       </p>
 
       <ul className="text-white list-disc pl-10 mb-8">
         <li>
-          <p>Cash out the reward instantly by burning chakra points</p>
+          <p className="omitted">
+            Cash out the reward instantly by burning chakra points
+          </p>
         </li>
         <li>
-          <p>
+          <p className="omitted">
             Stick around and receive a treasure chest which will then accrue
             higher rewards towards the end of the seasons
           </p>
@@ -1176,7 +1198,14 @@ const WhitepaperArticle = (props: Props) => {
         at the end of each season, and all airdrop tokens are vested.
       </p>
 
-      <p className="mb-6">
+      <p className="mb-6  italic">
+        <strong>
+          Note: The full set of actions and their point rewards will be defined
+          in the near future
+        </strong>
+      </p>
+
+      {/* <p className="mb-6">
         <span className="font-bold underline">User Reward Share</span>
         {` `}(Formula)
       </p>
@@ -1340,11 +1369,25 @@ const WhitepaperArticle = (props: Props) => {
             </li>
           </ul>
         </li>
-      </ul>
+      </ul> */}
 
       <h3 className="font-marco font-semibold text-red-e11 mb-10" id="pitch">
         Investors Pitch
       </h3>
+
+      <p className="mb-6">
+        This section is designed to provide insights into our strategic vision,
+        unique features, value proposition and plans for growth. We intend to
+        demonstrate not only the financial potential of our protocol but also
+        its socio-cultural impact in the realm of decentralized gaming and
+        community engagement
+      </p>
+
+      <p className="mb-6">
+        We believe that our success is intrinsically linked to our {` users `}
+        satisfaction and our ability to create a meaningful and immersive
+        ecosystem.
+      </p>
 
       <h4
         className="font-marco font-semibold text-white mb-10"
@@ -1353,7 +1396,7 @@ const WhitepaperArticle = (props: Props) => {
         Distribution and Supply
       </h4>
 
-      <p className="mb-6">
+      {/* <p className="mb-6">
         <span className="font-bold underline">Economy Balancing</span>
       </p>
 
@@ -1373,7 +1416,7 @@ const WhitepaperArticle = (props: Props) => {
           and its parts to maintain a balance between inflationary and
           deflationary pressures.
         </span>
-      </p>
+      </p> */}
 
       <p className="mb-4">
         <span className="font-bold underline">Token Allocation</span>
@@ -1424,7 +1467,7 @@ const WhitepaperArticle = (props: Props) => {
         </figcaption>
       </figure>
 
-      <h4
+      {/* <h4
         className="font-marco font-semibold text-white mb-10"
         id="how-to-moon"
       >
@@ -1621,7 +1664,7 @@ const WhitepaperArticle = (props: Props) => {
             Fiat and non-crypto onramps ensure accessibility for all users.
           </p>
         </li>
-      </ul>
+      </ul> */}
 
       <h4 className="font-marco font-semibold text-white mb-10" id="disclaimer">
         Disclaimer
