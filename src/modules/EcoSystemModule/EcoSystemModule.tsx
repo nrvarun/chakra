@@ -32,7 +32,7 @@ const NAV_ITEMS = [
   },
   {
     id: "webonacci",
-    title: "Webonaccis",
+    title: "webonacci",
   },
 ];
 

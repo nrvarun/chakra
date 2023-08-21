@@ -39,13 +39,23 @@ const Web = (props: Props) => {
             classes="mb-4"
           >
             <StyledLoreContentDesc className="mb-4 text-white text-sm">
-              A highly quality 3D ARPG with rogue-like elements. This is a
-              flagship Chakra ecosystem game whose key objective is to immerse
-              players into the world of chakra
+              Chakra Chieftains {`->`} A unique collection of 500 OG PFP
+              characters that play a crucial role in the ownership of the
+              ecosystem. These NFTs facilitate value accrual to their holders by
+              acting as a significant reward multiplier among other benefits.
+            </StyledLoreContentDesc>
+            <StyledLoreContentDesc className="mb-4 text-white text-sm">
+              Chakra 10k {`->`}{" "}
+              <span className="bg-white">
+                A larger set of 10k 3D characters that are functional in gaming,
+                aimed at engaging a wider audience within the ecosystem. While
+                these also enable value accrual to holders through multipliers,
+                their impact is slightly lower compared to the Chakra
+                Chieftains.
+              </span>
             </StyledLoreContentDesc>
           </Accordion>
           <Accordion title="INFRASTRUCTURE" open={true}>
-            <p className="mb-3 text-white">Game Modes</p>
             <ul className="text-white list-disc pl-5">
               <li className="mb-1">
                 <p className="text-sm">Native Token</p>

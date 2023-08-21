@@ -32,10 +32,10 @@ const MANGA_DETAILS = [
     id: 3,
     text: "These weekly releases are embedded with mini-arcs, clues and alpha that inform further development.",
   },
-  {
-    id: 4,
-    text: "These weekly releases are embedded with mini-arcs, clues and alpha that inform further development.",
-  },
+  // {
+  //   id: 4,
+  //   text: "These weekly releases are embedded with mini-arcs, clues and alpha that inform further development.",
+  // },
 ];
 
 const Manga = (props: Props) => {
@@ -114,11 +114,11 @@ const Manga = (props: Props) => {
                 <img src="/images/eco-system/manga/4.jpg" />
               </figure>
             </div>
-            <div>
+            {/* <div>
               <figure>
                 <img src="/images/eco-system/manga/5.jpg" />
               </figure>
-            </div>
+            </div> */}
           </Slider>
         </StyledEcoSystemSliderContent>
       </StyledEcoSystemGrid>
