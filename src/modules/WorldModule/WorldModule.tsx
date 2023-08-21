@@ -2,7 +2,6 @@ import { useEffect, useRef } from "react";
 import { StyledWorldPageBgImgWrapper, StyledWorldSection } from "./world.style";
 import WorldItem from "./WorldItem";
 
-import Tilt from "react-parallax-tilt";
 import { useRouter } from "next/router";
 import { useWindowSize } from "react-use";
 
@@ -22,7 +21,7 @@ const WORLD_ITEMS = [
     title: "Ecosystem",
     desc: "The Chakra ecosystem leverages the power of gaming and the wonders of web3 to create a well-defined yet boundless fantasy meta-world inspired by millennia-old Eastern mythologies.",
     img: "/images/world/2.png",
-    path: "/world/eco-system",
+    path: "/world",
     bgPattern: "/icons/eco-bg.svg",
   },
   {

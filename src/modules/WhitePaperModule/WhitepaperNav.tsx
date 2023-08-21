@@ -69,14 +69,14 @@ const NAV_LIST = [
         id: "revenue-generation",
         title: "Revenue Generation",
       },
-      {
-        id: "stakeholders",
-        title: "Stakeholders",
-      },
-      {
-        id: "ecosystem-birds-view",
-        title: "Bird's-eye view",
-      },
+      // {
+      //   id: "stakeholders",
+      //   title: "Stakeholders",
+      // },
+      // {
+      //   id: "ecosystem-birds-view",
+      //   title: "Bird's-eye view",
+      // },
       {
         id: "incentivization",
         title: "Incentivization",
@@ -95,10 +95,10 @@ const NAV_LIST = [
         id: "distribution-and-supply",
         title: "Distribution and Supply",
       },
-      {
-        id: "how-to-moon",
-        title: "how to moon",
-      },
+      // {
+      //   id: "how-to-moon",
+      //   title: "how to moon",
+      // },
     ],
   },
   {
