@@ -10,8 +10,6 @@ export default function Lore() {
     setFaction(flag);
   };
 
-  console.log(isFaction);
-
   return (
     <>
       <CustomHead />
