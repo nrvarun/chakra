@@ -21,7 +21,7 @@ const NAV_LINKS = [
   },
   {
     path: "/whitepaper",
-    title: "whitepaper",
+    title: "docs",
     disabled: false,
     target: "",
     tooltipContent: "",

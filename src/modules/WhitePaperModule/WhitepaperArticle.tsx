@@ -163,18 +163,50 @@ const WhitepaperArticle = (props: Props) => {
           stickiness through joy rather than <i>“numbers go up”</i>.
         </p>
         <p className="mb-6">
-          Chakra universe will be seeded with three game titles in the near term
+          Chakra universe will be primarily focus on the following casual games
+          for its opening season
+        </p>
+
+        <ul className="list-disc text-white pl-5">
+          <li>
+            <p className="mb-6">
+              <span className="font-bold">Chakra Clash </span>{" "}
+              <span className="text-red-e11">{`->`}</span> A PvP turn based
+              fighting game with progressive duel mechanics and wagering. (In
+              development)
+            </p>
+          </li>
+        </ul>
+
+        <p className="mb-3">
+          <span className="underline">Game description : </span>
         </p>
 
         <p className="mb-6">
-          <span className="font-bold underline">Chakra Conundrum </span>{" "}
-          <span className="text-red-e11">{`->`}</span> In Conundrum, players
-          face off (PvP) in the ultimate game of strategy and deception: the
-          iterative {`prisoner's `} dilemma.
+          <span>
+            <i>
+              Embrace the fusion of strategy and intuition as you delve into the
+              ancient World of Chakra Outmaneuver your foes, unlock the secrets
+              of energy manipulation, and emerge as the supreme warrior in this
+              captivating duel of mystical might.
+            </i>
+          </span>
         </p>
 
+        <ul className="list-disc text-white pl-5">
+          <li>
+            <p className="mb-6">
+              <span className="font-bold">Chakra Conundrum </span>{" "}
+              <span className="text-red-e11">{`->`}</span> In Conundrum, players
+              face off (PvP) in the ultimate game of strategy and deception: the
+              iterative {`prisoner's `} dilemma.
+            </p>
+          </li>
+        </ul>
+
+        <p className="mb-3 underline">Game description : </p>
+
         <p className="mb-8">
-          Game description :{" "}
           <span>
             {" "}
             <i>
@@ -187,28 +219,27 @@ const WhitepaperArticle = (props: Props) => {
           </span>
         </p>
 
-        <p className="mb-6">
-          <span className="font-bold underline">Chakra Ascension </span>{" "}
-          <span className="text-red-e11">{`->`}</span> A high—quality 3D ARPG
-          with rogue—like elements. This is a flagship Chakra ecosystem game
-          whose key objective is to immerse players into the world of chakra.
-        </p>
+        <p className="mb-3 underline">Coming soon </p>
+
+        <ul className="list-disc text-white pl-5">
+          <li>
+            <p className="mb-6">
+              <span className="font-bold">Chakra Ascension </span>{" "}
+              <span className="text-red-e11">{`->`}</span> A 3D ARPG survivor
+              with comprehensive loot mechanics supporting single player and
+              team based gameplay. (PvE)
+            </p>
+          </li>
+        </ul>
+
         <p className="mb-3">
-          Game description :{" "}
-          <span>
-            <i>
-              Embrace the fusion of strategy and intuition as you delve into the
-              ancient World of Chakra Outmaneuver your foes, unlock the secrets
-              of energy manipulation, and emerge as the supreme warrior in this
-              captivating duel of mystical might.
-            </i>
-          </span>
+          <span className="font-bold underline">Game Description : </span>{" "}
         </p>
 
-        <p className="mb-6">
-          <span className="font-bold underline">Chakra Clash </span>{" "}
-          <span className="text-red-e11">{`->`}</span> A PvP turn based fighting
-          game with progressive duel mechanics and wagering. (In development)
+        <p className="mb-6 italic">
+          Delve into digital catacombs and slaughter enemies for a never-ending
+          shower of loot. Team up with friends to increase the challenge (and
+          loot quality).
         </p>
 
         <p className="mb-2">
@@ -265,7 +296,7 @@ const WhitepaperArticle = (props: Props) => {
             <p className="mb-6">
               <span className="font-bold">Guidebooks</span>{" "}
               <span className="text-red-e11">{`->`}</span>{" "}
-              <span className="omitted">
+              <span className="omitted w-28 leading-normal">
                 Art-style guides, Technical Documentation, Lore and character
                 guides, Game content assets and Guide lines
               </span>
@@ -456,17 +487,14 @@ const WhitepaperArticle = (props: Props) => {
             <p className="mb-3">
               <span className="font-bold">Chakra 10k</span>{" "}
               <span className="text-red-e11">{`->`}</span>
-              <span className="omitted">
+              <span className="omitted leading-normal">
                 A larger set of 10k 3D characters that are functional in gaming,
-                aimed at engaging a wider audience within the ecosystem. While
-                these also enable value accrual to holders through multipliers,
-                their impact is slightly lower compared to the Chakra
-                Chieftains.
+                aimed at engaging a wider audience within the ecosystem.
               </span>
             </p>
           </li>
         </ol>
-        <p className="mb-10">
+        <p className="mb-10 -mt-3">
           Beyond the core collections, the Chakra ecosystem also offers a
           plethora of game-related NFTs and digital collectibles, designed to
           enhance gameplay and enrich the user experience. These include assets
@@ -514,7 +542,7 @@ const WhitepaperArticle = (props: Props) => {
           <li>
             <p className="mb-4">
               <span className="font-bold">DEX</span>{" "}
-              <span className="text-red-e11">{`->`}</span>
+              <span className="text-red-e11">{`-> `}</span>
               <span className="omitted">
                 AMM DEX that helps onboard and off ramp crypto users from across
                 chains
@@ -524,17 +552,19 @@ const WhitepaperArticle = (props: Props) => {
           <li>
             <p className="mb-4">
               <span className="font-bold">Marketplace</span>{" "}
-              <span className="text-red-e11">{`->`}</span>
+              <span className="text-red-e11">{`-> `}</span>
               NFT and virtual asset market place for P2P trading
             </p>
           </li>
           <li>
             <p className="mb-4">
               <span className="font-bold">Content Store</span>{" "}
-              <span className="omitted">
-                <span className="text-red-e11">{`->`}</span>Native content store
-                to buy and sell community created (community approved) game
-                ready content.
+              <span className="">
+                <span className="text-red-e11">{`-> `}</span>{" "}
+                <span className="omitted">
+                  Native content store to buy and sell community created
+                  (community approved)
+                </span>
               </span>
             </p>
           </li>
@@ -548,7 +578,7 @@ const WhitepaperArticle = (props: Props) => {
           <li>
             <p className="mb-4">
               <span className="font-bold">Wagering System</span>{" "}
-              <span className="text-red-e11">{`->`}</span>Wagering contracts
+              <span className="text-red-e11">{`-> `}</span>Wagering contracts
               that enable a robust wager 2 earn mechanisms for certain PvP and
               PvE game modes
             </p>
@@ -556,11 +586,10 @@ const WhitepaperArticle = (props: Props) => {
           <li>
             <p className="mb-10">
               <span className="font-bold">Governance System</span>{" "}
-              <span className="text-red-e11">{`->`}</span>{" "}
-              <span className="omitted">
+              <span className="text-red-e11">{`-> `}</span>{" "}
+              <span className="omitted leading-normal">
                 Governance infrastructure (discussion & proposal forums and
-                voting) using quadratic funding principles to facilitate optimal
-                and fair governance of ecosystem expansion
+                voting) using quadratic funding principles to facilitate
               </span>
             </p>
           </li>
@@ -874,8 +903,8 @@ const WhitepaperArticle = (props: Props) => {
         <span className="omitted">Governance</span>
       </p>
       <p className="mb-10">
-        <span className="text-red-e11">{`◇`}</span> Liquidity provision for
-        expansion games
+        <span className="text-red-e11">{`◇`}</span>{" "}
+        <span className="omitted">Liquidity provision for expansion games</span>
       </p>
 
       <p className="mb-3">
@@ -886,9 +915,10 @@ const WhitepaperArticle = (props: Props) => {
         <li>
           <p className="mb-5">
             <span className="font-bold">Chieftain NFT</span>
-            <span className="text-red-e11">{` -> `}</span>500 OG PFP characters
-            play a crucial role in the ownership of the ecosystem. They help in
-            value accrual to their holder by acting as a reward multiplier.
+            <span className="text-red-e11">{` -> `}</span>{" "}
+            <span className="omitted">500</span> OG PFP characters play a
+            crucial role in the ownership of the ecosystem. They help in value
+            accrual to their holder by acting as a reward multiplier.
           </p>
         </li>
         <li>
@@ -1066,12 +1096,12 @@ const WhitepaperArticle = (props: Props) => {
 
       <ol>
         <li>
+          <p className="mb-2">Seasonal Airdrops</p>
+        </li>
+        <li>
           <p className="mb-2 omitted inline-block">
             Liquid Provision (or Staking) rewards
           </p>
-        </li>
-        <li>
-          <p className="mb-2">Seasonal Airdrops</p>
         </li>
       </ol>
 
@@ -1080,30 +1110,36 @@ const WhitepaperArticle = (props: Props) => {
           <p className="mb-6 ">
             <span className="font-bold omitted">Staking Reward</span>
             <span className="text-white omitted">{` -> `}</span>
-            <span className="omitted">
+            <span className="omitted leading-normal">
               A substantial % of Revenue Pool will be allocated to liquidity
               providers (and stakers), with the remaining going to the
-              {`protocol's`} treasury. Additionally, a portion of token supply
+              {`protocol's`} treasury.
+              {/**
+               * 
+               * Additionally, a portion of token supply
               will be allocated to reward liquidity providers to encourage a
               rich market depth.
+               */}
             </span>{" "}
           </p>
         </li>
         <li>
           <p className="mb-6">
             <span className="font-bold">Seasonal Airdrops</span>
-            <span className="ml-1">
-              [Airdrops are composed of Tokens and Loot {`(virtual assets] ->`}{" "}
-              Rewards are distributed in a series of seasons to continually
-              incentivize network participation. The reward distribution is
-              strategic and gamified, aligning with the {`protocol's`} gaming
-              theme. The Chakra incentive system is inspired by Nir {`Eyal's`}{" "}
-              Hook Model and Sequential Airdrops pioneered by Blur NFT
-              Marketplace.
+            <span className="ml-1 italic">
+              [Airdrops are composed of Tokens and Loot {`(virtual assets]`}{" "}
             </span>{" "}
           </p>
         </li>
       </ul>
+
+      <p className="mb-6">
+        Rewards are distributed in a series of seasons to continually
+        incentivize network participation. The reward distribution is strategic
+        and gamified, aligning with the protocol{`'s`} gaming theme. The Chakra
+        incentive system is inspired by Nir Eyal{`'s`} Hook Model and Sequential
+        Airdrops pioneered by Blur NFT Marketplace.
+      </p>
 
       <p className="mb-10">
         <i>
@@ -1151,7 +1187,7 @@ const WhitepaperArticle = (props: Props) => {
       </p>
 
       <ul className="text-white list-disc pl-10 mb-8">
-        <li>
+        <li className="mb-3">
           <p className="omitted">
             Cash out the reward instantly by burning chakra points
           </p>
