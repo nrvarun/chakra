@@ -26,10 +26,10 @@ const NAV_ITEMS = [
     id: "manga",
     title: "Manga",
   },
-  {
-    id: "chakranomicon",
-    title: "Chakranomicon",
-  },
+  // {
+  //   id: "chakranomicon",
+  //   title: "Chakranomicon",
+  // },
   {
     id: "webonacci",
     title: "webonacci",
@@ -44,9 +44,9 @@ const EcoSystemModule = ({ handleFactionChange }: Props) => {
       return <Manga />;
     }
 
-    if (tab === "chakranomicon") {
-      return <Comicon />;
-    }
+    // if (tab === "chakranomicon") {
+    //   return <Comicon />;
+    // }
 
     if (tab === "webonacci") {
       return <Web />;
