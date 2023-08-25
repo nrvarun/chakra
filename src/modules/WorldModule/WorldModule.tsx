@@ -21,7 +21,7 @@ const WORLD_ITEMS = [
     title: "Ecosystem",
     desc: "The Chakra ecosystem leverages the power of gaming and the wonders of web3 to create a well-defined yet boundless fantasy meta-world inspired by millennia-old Eastern mythologies.",
     img: "/images/world/2.png",
-    path: "/world",
+    path: "/world/eco-system",
     bgPattern: "/icons/eco-bg.svg",
   },
   {

@@ -49,11 +49,12 @@ export const StyledLoreContentSubHeading = styled.h5`
 
 export const StyledLoreContentDesc = styled.p`
   font-family: "Inter", sans-serif;
+  color: #fff;
+  font-family: Inter;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 15px;
-  max-width: 360px;
+  line-height: normal;
 `;
 
 export const StyledLoreContentDescTitle = styled.h6`
@@ -74,7 +75,7 @@ export const StyledEcoSystemContentSection = styled.section`
   padding: 100px 20px;
 
   @media (min-width: 1200px) {
-    padding: 10px 0;
+    padding: 70px 40px 0 40px;
     min-height: calc(100vh - 118px);
   }
 `;
@@ -133,11 +134,10 @@ export const StyledEcoSystemGrid = styled.div`
   grid-gap: 5rem;
 
   @media (min-width: 1200px) {
-    grid-gap: 10rem;
+    grid-gap: 6rem;
     align-items: start;
     grid-template-columns: 32% 58%;
     height: calc(100vh - 110px);
-    padding: 70px 40px 0 40px;
   }
 `;
 
