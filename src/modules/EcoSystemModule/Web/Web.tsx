@@ -80,17 +80,74 @@ const Web = (props: Props) => {
             content: (
               <StyledEcoSystemGrid className="gap-4 overflow-hidden">
                 <article>
-                  <ul className="text-white list-disc pl-5">
-                    <li className="mb-1">
-                      <p className="text-sm">Native Token</p>
+                  <StyledLoreContentDesc className="mb-6 text-white text-sm ">
+                    Core non-rivalrous public infrastructure to help create a
+                    virtuous cycle of activity, expansion & commerce within the
+                    Chakra ecosystem.
+                  </StyledLoreContentDesc>
+                  <ol className="list-disc pl-4 mb-6 text-white">
+                    <li>
+                      <p className="mb-3">
+                        <span className="font-bold">Playable Game Content</span>{" "}
+                        <span className="text-red-e11">{`->`}</span> Chakra
+                        games accessible for all users to play and engage with
+                        the ecosystem
+                      </p>
                     </li>
-                    <li className="mb-1">
-                      <p className="text-sm">DEX</p>
+                    <li>
+                      <p className="mb-3">
+                        <span className="font-bold">Marketplace</span>{" "}
+                        <span className="text-red-e11">{`->`}</span> NFT and
+                        virtual asset market place for P2P trading
+                      </p>
                     </li>
-                    <li className="mb-1">
-                      <p className="text-sm">Marketplace</p>
+                    <li>
+                      <p className="mb-3">
+                        <span className="font-bold">Game Vendor</span>{" "}
+                        <span className="text-red-e11">{`->`}</span> Vendor
+                        acting as main sink for tokens through which players can
+                        access NFT drops and DLC
+                      </p>
                     </li>
-                  </ul>
+                    <li>
+                      <p className="mb-3">
+                        <span className="font-bold">Wagering</span>{" "}
+                        <span className="text-red-e11">{`->`}</span> Wagering
+                        contracts that enable a robust wager 2 earn mechanisms
+                        for certain PvP and PvE game modes
+                      </p>
+                    </li>
+                    <li>
+                      <p className="mb-3 bg-white">
+                        <span className="font-bold">Wagering</span>{" "}
+                        <span className="text-red-e11"></span> Wagering
+                        contracts that enable a robust wager
+                      </p>
+                    </li>
+                    <li>
+                      <p className="mb-3 ">
+                        <span className="font-bold bg-white leading-normal">
+                          Wagering Wagering contracts that enable a robust wager
+                          2 earn mechanisms for certain PvP
+                        </span>
+                      </p>
+                    </li>
+                    <li>
+                      <p className="mb-3 bg-white">
+                        <span className="font-bold">Wagering</span>{" "}
+                        <span className="text-red-e11"></span> Wagering
+                        contracts that enable a robust wager
+                      </p>
+                    </li>
+                    <li>
+                      <p className="mb-3 ">
+                        <span className="font-bold bg-white leading-normal">
+                          Wagering contracts that enable a robust wager 2 earn
+                          mechanisms for certain PvP and PvE game modes
+                        </span>
+                      </p>
+                    </li>
+                  </ol>
                 </article>
                 <StyledEcoSystemSliderContent>
                   <figure>

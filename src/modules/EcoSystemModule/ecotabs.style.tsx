@@ -35,9 +35,20 @@ export const StyledEcoTabsNav = styled.nav`
     margin: 0 24px 0 0;
     display: block;
     min-width: 200px;
+    order: 1;
+    transition: opacity 0.5s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &.active {
+      order: 0;
+    }
 
     @media (min-width: 1200px) {
       font-size: 48px;
+      min-width: auto;
     }
   }
 `;
