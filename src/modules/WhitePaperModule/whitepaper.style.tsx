@@ -139,6 +139,10 @@ export const StyledLitePaperArticle = styled.article`
     padding: 0 120px 180px 120px;
   }
 
+  .omitted {
+    background: #ffffff;
+  }
+
   h3 {
     font-weight: 400;
     font-size: 48px;

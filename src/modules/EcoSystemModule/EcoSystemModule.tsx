@@ -80,7 +80,7 @@ const EcoSystemModule = ({ handleFactionChange }: Props) => {
             </svg>
           </span>
           <span className="text-xs font-semibold capitalize text-white">
-            Eco System
+            Ecosystem
           </span>
         </div>
       </StyledLoreBreadCrumbWrapper>
