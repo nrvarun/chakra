@@ -22,11 +22,9 @@ const EcoContentTabs = ({ tabs }: Props) => {
     setActiveTab(tab);
   };
 
-  console.log(activeTab);
-
   return (
     <StyledEcoTabsWrapper>
-      <StyledEcoTabsNav className="mb-4">
+      <StyledEcoTabsNav className="mb-4 mt-6">
         {tabs.map((tab) => (
           <button
             key={tab.id}

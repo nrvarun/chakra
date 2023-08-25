@@ -282,7 +282,7 @@ export const StyledStoryNav = styled.nav`
 
 export const StyledEcoSystemNav = styled(StyledStoryNav)`
   top: 56px;
-  padding: 10px 0 10px 60px;
+  padding: 10px 0 10px 0px;
   overflow: auto;
 
   @media (min-width: 1200px) {
