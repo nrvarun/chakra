@@ -32,7 +32,7 @@ const EcoContentTabs = ({ tabs }: Props) => {
             onClick={() => handleTabChange(tab.id)}
             className={`${
               activeTab === tab.id
-                ? "opacity-100 underline active"
+                ? "opacity-100 no-underline active"
                 : "opacity-50 no-underline"
             }`}
           >

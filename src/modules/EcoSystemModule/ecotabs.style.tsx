@@ -26,6 +26,7 @@ export const StyledEcoTabsNav = styled.nav`
   }
 
   button {
+    padding: 0 12px;
     color: #e11d48;
     font-family: "Marcovaldo", serif;
     font-style: normal;
@@ -36,13 +37,18 @@ export const StyledEcoTabsNav = styled.nav`
     display: block;
     min-width: 200px;
     order: 1;
-    transition: opacity 0.5s ease;
+    border: 1px solid currentColor;
+    border-radius: 8px;
+    background: transparent;
+    transition: opacity 0.5s ease, background-color 0.5s ease;
 
     &:hover {
       opacity: 1;
     }
 
     &.active {
+      color: #000000;
+      background: #e11d48;
       order: 0;
     }
 
