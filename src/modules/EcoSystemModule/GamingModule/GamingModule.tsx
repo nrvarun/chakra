@@ -13,7 +13,7 @@ import EcoContentTabs from "../EcoContentTabs";
 
 type Props = {};
 
-const Gaming = (props: Props) => {
+const GamingModule = (props: Props) => {
   return (
     <StyledEcoSystemContentSection>
       <div className="grid grid-cols-1">
@@ -182,4 +182,4 @@ const Gaming = (props: Props) => {
   );
 };
 
-export default Gaming;
+export default GamingModule;

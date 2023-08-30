@@ -13,7 +13,7 @@ import EcoContentTabs from "../EcoContentTabs";
 
 type Props = {};
 
-const Web = (props: Props) => {
+const WebModule = (props: Props) => {
   return (
     <StyledEcoSystemContentSection>
       <div className="grid grid-cols-1">
@@ -163,4 +163,4 @@ const Web = (props: Props) => {
   );
 };
 
-export default Web;
+export default WebModule;

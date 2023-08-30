@@ -9,7 +9,7 @@ import {
 
 type Props = {};
 
-const Comicon = (props: Props) => {
+const ComiconModule = (props: Props) => {
   return (
     <StyledEcoSystemContentSection>
       <StyledEcoSystemGrid className="gap-4 overflow-hidden">
@@ -53,4 +53,4 @@ const Comicon = (props: Props) => {
   );
 };
 
-export default Comicon;
+export default ComiconModule;

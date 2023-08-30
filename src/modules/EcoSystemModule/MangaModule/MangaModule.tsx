@@ -38,7 +38,7 @@ const MANGA_DETAILS = [
   // },
 ];
 
-const Manga = (props: Props) => {
+const MangaModule = (props: Props) => {
   const [activeSlide, setActiveSlide] = useState(0);
 
   const sliderRef = useRef<any>(null);
@@ -126,4 +126,4 @@ const Manga = (props: Props) => {
   );
 };
 
-export default Manga;
+export default MangaModule;

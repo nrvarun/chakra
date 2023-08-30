@@ -1,30 +1,28 @@
 /* eslint-disable @next/next/no-img-element */
 
-import { useState } from "react";
-
 import Link from "next/link";
 import {
   StyledEcoSystemNav,
   StyledLoreBreadCrumbWrapper,
   StyledStoryNav,
 } from "modules/LoreModule/lore.style";
-import Gaming from "./Gaming";
-import Manga from "./Manga";
-import Comicon from "./Comicon";
-import Web from "./Web";
+import React from "react";
+import { useRouter } from "next/router";
 
 type Props = {
-  handleFactionChange: (f: boolean) => void;
+  children?: React.ReactNode;
 };
 
 const NAV_ITEMS = [
   {
     id: "gaming",
     title: "Gaming",
+    path: "gaming",
   },
   {
     id: "manga",
     title: "Manga",
+    path: "manga",
   },
   // {
   //   id: "chakranomicon",
@@ -33,28 +31,12 @@ const NAV_ITEMS = [
   {
     id: "webonacci",
     title: "webonacci",
+    path: "webonacci",
   },
 ];
 
-const EcoSystemModule = ({ handleFactionChange }: Props) => {
-  const [activeTab, setActiveTab] = useState(NAV_ITEMS[0].id);
-
-  const getStoryContent = (tab) => {
-    if (tab === "manga") {
-      return <Manga />;
-    }
-
-    // if (tab === "chakranomicon") {
-    //   return <Comicon />;
-    // }
-
-    if (tab === "webonacci") {
-      return <Web />;
-    }
-
-    handleFactionChange(false);
-    return <Gaming />;
-  };
+const EcoLayout = ({ children }: Props) => {
+  const router = useRouter();
 
   return (
     <main className="non-landing eco-system min-h-screen">
@@ -86,21 +68,22 @@ const EcoSystemModule = ({ handleFactionChange }: Props) => {
       </StyledLoreBreadCrumbWrapper>
       <StyledEcoSystemNav>
         {NAV_ITEMS.map((nav) => (
-          <Link key={nav.id} href={`/world/eco-system`}>
+          <Link key={nav.id} href={`/world/eco-system/${nav.path}`}>
             <button
               className={`text-sm xl:text-base capitalize ${
-                activeTab === nav.id ? "active text-red-e11" : "text-white"
+                router.pathname === `/world/eco-system/${nav.path}`
+                  ? "active text-red-e11"
+                  : "text-white"
               }`}
-              onClick={() => setActiveTab(nav.id)}
             >
               <p className="">{nav.title}</p>
             </button>
           </Link>
         ))}
       </StyledEcoSystemNav>
-      {getStoryContent(activeTab)}
+      {children}
     </main>
   );
 };
 
-export default EcoSystemModule;
+export default EcoLayout;
