@@ -75,8 +75,7 @@ export const StyledEcoSystemContentSection = styled.section`
   padding: 100px 20px;
 
   @media (min-width: 1200px) {
-    padding: 70px 40px 0 40px;
-    min-height: calc(100vh - 118px);
+    padding: 70px 40px;
   }
 `;
 
@@ -129,37 +128,57 @@ export const StyledFactionNavList = styled.ul`
 `;
 
 export const StyledEcoSystemGrid = styled.div`
-  display: grid;
-  grid-template-columns: 100%;
-  grid-gap: 5rem;
-
-  @media (min-width: 1200px) {
-    grid-gap: 6rem;
-    align-items: start;
-    grid-template-columns: 32% 58%;
-    height: calc(100vh - 110px);
-  }
+  padding: 60px 0 60px 0;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 `;
 
 export const StyledEcoSystemSliderContent = styled.div`
+  position: relative;
+  height: 30%;
+  width: 75%;
+  z-index: 10;
+
+  @media (min-width: 1200px) {
+    width: 55%;
+    height: 100%;
+  }
+
+  @media (min-width: 1920px) {
+    width: 65%;
+  }
+
+  article {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
+
   figure {
     width: 100%;
     height: 100%;
+    margin: 0 auto;
+    display: block;
 
     img {
       width: 100%;
       height: 100%;
+      // object-fit: cover;
     }
   }
 `;
 
 export const StyledMangaDetailsTextList = styled.ul`
   li {
-    opacity: 0.5;
     transition: opacity 0.5s ease;
-
-    &.active {
-      opacity: 1;
-    }
   }
 `;

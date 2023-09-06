@@ -230,6 +230,7 @@ export const StyledStoryNav = styled.nav`
   justify-content: center;
   z-index: 11;
   top: 120px;
+  z-index: 100;
 
   @media (min-width: 1200px) {
     top: 90px;
