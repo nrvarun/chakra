@@ -41,7 +41,7 @@ const WebModule = (props: Props) => {
             title: "NFTs",
             content: (
               <StyledEcoSystemGrid className="gap-4 overflow-hidden">
-                <article>
+                <article className="">
                   <ul className="text-white pl-5 list-decimal">
                     <li>
                       <StyledLoreContentDesc className="mb-4 text-white text-sm">
@@ -79,7 +79,7 @@ const WebModule = (props: Props) => {
             title: "Public Goods",
             content: (
               <StyledEcoSystemGrid className="gap-4 overflow-hidden">
-                <article>
+                <article className="">
                   <StyledLoreContentDesc className="mb-6 text-white text-sm ">
                     Core non-rivalrous public infrastructure to help create a
                     virtuous cycle of activity, expansion & commerce within the

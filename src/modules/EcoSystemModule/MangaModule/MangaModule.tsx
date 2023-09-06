@@ -3,6 +3,8 @@ import {
   StyledEcoSystemGrid,
   StyledEcoSystemSliderContent,
   StyledLoreContentHeading,
+  StyledMangaArtContent,
+  StyledMangaArtGrid,
   StyledMangaDetailsTextList,
 } from "../lore.style";
 import { useEffect, useLayoutEffect, useRef } from "react";
@@ -98,11 +100,8 @@ const MangaModule = (props: Props) => {
         </div>
       </StyledEcoSystemContentSection>
       <section id="mangaArt" ref={mangaSectionRef}>
-        <StyledEcoSystemGrid ref={sectionRef}>
-          <StyledEcoSystemSliderContent
-            id="sliderContent"
-            className="oveflow-hidden"
-          >
+        <StyledMangaArtGrid ref={sectionRef}>
+          <StyledMangaArtContent id="sliderContent" className="oveflow-hidden ">
             <article className="panel panel-1 bg-red">
               <figure className="">
                 <img src="/images/eco-system/manga/1.jpg" alt="panel" />
@@ -123,8 +122,8 @@ const MangaModule = (props: Props) => {
                 <img src="/images/eco-system/manga/4.jpg" alt="panel 4" />
               </figure>
             </article>
-          </StyledEcoSystemSliderContent>
-        </StyledEcoSystemGrid>
+          </StyledMangaArtContent>
+        </StyledMangaArtGrid>
       </section>
       <section className="text-center mb-10">
         <svg

@@ -57,7 +57,7 @@ const GamingModule = (props: Props) => {
             title: "Conundrum",
             content: (
               <StyledEcoSystemGrid className="gap-4 overflow-hidden">
-                <article>
+                <article className="">
                   <StyledLoreContentDesc className="mb-4 text-white text-sm">
                     A Social strategy game inspired by iterative prisoners
                     dilemma Players battle it out for weekly rewards through
@@ -99,7 +99,7 @@ const GamingModule = (props: Props) => {
             title: "Ascension",
             content: (
               <StyledEcoSystemGrid className="gap-4 overflow-hidden">
-                <article>
+                <article className="">
                   <StyledLoreContentDesc className="mb-4 text-white text-sm">
                     A 3D ARPG with comprehensive combat & loot mechanics
                     supporting single player and team based gameplay. (PvE)
@@ -139,7 +139,7 @@ const GamingModule = (props: Props) => {
             title: "Clash",
             content: (
               <StyledEcoSystemGrid className="gap-4 overflow-hidden">
-                <article>
+                <article className="">
                   <StyledLoreContentDesc className="mb-4 text-white text-sm">
                     A simultaneous PvP game with tactical duel mechanics and
                     wagering.
