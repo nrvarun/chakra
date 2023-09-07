@@ -17,24 +17,26 @@ const GamingModule = (props: Props) => {
   return (
     <StyledEcoSystemContentSection>
       <div className="grid grid-cols-1">
-        <StyledLoreContentHeading
-          className="font-marco text-red flex items-center"
-          style={{
-            margin: 0,
-          }}
-        >
-          Gaming
-        </StyledLoreContentHeading>
-        <StyledLoreContentDesc className="mt-4 mb-6 text-white text-sm">
-          Our games are designed to immerse players in the Chakra universe. As a
-          game studio at heart, this is our chosen medium to achieve critical
-          mass necessary for capturing platform network effects. Apart from
-          driving adoption and commerce gaming as a medium is pivotal to create
-          stickiness through joy rather than “numbers go up”. Two game modes
-          enabled for each game catering to different gamer archetypes: P2E and
-          Wagering.
-        </StyledLoreContentDesc>
-        <div className="text-center">
+        <div className="xl:max-w-7xl">
+          <StyledLoreContentHeading
+            className="font-marco text-red flex items-center"
+            style={{
+              margin: 0,
+            }}
+          >
+            Gaming
+          </StyledLoreContentHeading>
+          <StyledLoreContentDesc className="mt-4 mb-6 text-white text-sm">
+            Our games are designed to immerse players in the Chakra universe. As
+            a game studio at heart, this is our chosen medium to achieve
+            critical mass necessary for capturing platform network effects.
+            Apart from driving adoption and commerce gaming as a medium is
+            pivotal to create stickiness through joy rather than “numbers go
+            up”. Two game modes enabled for each game catering to different
+            gamer archetypes: P2E and Wagering.
+          </StyledLoreContentDesc>
+        </div>
+        <div className="text-center xl:pt-6 xl:pb-10">
           <svg
             className="mx-auto"
             width="177"

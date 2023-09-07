@@ -75,7 +75,7 @@ export const StyledEcoSystemContentSection = styled.section`
   padding: 100px 20px;
 
   @media (min-width: 1200px) {
-    padding: 70px 40px;
+    padding: 70px 40px 20px 40px;
   }
 `;
 
@@ -168,12 +168,13 @@ export const StyledMangaArtContent = styled(StyledEcoSystemContent)`
   z-index: 10;
 
   @media (min-width: 1200px) {
-    width: 55%;
-    height: 100%;
+    width: 750px;
+    height: 500px;
   }
 
-  @media (min-width: 1920px) {
-    width: 65%;
+  @media (min-width: 1600px) {
+    width: 1060px;
+    height: 750px;
   }
 
   article {
@@ -196,7 +197,7 @@ export const StyledMangaArtContent = styled(StyledEcoSystemContent)`
     img {
       width: 100%;
       height: 100%;
-      // object-fit: cover;
+      object-fit: cover;
     }
   }
 `;

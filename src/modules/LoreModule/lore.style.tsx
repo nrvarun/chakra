@@ -194,7 +194,7 @@ export const StyledLoreBreadCrumbWrapper = styled.div`
 
   @media (min-width: 1200px) {
     left: 20px;
-    top: 100px;
+    top: 85px;
     width: 30%;
   }
 
@@ -288,6 +288,6 @@ export const StyledEcoSystemNav = styled(StyledStoryNav)`
 
   @media (min-width: 1200px) {
     padding: 0;
-    top: 85px;
+    top: 78px;
   }
 `;

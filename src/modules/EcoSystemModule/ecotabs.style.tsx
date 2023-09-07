@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const StyledEcoTabsWrapper = styled.div`
   width: 100%;
   position: relative;
+  padding: 24px 0 0 0;
 `;
 
 export const StyledEcoTabsNav = styled.nav`

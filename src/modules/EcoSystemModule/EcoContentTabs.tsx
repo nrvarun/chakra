@@ -45,7 +45,7 @@ const EcoContentTabs = ({ tabs }: Props) => {
           <article
             key={tab.id}
             id={tab.id}
-            className={`${
+            className={`pt-3 ${
               activeTab === tab.id ? "opacity-100 block" : "opacity-0 hidden"
             } transition`}
           >
