@@ -13,7 +13,7 @@ export const StyledQuestWrapper = styled.section`
   }
 `;
 
-export const StyledQuestListingsWrapper = styled.div`
+export const StyledQuestListingsWrapper = styled.section`
   position: relative;
 `;
 
@@ -36,15 +36,20 @@ export const StyledQuestLeaderBoardHeader = styled.div`
 export const StyledQuestHeading = styled.h2`
   color: #e11d48;
   font-family: Inter;
-  font-size: 24px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+
+  @media (min-width: 1200px) {
+    font-size: 24px;
+  }
 `;
 
 export const StyledQuestFilters = styled.ul`
   position: relative;
   display: flex;
+
   li {
     button {
       color: var(--base-01, #e6e6e6);
@@ -124,6 +129,67 @@ export const StyledQuestItemContent = styled.div`
       font-style: normal;
       font-weight: 500;
       line-height: normal;
+    }
+  }
+`;
+
+export const StyledQuestBody = styled.div`
+  position: relative;
+`;
+
+export const StyledQuestTable = styled.table`
+  width: 100%;
+  margin: 12px 0 0 0;
+
+  tr {
+    width: 100%;
+    display: flex;
+  }
+
+  td {
+    color: #fff;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    @media (min-width: 1200px) {
+      font-size: 12px;
+    }
+
+    &.rank {
+      width: 20%;
+    }
+
+    &.name {
+      width: 30%;
+    }
+
+    &.wallet {
+      width: 30%;
+    }
+
+    &.score {
+      width: 20%;
+    }
+  }
+
+  tbody {
+    tr {
+      padding: 0 16px;
+    }
+
+    td {
+      padding: 12px 0;
+
+      span {
+        display: inline-block;
+        max-width: 75%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
     }
   }
 `;
