@@ -4,6 +4,9 @@ export const StyledQuestWrapper = styled.section`
   position: relative;
   padding: 20px 24px 40px 24px;
   border-top: 1px solid #484848;
+`;
+
+export const StyledQuestContentWrapper = styled.div`
   min-height: 100vh;
   display: grid;
 
