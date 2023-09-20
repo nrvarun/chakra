@@ -54,7 +54,7 @@ const QuestModule = (props: Props) => {
           }
         );
 
-        console.log(res);
+        console.log(res.json());
       }
     } catch {}
   };
