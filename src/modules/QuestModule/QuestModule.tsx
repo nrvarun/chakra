@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import {
   StyledQuestBody,
   StyledQuestContentWrapper,
@@ -33,8 +33,39 @@ const BOARD_FILTERS = [
   },
 ];
 
+const API_KEY = process.env.NEXT_PUBLIC_ZEALY_API_KEY;
+
 const QuestModule = (props: Props) => {
   const [activeFilter, setActiveFilter] = useState(BOARD_FILTERS[0].id);
+
+  const abortController = new AbortController();
+
+  const getLeaderboardListing = async () => {
+    try {
+      if (API_KEY) {
+        const res = await fetch(
+          "https://api.zealy.io/communities/chakra/leaderboard?limit=100&page=0",
+          {
+            method: "GET",
+            signal: abortController.signal,
+            headers: {
+              "x-api-key": API_KEY,
+            },
+          }
+        );
+
+        console.log(res);
+      }
+    } catch {}
+  };
+
+  useEffect(() => {
+    console.log(getLeaderboardListing());
+
+    return () => {
+      abortController.abort();
+    };
+  }, []);
 
   const toggleFilter = useCallback((id: string) => {
     setActiveFilter(id);
