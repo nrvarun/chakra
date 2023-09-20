@@ -12,7 +12,9 @@ import {
 } from "./quest.style";
 import QuestItem from "./QuestItem";
 
-type Props = {};
+type Props = {
+  listing: any;
+};
 
 const BOARD_FILTERS = [
   {
@@ -33,39 +35,8 @@ const BOARD_FILTERS = [
   },
 ];
 
-const API_KEY = process.env.NEXT_PUBLIC_ZEALY_API_KEY;
-
-const QuestModule = (props: Props) => {
+const QuestModule = ({ listing }: Props) => {
   const [activeFilter, setActiveFilter] = useState(BOARD_FILTERS[0].id);
-
-  const abortController = new AbortController();
-
-  const getLeaderboardListing = async () => {
-    try {
-      if (API_KEY) {
-        const res = await fetch(
-          "https://api.zealy.io/communities/chakra/leaderboard?limit=100&page=0",
-          {
-            method: "GET",
-            signal: abortController.signal,
-            headers: {
-              "x-api-key": API_KEY,
-            },
-          }
-        );
-
-        console.log(res.json());
-      }
-    } catch {}
-  };
-
-  useEffect(() => {
-    console.log(getLeaderboardListing());
-
-    return () => {
-      abortController.abort();
-    };
-  }, []);
 
   const toggleFilter = useCallback((id: string) => {
     setActiveFilter(id);
@@ -102,235 +73,25 @@ const QuestModule = (props: Props) => {
                 <tr className="grid grid-cols-4 p-3 bg-[#33383F]">
                   <td className="rank">Rank</td>
                   <td className="name">Name</td>
-                  <td className="wallet">Wallet ID</td>
+                  <td className="wallet">Quests</td>
                   <td className="score">Total Score</td>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td className="rank">01</td>
-                  <td className="name">moon moon</td>
-                  <td className="wallet">
-                    <span title="0xa5b6...">0xa5b6...</span>
-                  </td>
-                  <td className="score">1000</td>
-                </tr>
-                <tr>
-                  <td className="rank">01</td>
-                  <td className="name">moon moon</td>
-                  <td className="wallet">
-                    <span title="0xa5b6...">0xa5b6...</span>
-                  </td>
-                  <td className="score">1000</td>
-                </tr>
-                <tr>
-                  <td className="rank">01</td>
-                  <td className="name">moon moon</td>
-                  <td className="wallet">
-                    <span title="0xa5b6...">0xa5b6...</span>
-                  </td>
-                  <td className="score">1000</td>
-                </tr>
-                <tr>
-                  <td className="rank">01</td>
-                  <td className="name">moon moon</td>
-                  <td className="wallet">
-                    <span title="0xa5b6...">0xa5b6...</span>
-                  </td>
-                  <td className="score">1000</td>
-                </tr>
-                <tr>
-                  <td className="rank">01</td>
-                  <td className="name">moon moon</td>
-                  <td className="wallet">
-                    <span title="0xa5b6...">0xa5b6...</span>
-                  </td>
-                  <td className="score">1000</td>
-                </tr>
-                <tr>
-                  <td className="rank">01</td>
-                  <td className="name">moon moon</td>
-                  <td className="wallet">
-                    <span title="0xa5b6...">0xa5b6...</span>
-                  </td>
-                  <td className="score">1000</td>
-                </tr>
-                <tr>
-                  <td className="rank">01</td>
-                  <td className="name">moon moon</td>
-                  <td className="wallet">
-                    <span title="0xa5b6...">0xa5b6...</span>
-                  </td>
-                  <td className="score">1000</td>
-                </tr>
-                <tr>
-                  <td className="rank">01</td>
-                  <td className="name">moon moon</td>
-                  <td className="wallet">
-                    <span title="0xa5b6...">0xa5b6...</span>
-                  </td>
-                  <td className="score">1000</td>
-                </tr>
-                <tr>
-                  <td className="rank">01</td>
-                  <td className="name">moon moon</td>
-                  <td className="wallet">
-                    <span title="0xa5b6...">0xa5b6...</span>
-                  </td>
-                  <td className="score">1000</td>
-                </tr>
-                <tr>
-                  <td className="rank">01</td>
-                  <td className="name">moon moon</td>
-                  <td className="wallet">
-                    <span title="0xa5b6...">0xa5b6...</span>
-                  </td>
-                  <td className="score">1000</td>
-                </tr>
-                <tr>
-                  <td className="rank">01</td>
-                  <td className="name">moon moon</td>
-                  <td className="wallet">
-                    <span title="0xa5b6...">0xa5b6...</span>
-                  </td>
-                  <td className="score">1000</td>
-                </tr>
-                <tr>
-                  <td className="rank">01</td>
-                  <td className="name">moon moon</td>
-                  <td className="wallet">
-                    <span title="0xa5b6...">0xa5b6...</span>
-                  </td>
-                  <td className="score">1000</td>
-                </tr>
-                <tr>
-                  <td className="rank">01</td>
-                  <td className="name">moon moon</td>
-                  <td className="wallet">
-                    <span title="0xa5b6...">0xa5b6...</span>
-                  </td>
-                  <td className="score">1000</td>
-                </tr>
-                <tr>
-                  <td className="rank">01</td>
-                  <td className="name">moon moon</td>
-                  <td className="wallet">
-                    <span title="0xa5b6...">0xa5b6...</span>
-                  </td>
-                  <td className="score">1000</td>
-                </tr>
-                <tr>
-                  <td className="rank">01</td>
-                  <td className="name">moon moon</td>
-                  <td className="wallet">
-                    <span title="0xa5b6...">0xa5b6...</span>
-                  </td>
-                  <td className="score">1000</td>
-                </tr>
-                <tr>
-                  <td className="rank">01</td>
-                  <td className="name">moon moon</td>
-                  <td className="wallet">
-                    <span title="0xa5b6...">0xa5b6...</span>
-                  </td>
-                  <td className="score">1000</td>
-                </tr>
-                <tr>
-                  <td className="rank">01</td>
-                  <td className="name">moon moon</td>
-                  <td className="wallet">
-                    <span title="0xa5b6...">0xa5b6...</span>
-                  </td>
-                  <td className="score">1000</td>
-                </tr>
-                <tr>
-                  <td className="rank">01</td>
-                  <td className="name">moon moon</td>
-                  <td className="wallet">
-                    <span title="0xa5b6...">0xa5b6...</span>
-                  </td>
-                  <td className="score">1000</td>
-                </tr>
-                <tr>
-                  <td className="rank">01</td>
-                  <td className="name">moon moon</td>
-                  <td className="wallet">
-                    <span title="0xa5b6...">0xa5b6...</span>
-                  </td>
-                  <td className="score">1000</td>
-                </tr>
-                <tr>
-                  <td className="rank">01</td>
-                  <td className="name">moon moon</td>
-                  <td className="wallet">
-                    <span title="0xa5b6...">0xa5b6...</span>
-                  </td>
-                  <td className="score">1000</td>
-                </tr>
-                <tr>
-                  <td className="rank">01</td>
-                  <td className="name">moon moon</td>
-                  <td className="wallet">
-                    <span title="0xa5b6...">0xa5b6...</span>
-                  </td>
-                  <td className="score">1000</td>
-                </tr>
-                <tr>
-                  <td className="rank">01</td>
-                  <td className="name">moon moon</td>
-                  <td className="wallet">
-                    <span title="0xa5b6...">0xa5b6...</span>
-                  </td>
-                  <td className="score">1000</td>
-                </tr>
-                <tr>
-                  <td className="rank">01</td>
-                  <td className="name">moon moon</td>
-                  <td className="wallet">
-                    <span title="0xa5b6...">0xa5b6...</span>
-                  </td>
-                  <td className="score">1000</td>
-                </tr>
-                <tr>
-                  <td className="rank">01</td>
-                  <td className="name">moon moon</td>
-                  <td className="wallet">
-                    <span title="0xa5b6...">0xa5b6...</span>
-                  </td>
-                  <td className="score">1000</td>
-                </tr>
-                <tr>
-                  <td className="rank">01</td>
-                  <td className="name">moon moon</td>
-                  <td className="wallet">
-                    <span title="0xa5b6...">0xa5b6...</span>
-                  </td>
-                  <td className="score">1000</td>
-                </tr>
-                <tr>
-                  <td className="rank">01</td>
-                  <td className="name">moon moon</td>
-                  <td className="wallet">
-                    <span title="0xa5b6...">0xa5b6...</span>
-                  </td>
-                  <td className="score">1000</td>
-                </tr>
-                <tr>
-                  <td className="rank">01</td>
-                  <td className="name">moon moon</td>
-                  <td className="wallet">
-                    <span title="0xa5b6...">0xa5b6...</span>
-                  </td>
-                  <td className="score">1000</td>
-                </tr>
-                <tr>
-                  <td className="rank">01</td>
-                  <td className="name">moon moon</td>
-                  <td className="wallet">
-                    <span title="0xa5b6...">0xa5b6...</span>
-                  </td>
-                  <td className="score">1000</td>
-                </tr>
+                {listing.leaderboard &&
+                  listing.leaderboard.length &&
+                  listing.leaderboard.map((entry, index) => (
+                    <tr key={entry.userId}>
+                      <td className="rank">{`${
+                        index + 1 >= 9 ? index + 1 : `0${index + 1}`
+                      }`}</td>
+                      <td className="name">{entry.name}</td>
+                      <td className="wallet">
+                        <span title="0xa5b6...">{entry.numberOfQuests}</span>
+                      </td>
+                      <td className="score">{entry.xp}</td>
+                    </tr>
+                  ))}
               </tbody>
             </StyledQuestTable>
           </StyledQuestBody>
