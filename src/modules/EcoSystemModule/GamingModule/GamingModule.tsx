@@ -90,7 +90,7 @@ const GamingModule = (props: Props) => {
                 </article>
                 <StyledEcoSystemSliderContent>
                   <video autoPlay muted playsInline loop>
-                    <source src="/videos/eco-gaming.mp4" />
+                    <source src="/videos/eco-system/conundrum.mp4" />
                   </video>
                 </StyledEcoSystemSliderContent>
               </StyledEcoSystemGrid>
@@ -172,7 +172,7 @@ const GamingModule = (props: Props) => {
                 </article>
                 <StyledEcoSystemSliderContent>
                   <video autoPlay muted playsInline loop>
-                    <source src="/videos/eco-gaming.mp4" />
+                    <source src="/videos/eco-system/clash.mp4" />
                   </video>
                 </StyledEcoSystemSliderContent>
               </StyledEcoSystemGrid>

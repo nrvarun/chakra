@@ -49,7 +49,7 @@ const EcoContentTabs = ({ tabs }: Props) => {
               activeTab === tab.id ? "opacity-100 block" : "opacity-0 hidden"
             } transition`}
           >
-            {tab.content}
+            {activeTab === tab.id && tab.content}
           </article>
         ))}
       </StyledEcoTabsContent>

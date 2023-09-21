@@ -85,7 +85,7 @@ const WebModule = (props: Props) => {
                 </article>
                 <StyledEcoSystemSliderContent>
                   <figure>
-                    <img src="/images/eco-system/web.png" />
+                    <img src="/images/eco-system/NFTs.jpg" />
                   </figure>
                 </StyledEcoSystemSliderContent>
               </StyledEcoSystemGrid>
@@ -168,7 +168,7 @@ const WebModule = (props: Props) => {
                 </article>
                 <StyledEcoSystemSliderContent>
                   <figure>
-                    <img src="/images/eco-system/web.png" />
+                    <img src="/images/eco-system/NFTs.jpg" alt="" />
                   </figure>
                 </StyledEcoSystemSliderContent>
               </StyledEcoSystemGrid>
