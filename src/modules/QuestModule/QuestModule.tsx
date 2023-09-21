@@ -73,7 +73,7 @@ const QuestModule = ({ listing }: Props) => {
                 <tr className="grid grid-cols-4 p-3 bg-[#33383F]">
                   <td className="rank">Rank</td>
                   <td className="name">Name</td>
-                  <td className="wallet">Quests</td>
+                  <td className="wallet">Wallet ID</td>
                   <td className="score">Total Score</td>
                 </tr>
               </thead>
@@ -87,7 +87,7 @@ const QuestModule = ({ listing }: Props) => {
                       }`}</td>
                       <td className="name">{entry.name}</td>
                       <td className="wallet">
-                        <span title="0xa5b6...">{entry.numberOfQuests}</span>
+                        <span title={entry.address}>{entry.address}</span>
                       </td>
                       <td className="score">{entry.xp}</td>
                     </tr>
