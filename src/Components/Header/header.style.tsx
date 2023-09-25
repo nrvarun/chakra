@@ -228,3 +228,16 @@ export const StyledMobileMenuCTA = styled.button`
     display: none;
   }
 `;
+
+export const StyledHeaderNavList = styled.ul`
+  li {
+    &.play-btn {
+      border-radius: 4px;
+      background: #e11d48;
+
+      p {
+        color: #fff !important;
+      }
+    }
+  }
+`;

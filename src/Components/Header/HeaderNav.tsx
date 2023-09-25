@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
+import { StyledHeaderNavList } from "./header.style";
 
 type Props = {};
 
@@ -55,9 +56,14 @@ const HeaderNav = (props: Props) => {
 
   return (
     <div className="relative flex">
-      <ul className="flex items-start ml-auto">
+      <StyledHeaderNavList className="flex items-start ml-auto">
         {NAV_LINKS.map((link) => (
-          <li className="px-1 lg:px-5 py-2 mr-1" key={link.path}>
+          <li
+            className={`px-1 lg:px-5 py-2 mr-1 ${
+              link.title === "Play" ? "play-btn" : ""
+            }`}
+            key={link.path}
+          >
             <Link
               target={link.target}
               href={link.disabled ? "/" : link.path}
@@ -72,7 +78,7 @@ const HeaderNav = (props: Props) => {
             </Link>
           </li>
         ))}
-      </ul>
+      </StyledHeaderNavList>
     </div>
   );
 };
