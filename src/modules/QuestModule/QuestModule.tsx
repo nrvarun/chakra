@@ -118,7 +118,7 @@ const QuestModule = ({ listing }: Props) => {
               <StyledQuestHeading>Leaderboard</StyledQuestHeading>
             </div>
             <div>
-              <StyledQuestFilters>
+              {/* <StyledQuestFilters>
                 {BOARD_FILTERS.map((filter) => (
                   <li key={filter.id} className="mr-4">
                     <button
@@ -131,7 +131,7 @@ const QuestModule = ({ listing }: Props) => {
                     </button>
                   </li>
                 ))}
-              </StyledQuestFilters>
+              </StyledQuestFilters> */}
             </div>
           </StyledQuestLeaderBoardHeader>
           <StyledQuestBody>
