@@ -49,7 +49,7 @@ const QUESTS_LISTING = [
     title: "Visit this Link",
     desc: "Unleash ancient myths and unlock the ultimate power!",
     xp: "10",
-    img: "/images/quest/2.png",
+    img: "/images/quest/link.png",
     questId: "7aec2d6b-2a5f-4b70-9f17-d271ca0a4d3a",
   },
   {
