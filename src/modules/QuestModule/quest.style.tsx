@@ -7,10 +7,8 @@ export const StyledQuestWrapper = styled.section`
 `;
 
 export const StyledQuestContentWrapper = styled.div`
-  min-height: 100vh;
-  display: grid;
-
   @media (min-width: 1200px) {
+    display: grid;
     grid-gap: 24px;
     grid-template-columns: 36% 60%;
   }
@@ -25,6 +23,7 @@ export const StyledQuestLeaderBoardWrapper = styled.div`
   border-radius: 8px;
   border: 1px solid #272b30;
   background: #000;
+  overflow: auto hidden;
 `;
 
 export const StyledQuestLeaderBoardHeader = styled.div`
@@ -78,11 +77,16 @@ export const StyledQuestItem = styled.article`
   border: 0.938px solid #272b30;
   background: #000;
   position: relative;
+  height: 100%;
 
   img {
-    height: 160px;
+    height: 100px;
     width: 100%;
     object-fit: cover;
+
+    @media (min-width: 1200px) {
+      height: 160px;
+    }
   }
 
   button {
@@ -146,7 +150,7 @@ export const StyledQuestTable = styled.table`
 
   tr {
     width: 100%;
-    display: flex;
+    display: inline-flex;
   }
 
   td {

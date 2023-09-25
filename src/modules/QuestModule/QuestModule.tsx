@@ -41,7 +41,7 @@ const QUESTS_LISTING = [
     title: "Daily Connect",
     desc: "Boost your Chakra XP daily!",
     xp: "10",
-    img: "/images/quest/1.png",
+    img: "/images/quest/daily.png",
     questId: "81fc3ce0-5fa9-47cf-9399-b8411170bc92",
   },
   {
@@ -58,7 +58,7 @@ const QUESTS_LISTING = [
     desc: "Subscribe to our newsletter guide. ",
     xp: "10",
     questId: "083e375c-a769-42aa-ba1b-29f9d780389b",
-    img: "/images/quest/3.png",
+    img: "/images/quest/news.png",
   },
   {
     id: 4,
@@ -66,7 +66,7 @@ const QUESTS_LISTING = [
     desc: "Chase the mythos with every tweet! Follow us on X",
     xp: "10",
     questId: "6006e613-afd2-40b1-9a89-f8e285d475ab",
-    img: "/images/quest/4.png",
+    img: "/images/quest/follow.png",
   },
   {
     id: 5,
@@ -74,7 +74,7 @@ const QUESTS_LISTING = [
     desc: "Come and vibe with us on out Discord channel.",
     xp: "10",
     questId: "f166e92d-affe-4987-a443-f319e7279650",
-    img: "/images/quest/5.png",
+    img: "/images/quest/discord.png",
   },
   {
     id: 6,
@@ -82,7 +82,7 @@ const QUESTS_LISTING = [
     desc: "Gateway to the Mythos: Launching the  All-New Chakra Universe Website!",
     xp: "10",
     questId: "9a49bd04-4f91-4ffe-9501-80d15a7c7946",
-    img: "/images/quest/6.png",
+    img: "/images/quest/web.png",
   },
   {
     id: 7,
@@ -90,7 +90,7 @@ const QUESTS_LISTING = [
     desc: "Chase the mythos with every tweet! Follow us on X",
     xp: "10",
     questId: "40548a4a-f6c8-4e5f-bced-13a682737ac7",
-    img: "/images/quest/7.png",
+    img: "/images/quest/tweet.png",
   },
   {
     id: 8,
@@ -98,7 +98,7 @@ const QUESTS_LISTING = [
     desc: "Step into the Unknown:The Grand Unveiling of Chakra’s Mystical World!",
     xp: "10",
     questId: "db1853db-fd4c-4726-b1f4-19fef52573dc",
-    img: "/images/quest/8.png",
+    img: "/images/quest/world.png",
   },
 ];
 
@@ -112,13 +112,14 @@ const QuestModule = ({ listing }: Props) => {
   return (
     <StyledQuestWrapper>
       <StyledQuestContentWrapper className="max-w-[1440px] mx-auto">
-        <StyledQuestLeaderBoardWrapper>
-          <StyledQuestLeaderBoardHeader>
-            <div>
-              <StyledQuestHeading>Leaderboard</StyledQuestHeading>
-            </div>
-            <div>
-              {/* <StyledQuestFilters>
+        <div>
+          <StyledQuestLeaderBoardWrapper>
+            <StyledQuestLeaderBoardHeader>
+              <div>
+                <StyledQuestHeading>Leaderboard</StyledQuestHeading>
+              </div>
+              <div>
+                {/* <StyledQuestFilters>
                 {BOARD_FILTERS.map((filter) => (
                   <li key={filter.id} className="mr-4">
                     <button
@@ -132,37 +133,38 @@ const QuestModule = ({ listing }: Props) => {
                   </li>
                 ))}
               </StyledQuestFilters> */}
-            </div>
-          </StyledQuestLeaderBoardHeader>
-          <StyledQuestBody>
-            <StyledQuestTable>
-              <thead>
-                <tr className="grid grid-cols-4 p-3 bg-[#33383F]">
-                  <td className="rank">Rank</td>
-                  <td className="name">Name</td>
-                  <td className="wallet">Wallet ID</td>
-                  <td className="score">Total Score</td>
-                </tr>
-              </thead>
-              <tbody>
-                {listing.leaderboard &&
-                  listing.leaderboard.length &&
-                  listing.leaderboard.map((entry, index) => (
-                    <tr key={entry.userId}>
-                      <td className="rank">{`${
-                        index + 1 >= 9 ? index + 1 : `0${index + 1}`
-                      }`}</td>
-                      <td className="name">{entry.name}</td>
-                      <td className="wallet">
-                        <span title={entry.address}>{entry.address}</span>
-                      </td>
-                      <td className="score">{entry.xp}</td>
-                    </tr>
-                  ))}
-              </tbody>
-            </StyledQuestTable>
-          </StyledQuestBody>
-        </StyledQuestLeaderBoardWrapper>
+              </div>
+            </StyledQuestLeaderBoardHeader>
+            <StyledQuestBody>
+              <StyledQuestTable>
+                <thead>
+                  <tr className="p-3 bg-[#33383F]">
+                    <td className="rank">Rank</td>
+                    <td className="name">Name</td>
+                    <td className="wallet">Wallet ID</td>
+                    <td className="score">Total Score</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  {listing.leaderboard &&
+                    listing.leaderboard.length &&
+                    listing.leaderboard.map((entry, index) => (
+                      <tr key={entry.userId}>
+                        <td className="rank">{`${
+                          index + 1 >= 9 ? index + 1 : `0${index + 1}`
+                        }`}</td>
+                        <td className="name">{entry.name}</td>
+                        <td className="wallet">
+                          <span title={entry.address}>{entry.address}</span>
+                        </td>
+                        <td className="score">{entry.xp}</td>
+                      </tr>
+                    ))}
+                </tbody>
+              </StyledQuestTable>
+            </StyledQuestBody>
+          </StyledQuestLeaderBoardWrapper>
+        </div>
         <StyledQuestListingsWrapper className="mt-10 xl:mt-0">
           <StyledQuestHeading className="mb-6">
             Do Quests, Earn Rewards
