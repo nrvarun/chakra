@@ -19,7 +19,7 @@ const GamingModule = (props: Props) => {
       <div className="grid grid-cols-1 mb-8 lg:mb-16">
         <div className="xl:max-w-7xl">
           <StyledLoreContentHeading
-            className="font-marco text-red flex items-center"
+            className="font-marco text-red-e11 flex items-center"
             style={{
               margin: 0,
             }}

@@ -83,7 +83,7 @@ const MangaModule = (props: Props) => {
       <StyledEcoSystemContentSection ref={comp}>
         <div className="mb-6 max-w-[75vw]">
           <StyledLoreContentHeading
-            className="font-marco text-red flex items-center"
+            className="font-marco text-red-e11 flex items-center"
             style={{
               margin: 0,
             }}
@@ -102,22 +102,22 @@ const MangaModule = (props: Props) => {
       <section id="mangaArt" ref={mangaSectionRef}>
         <StyledMangaArtGrid ref={sectionRef}>
           <StyledMangaArtContent id="sliderContent" className="oveflow-hidden ">
-            <article className="panel panel-1 bg-red">
+            <article className="panel panel-1">
               <figure className="">
                 <img src="/images/eco-system/manga/1.jpg" alt="panel" />
               </figure>
             </article>
-            <article className="panel panel-2 bg-blue">
+            <article className="panel panel-2 ">
               <figure>
                 <img src="/images/eco-system/manga/2.jpg" alt="panel 2" />
               </figure>
             </article>
-            <article className="panel panel-3 bg-purple">
+            <article className="panel panel-3 ">
               <figure>
                 <img src="/images/eco-system/manga/3.jpg" alt="panel 3" />
               </figure>
             </article>
-            <article className="panel panel-4 bg-orange">
+            <article className="panel panel-4">
               <figure>
                 <img src="/images/eco-system/manga/4.jpg" alt="panel 4" />
               </figure>
