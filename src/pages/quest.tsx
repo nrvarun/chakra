@@ -6,7 +6,7 @@ export default function Quest({ listing }) {
   return (
     <>
       <CustomHead title="Chakra - The Quest" />
-      <Header customClass="white" />
+      <Header customClass="white bg-black" />
       <main className="bg-black pt-20">
         <QuestModule listing={listing} />
       </main>

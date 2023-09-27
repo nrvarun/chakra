@@ -137,6 +137,10 @@ export const StyledEcoSystemGrid = styled.div`
     align-items: start;
     grid-template-columns: 32% 58%;
     height: calc(100vh - 250px);
+
+    article {
+      padding: 60px 0 0 0;
+    }
   }
 `;
 

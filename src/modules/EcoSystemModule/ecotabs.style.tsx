@@ -7,9 +7,15 @@ export const StyledEcoTabsWrapper = styled.div`
 `;
 
 export const StyledEcoTabsNav = styled.nav`
-  display: flex;
+  display: inline-flex;
   flex-wrap: nowrap;
   overflow: auto;
+
+  @media (min-width: 1200px) {
+    position: absolute;
+    top: 3px;
+    left: 0;
+  }
 
   &::-webkit-scrollbar {
     width: 2px;
@@ -54,7 +60,7 @@ export const StyledEcoTabsNav = styled.nav`
     }
 
     @media (min-width: 1200px) {
-      font-size: 48px;
+      font-size: 32px;
       min-width: auto;
     }
   }
