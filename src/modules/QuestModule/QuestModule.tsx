@@ -8,6 +8,7 @@ import {
   StyledQuestLeaderBoardWrapper,
   StyledQuestListingsWrapper,
   StyledQuestTable,
+  StyledQuestTableHeading,
   StyledQuestWrapper,
 } from "./quest.style";
 import QuestItem from "./QuestItem";
@@ -112,11 +113,18 @@ const QuestModule = ({ listing }: Props) => {
   return (
     <StyledQuestWrapper>
       <StyledQuestContentWrapper className="max-w-[1440px] mx-auto">
+        <img
+          src="/images/quest-bgshape.svg"
+          alt="quest background pattern"
+          className="absolute top-0 right-0"
+        />
         <div>
           <StyledQuestLeaderBoardWrapper>
             <StyledQuestLeaderBoardHeader>
               <div>
-                <StyledQuestHeading>Leaderboard</StyledQuestHeading>
+                <StyledQuestTableHeading className="font-marco">
+                  Leaderboard
+                </StyledQuestTableHeading>
               </div>
               <div>
                 {/* <StyledQuestFilters>
@@ -166,8 +174,8 @@ const QuestModule = ({ listing }: Props) => {
           </StyledQuestLeaderBoardWrapper>
         </div>
         <StyledQuestListingsWrapper className="mt-10 xl:mt-0">
-          <StyledQuestHeading className="mb-6">
-            Do Quests, Earn Rewards
+          <StyledQuestHeading className="mb-6 font-marco">
+            Go Quest, Reap Rewards
           </StyledQuestHeading>
           <div className="grid xl:grid-cols-2 gap-x-4 gap-y-6">
             {QUESTS_LISTING.map((quest) => (

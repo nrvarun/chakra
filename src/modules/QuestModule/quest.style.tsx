@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledQuestWrapper = styled.section`
   position: relative;
-  padding: 20px 24px 40px 24px;
+  padding: 40px 24px;
   border-top: 1px solid #484848;
 `;
 
@@ -10,7 +10,7 @@ export const StyledQuestContentWrapper = styled.div`
   @media (min-width: 1200px) {
     display: grid;
     grid-gap: 24px;
-    grid-template-columns: 36% 60%;
+    grid-template-columns: 40% 58%;
   }
 `;
 
@@ -37,14 +37,41 @@ export const StyledQuestLeaderBoardHeader = styled.div`
 
 export const StyledQuestHeading = styled.h2`
   color: #e11d48;
-  font-family: Inter;
-  font-size: 16px;
+  font-size: 24px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: normal;
 
+  @media (min-width: 768px) {
+    font-size: 32px;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 40px;
+  }
+
   @media (min-width: 1200px) {
+    font-size: 48px;
+  }
+`;
+
+export const StyledQuestTableHeading = styled.h2`
+  color: #e11d48;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
+
+  @media (min-width: 992px) {
     font-size: 24px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 32px;
   }
 `;
 
