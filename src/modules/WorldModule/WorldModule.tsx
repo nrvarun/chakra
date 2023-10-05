@@ -15,6 +15,7 @@ const WORLD_ITEMS = [
     img: "/images/world/1.png",
     path: "/world/lore",
     bgPattern: "/icons/lore-bg.svg",
+    isActive: true,
   },
   {
     id: 2,
@@ -23,6 +24,7 @@ const WORLD_ITEMS = [
     img: "/images/world/2.png",
     path: "/world",
     bgPattern: "/icons/eco-bg.svg",
+    isActive: false,
   },
   {
     id: 3,
@@ -31,6 +33,7 @@ const WORLD_ITEMS = [
     img: "/images/world/3.png",
     path: "/world",
     bgPattern: "/icons/vision-bg.svg",
+    isActive: false,
   },
 ];
 

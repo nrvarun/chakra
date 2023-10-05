@@ -13,9 +13,10 @@ type Props = {
   img: string;
   bgPattern?: string;
   path: string;
+  isActive: boolean;
 };
 
-const WorldItem = ({ title, desc, img, path, bgPattern }: Props) => {
+const WorldItem = ({ title, desc, img, path, bgPattern, isActive }: Props) => {
   return (
     <StyledWorldItem bgPattern={bgPattern}>
       <Link href={path}>
@@ -24,8 +25,14 @@ const WorldItem = ({ title, desc, img, path, bgPattern }: Props) => {
             <h3 className="font-marco world-inner-element">{title}</h3>
             <p className="xl:mb-8 font-medium font-inter">{desc}</p>
             <p className="text-md text-white capitalize py-2 font-semibold font-inter explore-item">
-              Explore
-              <span>{`->`}</span>
+              {isActive ? (
+                <>
+                  Explore
+                  <span>{`->`}</span>
+                </>
+              ) : (
+                <>Coming soon 🚧</>
+              )}
             </p>
           </div>
         </StyledWorldContent>
