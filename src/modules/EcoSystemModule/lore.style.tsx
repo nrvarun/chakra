@@ -156,9 +156,10 @@ export const StyledMangaDetailsTextList = styled.ul`
 `;
 
 export const StyledMangaArtGrid = styled.div`
-  padding: 60px 0px;
+  // padding: 60px 0px;
+  padding: 0px 0px;
   position: relative;
-  height: 100vh;
+  height: calc(100vh - 80px);
   display: flex;
   align-items: center;
   justify-content: center;

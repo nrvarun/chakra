@@ -54,13 +54,12 @@ const MangaModule = (props: Props) => {
       gsap.fromTo(
         child,
         {
-          x: () => window.innerWidth / 2 + 100,
-          opacity: 0,
+          // x: () => window.innerWidth / 2 + 100,
+          x: "160%",
           // rotate: -90,
         },
         {
           x: 0,
-          opacity: 1,
           stagger: 0.5,
           rotate: 0,
           scrollTrigger: {
@@ -68,7 +67,7 @@ const MangaModule = (props: Props) => {
             markers: false,
             scrub: true,
             start: "top top+=55",
-            end: "+=4000",
+            end: "+=3000",
             invalidateOnRefresh: true,
           },
         }
@@ -125,7 +124,7 @@ const MangaModule = (props: Props) => {
           </StyledMangaArtContent>
         </StyledMangaArtGrid>
       </section>
-      <section className="text-center mb-10">
+      {/* <section className="text-center mb-10">
         <svg
           className="mx-auto"
           width="177"
@@ -139,7 +138,7 @@ const MangaModule = (props: Props) => {
             fill="#E11D48"
           />
         </svg>
-      </section>
+      </section> */}
     </>
   );
 };

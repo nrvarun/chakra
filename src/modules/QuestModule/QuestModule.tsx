@@ -4,6 +4,7 @@ import {
   StyledQuestContentWrapper,
   StyledQuestFilters,
   StyledQuestHeading,
+  StyledQuestItemsListingWrapper,
   StyledQuestLeaderBoardHeader,
   StyledQuestLeaderBoardWrapper,
   StyledQuestListingsWrapper,
@@ -111,7 +112,7 @@ const QuestModule = ({ listing }: Props) => {
   }, []);
 
   return (
-    <StyledQuestWrapper>
+    <StyledQuestWrapper className="overflow-hidden">
       <StyledQuestContentWrapper className="max-w-[1440px] mx-auto">
         <img
           src="/images/quest-bgshape.svg"
@@ -177,11 +178,13 @@ const QuestModule = ({ listing }: Props) => {
           <StyledQuestHeading className="mb-6 font-marco">
             Go Quest, Reap Rewards
           </StyledQuestHeading>
-          <div className="grid xl:grid-cols-2 gap-x-4 gap-y-6">
-            {QUESTS_LISTING.map((quest) => (
-              <QuestItem key={quest.id} quest={quest} />
-            ))}
-          </div>
+          <StyledQuestItemsListingWrapper>
+            <div className="grid xl:grid-cols-2 gap-x-4 gap-y-6">
+              {QUESTS_LISTING.map((quest) => (
+                <QuestItem key={quest.id} quest={quest} />
+              ))}
+            </div>
+          </StyledQuestItemsListingWrapper>
         </StyledQuestListingsWrapper>
       </StyledQuestContentWrapper>
     </StyledQuestWrapper>
