@@ -1,5 +1,6 @@
 import React from "react";
 import { StyledFactionContent, StyledFactionItem } from "./factions.style";
+import Image from "next/image";
 
 type Props = {
   activeSection: string;
@@ -16,8 +17,11 @@ const FactionView = ({ activeSection, faction }: Props) => {
       <div></div>
       <div className="flex">
         <div className="py-12 m-auto">
-          <img
+          <Image
             className=""
+            loading="lazy"
+            width={460}
+            height={580}
             src={`/images/factions/${faction.id}.gif`}
             alt={faction.title}
           />
