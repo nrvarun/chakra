@@ -8,6 +8,8 @@ type Props = {
 };
 
 const FactionView = ({ activeSection, faction }: Props) => {
+  console.log("Check active section", activeSection === faction.id);
+
   return (
     <StyledFactionItem
       className={`grid grid-cols-[20%_55%_25%] relative z-10 h-full ${
@@ -17,14 +19,16 @@ const FactionView = ({ activeSection, faction }: Props) => {
       <div></div>
       <div className="flex">
         <div className="py-12 m-auto">
-          <Image
-            className=""
-            loading="lazy"
-            width={460}
-            height={580}
-            src={`/images/factions/${faction.id}.gif`}
-            alt={faction.title}
-          />
+          {activeSection === faction.id && (
+            <Image
+              className=""
+              loading="lazy"
+              width={460}
+              height={580}
+              src={`/images/factions/${faction.id}.gif`}
+              alt={faction.title}
+            />
+          )}
         </div>
       </div>
       <div className="flex">

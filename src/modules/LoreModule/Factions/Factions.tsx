@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import {
   StyledFactionContent,
   StyledFactionMobileWrapper,
@@ -417,8 +417,9 @@ const FACTION_NAV_LIST = [
 const Factions = (props: Props) => {
   const [activeSection, setActiveSection] = useState(FACTION_NAV_LIST[0].id);
 
-  const toggleActiveFaction = () => {};
-
+  const toggleActiveFaction = useCallback((id: string) => {
+    setActiveSection(id);
+  }, []);
   const { width } = useWindowSize();
 
   return (
@@ -429,16 +430,15 @@ const Factions = (props: Props) => {
             <ul>
               {FACTION_NAV_LIST.map((nav, index) => (
                 <li key={nav.id}>
-                  <a
-                    onClick={() => setActiveSection(nav.id)}
-                    href="javascript:void(0);"
+                  <button
+                    onClick={() => toggleActiveFaction(nav.id)}
                     className={`font-inter capitalize inline-block ${
                       activeSection === nav.id ? "active" : ""
                     }`}
                     data-id={nav.id}
                   >
                     {nav.title}
-                  </a>
+                  </button>
                 </li>
               ))}
             </ul>

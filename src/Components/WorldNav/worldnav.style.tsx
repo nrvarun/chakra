@@ -12,7 +12,7 @@ export const StyledWorldNavHeading = styled.h3`
 export const StyledWorldNavList = styled.nav`
   ul {
     li {
-      a {
+      button {
         &,
         &:hover {
           font-weight: 600;
