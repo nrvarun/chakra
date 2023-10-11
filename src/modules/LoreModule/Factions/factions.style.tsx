@@ -92,6 +92,26 @@ export const StyledFactionContent = styled.div`
       font-size: 14px;
     }
   }
+
+  .faction-detail {
+    max-height: calc(100vh - 320px);
+    overflow: auto;
+    padding: 0 12px 0 0;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+      opacity: 0.4;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #e11d48;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: #273444;
+    }
+  }
 `;
 
 export const StyledFactionsBottomPattern = styled.img`

@@ -22,7 +22,7 @@ const NAV_LINKS = [
   },
   {
     path: "/quest",
-    title: "quest",
+    title: "quests",
     disabled: false,
     target: "",
     tooltipContent: "",

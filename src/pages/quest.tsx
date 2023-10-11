@@ -32,6 +32,7 @@ export const getStaticProps = async (context) => {
     );
 
     const listing = await res.json();
+
     return { props: { listing } };
   }
 };

@@ -16,7 +16,11 @@ const FactionView = ({ activeSection, faction }: Props) => {
       <div></div>
       <div className="flex">
         <div className="py-12 m-auto">
-          <img className="" src={faction.img} alt={faction.title} />
+          <img
+            className=""
+            src={`/images/factions/${faction.id}.gif`}
+            alt={faction.title}
+          />
         </div>
       </div>
       <div className="flex">
@@ -24,7 +28,7 @@ const FactionView = ({ activeSection, faction }: Props) => {
           <header>
             <h4>{faction.title}</h4>
           </header>
-          <div>{faction.desc}</div>
+          <div className="faction-detail">{faction.desc}</div>
         </StyledFactionContent>
       </div>
     </StyledFactionItem>

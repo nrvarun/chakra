@@ -15,6 +15,8 @@ const WORLD_ITEMS = [
     img: "/images/world/1.png",
     path: "/world/lore",
     bgPattern: "/icons/lore-bg.svg",
+    hasTooltip: false,
+    tooltipContent: "",
   },
   {
     id: 2,
@@ -23,6 +25,8 @@ const WORLD_ITEMS = [
     img: "/images/world/2.png",
     path: "/world/eco-system/gaming",
     bgPattern: "/icons/eco-bg.svg",
+    hasTooltip: false,
+    tooltipContent: "",
   },
   {
     id: 3,
@@ -31,6 +35,8 @@ const WORLD_ITEMS = [
     img: "/images/world/3.png",
     path: "/world",
     bgPattern: "/icons/vision-bg.svg",
+    hasTooltip: true,
+    tooltipContent: "coming soon 🚧",
   },
 ];
 

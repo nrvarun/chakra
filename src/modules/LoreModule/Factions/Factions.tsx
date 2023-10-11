@@ -20,7 +20,6 @@ const FACTION_NAV_LIST = [
   {
     id: "deva",
     title: "Devas",
-    img: "/images/factions/1.gif",
     desc: (
       <>
         <p>
@@ -45,7 +44,6 @@ const FACTION_NAV_LIST = [
   {
     id: "naga",
     title: "Nagas",
-    img: "/images/factions/2.gif",
     desc: (
       <>
         <p>
@@ -71,7 +69,6 @@ const FACTION_NAV_LIST = [
   {
     id: "shakti",
     title: "shakti",
-    img: "/images/factions/3.gif",
     desc: (
       <>
         <p>
@@ -98,7 +95,6 @@ const FACTION_NAV_LIST = [
   {
     id: "apsara",
     title: "apsara",
-    img: "/images/factions/4.gif",
     desc: (
       <>
         <p>
@@ -125,9 +121,8 @@ const FACTION_NAV_LIST = [
     ),
   },
   {
-    id: "kimpurasha",
-    img: "/images/factions/5.png",
-    title: "kimpurasha",
+    id: "kimpurusha",
+    title: "kimpurusha",
     desc: (
       <>
         <p>
@@ -155,7 +150,6 @@ const FACTION_NAV_LIST = [
   },
   {
     id: "daitya",
-    img: "/images/factions/6.png",
     title: "daitya",
     desc: (
       <>
@@ -181,7 +175,6 @@ const FACTION_NAV_LIST = [
   },
   {
     id: "asura",
-    img: "/images/factions/7.gif",
     title: "asura",
     desc: (
       <>
@@ -211,7 +204,6 @@ const FACTION_NAV_LIST = [
   {
     id: "vanara",
     title: "vanara",
-    img: "/images/factions/8.gif",
     desc: (
       <>
         <p>
@@ -236,9 +228,8 @@ const FACTION_NAV_LIST = [
     ),
   },
   {
-    id: "kimpurasha-tiger",
-    title: "kimpurasha [Tiger]",
-    img: "/images/factions/9.png",
+    id: "kimpurusha-tiger",
+    title: "kimpurusha [Tiger]",
 
     desc: (
       <>
@@ -264,7 +255,6 @@ const FACTION_NAV_LIST = [
   {
     id: "garuda",
     title: "garuda",
-    img: "/images/factions/10.png",
 
     desc: (
       <>
@@ -290,7 +280,6 @@ const FACTION_NAV_LIST = [
   {
     id: "rakshasa",
     title: "rakshasa",
-    img: "/images/factions/11.png",
     desc: (
       <>
         <p>
@@ -319,7 +308,6 @@ const FACTION_NAV_LIST = [
   {
     id: "danava",
     title: "danava",
-    img: "/images/factions/12.png",
     desc: (
       <>
         <p>
@@ -345,7 +333,6 @@ const FACTION_NAV_LIST = [
   {
     id: "yaksha",
     title: "yaksha",
-    img: "/images/factions/13.png",
     desc: (
       <>
         <p>
@@ -380,7 +367,6 @@ const FACTION_NAV_LIST = [
   {
     id: "ugradeva",
     title: "ugradeva",
-    img: "/images/factions/14.png",
     desc: (
       <>
         <p>
@@ -403,9 +389,8 @@ const FACTION_NAV_LIST = [
     ),
   },
   {
-    id: "kimpurasha-parrot",
-    title: "kimpurasha [Parrot]",
-    img: "/images/factions/15.png",
+    id: "kimpurusha-parrot",
+    title: "kimpurusha [Parrot]",
     desc: (
       <>
         <p>
