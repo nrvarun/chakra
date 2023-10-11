@@ -16,7 +16,7 @@ import FactionMobileNav from "./FactionMobileNav";
 
 type Props = {};
 
-const FACTION_NAV_LIST = [
+export const FACTION_NAV_LIST = [
   {
     id: "deva",
     title: "Devas",

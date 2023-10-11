@@ -12,7 +12,7 @@ export default function Lore() {
 
   return (
     <>
-      <CustomHead />
+      <CustomHead title="Chakra - The Lore" />
       <Header
         customClass={`red with-underline ${
           isFaction ? "bg-black" : "bg-transparent"

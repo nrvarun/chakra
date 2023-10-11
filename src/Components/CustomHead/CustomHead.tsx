@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-page-custom-font */
+import { FACTION_NAV_LIST } from "modules/LoreModule/Factions/Factions";
 import Head from "next/head";
 
 type Props = {
@@ -19,6 +20,17 @@ const CustomHead = ({
         rel="stylesheet"
       />
       <title>{title}</title>
+      {title && title.toLowerCase().includes("lore") && (
+        <>
+          {FACTION_NAV_LIST.map((faction) => (
+            <link
+              rel="prefetch"
+              href={`/images/factions/${faction.id}.gif`}
+              key={faction.id}
+            />
+          ))}
+        </>
+      )}
       <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="Chakra" />
