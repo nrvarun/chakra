@@ -20,16 +20,13 @@ const NAV_LINKS = [
     target: "_blank",
     tooltipContent: "🚧",
   },
-  /**
-   * When the quest page is ready to go un-comment the below code
-   */
-  // {
-  //   path: "/quest",
-  //   title: "quests",
-  //   disabled: true,
-  //   target: "",
-  //   tooltipContent: "",
-  // },
+  {
+    path: "/quest",
+    title: "quests",
+    disabled: true,
+    target: "",
+    tooltipContent: "🚧",
+  },
   {
     path: "/whitepaper",
     title: "docs",
