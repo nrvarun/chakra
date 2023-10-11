@@ -64,18 +64,26 @@ const HeaderNav = (props: Props) => {
             }`}
             key={link.path}
           >
-            <Link
-              target={link.target}
-              href={link.disabled ? "/" : link.path}
-              className={`${
-                currentRoute.includes(link.path) ? "active" : "in-active"
-              } ${link.disabled ? "disabled" : ""}`}
-            >
-              <p className="text-xs md:text-sm lg:text-base font-inter capitalize text-white">
+            {link.disabled ? (
+              <p
+                className="text-xs md:text-sm lg:text-base font-inter capitalize text-white"
+                title="Coming soon 🚧"
+              >
                 {link.title}
               </p>
-              {link.disabled && <span>{link.tooltipContent}</span>}
-            </Link>
+            ) : (
+              <Link
+                target={link.target}
+                href={link.disabled ? "/" : link.path}
+                className={`${
+                  currentRoute.includes(link.path) ? "active" : "in-active"
+                } ${link.disabled ? "disabled" : ""}`}
+              >
+                <p className="text-xs md:text-sm lg:text-base font-inter capitalize text-white">
+                  {link.title}
+                </p>
+              </Link>
+            )}
           </li>
         ))}
       </StyledHeaderNavList>
