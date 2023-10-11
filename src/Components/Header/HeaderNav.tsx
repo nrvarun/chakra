@@ -21,6 +21,13 @@ const NAV_LINKS = [
     tooltipContent: "🚧",
   },
   {
+    path: "/quest",
+    title: "quests",
+    disabled: false,
+    target: "",
+    tooltipContent: "",
+  },
+  {
     path: "/whitepaper",
     title: "docs",
     disabled: false,

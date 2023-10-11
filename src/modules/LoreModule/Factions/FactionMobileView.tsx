@@ -9,7 +9,7 @@ const FactionMobileView = ({ faction }: Props) => {
   return (
     <StyledFactionMobileCard>
       <figure>
-        <img src={faction.img} alt={faction.title} />
+        <img src={`/images/factions/${faction.id}.gif`} alt={faction.title} />
       </figure>
 
       <div className="p-3">

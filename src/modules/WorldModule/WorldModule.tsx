@@ -15,16 +15,18 @@ const WORLD_ITEMS = [
     img: "/images/world/1.png",
     path: "/world/lore",
     bgPattern: "/icons/lore-bg.svg",
-    isActive: true,
+    hasTooltip: false,
+    tooltipContent: "",
   },
   {
     id: 2,
     title: "Ecosystem",
     desc: "The Chakra ecosystem leverages the power of gaming and the wonders of web3 to create a well-defined yet boundless fantasy meta-world inspired by millennia-old Eastern mythologies.",
     img: "/images/world/2.png",
-    path: "/world",
+    path: "/world/eco-system/gaming",
     bgPattern: "/icons/eco-bg.svg",
-    isActive: false,
+    hasTooltip: false,
+    tooltipContent: "",
   },
   {
     id: 3,
@@ -33,7 +35,8 @@ const WORLD_ITEMS = [
     img: "/images/world/3.png",
     path: "/world",
     bgPattern: "/icons/vision-bg.svg",
-    isActive: false,
+    hasTooltip: true,
+    tooltipContent: "coming soon 🚧",
   },
 ];
 
