@@ -8,8 +8,6 @@ type Props = {
 };
 
 const FactionView = ({ activeSection, faction }: Props) => {
-  console.log("Check active section", activeSection === faction.id);
-
   return (
     <StyledFactionItem
       className={`grid grid-cols-[20%_55%_25%] relative z-10 h-full ${
